@@ -1,6 +1,46 @@
-footer {
+.footer {
+  padding-top: 39px;
+
+  &__item {
+    padding-left: 40px;
+  }
+
+  .company-info {
+    padding-bottom: 39px;
+  }
 
   .company-links {
     border-top: 1px solid rgb(214, 217, 220);
+    padding: 29px 0 29px 0;
+
+    &-box {
+      padding-left: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  h4 {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 16px;
+  }
+
+  .logo-footer {
+    margin-bottom: 20px;
+  }
+
+  .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      margin-bottom: 15px;
+    }
   }
 }
