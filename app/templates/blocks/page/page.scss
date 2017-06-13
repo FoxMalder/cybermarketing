@@ -5,7 +5,7 @@
   align-content: flex-start;
 
   &__content {
-    padding: 20px;
+    padding: 40px;
     flex: 1 100%;
   }
 
@@ -161,7 +161,6 @@
   }
 }
 
-
 // Ссылки на интересные материалы
 .list {
   list-style: none;
@@ -186,4 +185,78 @@
       background-image: svg-load('check-small.svg', fill=#63a824);
     }
   }
+}
+
+.course-module {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 2px;
+
+  &__box {
+    padding: 26px 39px;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+  }
+
+  &__desc {
+    color: rgb(120, 122, 128);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__footer {
+    margin-top: 20px;
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+  }
+}
+
+.course-speaker {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  flex: 1 100%;
+
+  &__photka {
+    flex-basis: 40px;
+
+    span {
+      display: block;
+      background-color: #f7f7f8;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__who {
+    margin-left: 19px;
+    flex: 1 100%;
+  }
+
+  &__name {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__position {
+    color: rgb(120, 122, 128);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+.course-more {
+  flex: 1 30%;
+  text-align: right;
 }
