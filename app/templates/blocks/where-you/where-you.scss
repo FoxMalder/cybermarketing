@@ -8,9 +8,23 @@
     padding: 29px 39px;
   }
 
-  &__icon {
-    flex-basis: 90px;
-    margin-left: 20px;
+  &__status {
+    flex-basis: 60px;
+    margin-right: 40px;
+
+    .you-status {
+      width: 60px;
+      height: 60px;
+      border: 2px solid rgb(173, 177, 185);
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+
+      span {
+        position: relative;
+        top: 18px;
+      }
+    }
   }
 
   &__desc {
@@ -40,11 +54,20 @@
 
   .course-time {
     margin-left: 15px;
-
     color: rgb(120, 122, 128);
     font-family: Arial;
     font-size: 15px;
-    line-height: 30px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      margin-right: 8px;
+
+      .ico-watch {
+        position: relative;
+        top: 1px;
+      }
+    }
   }
 }
