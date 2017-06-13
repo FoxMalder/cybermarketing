@@ -1,0 +1,38 @@
+.btn {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 12px 19px 11px 19px;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .3s ease;
+  vertical-align: middle;
+
+  &-green {
+    background-color: rgb(99, 168, 36);
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:focus {
+    background-color: rgb(242, 245, 245);
+  }
+}
+
+button[disabled=disabled],
+button:disabled,
+.btn:disabled,
+.btn.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgb(195, 200, 204);
+  border-color: rgb(233, 239, 240);
+}

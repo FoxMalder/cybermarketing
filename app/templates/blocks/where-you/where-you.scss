@@ -1,3 +1,50 @@
 .where-you {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(247, 247, 248);
+
+  &__box {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    padding: 29px 39px;
+  }
+
+  &__icon {
+    flex-basis: 90px;
+    margin-left: 20px;
+  }
+
+  &__desc {
+    flex: 1 100%;
+  }
+
+  &__text {
+    color: rgb(131, 133, 138);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+  }
+
+  .course-name {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .course-time {
+    margin-left: 15px;
+
+    color: rgb(120, 122, 128);
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+  }
 }
