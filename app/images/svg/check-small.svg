@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="10" height="8" viewBox="0 0 10 8">
+  <defs>
+    <style>
+      .check-small {
+        fill: #63a824;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M1.414,2.262 L4.000,5.049 L8.586,0.000 L10.000,1.476 L4.000,8.000 L-0.000,3.737 L1.414,2.262 Z" class="check-small"/>
+</svg>

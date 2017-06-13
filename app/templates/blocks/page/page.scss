@@ -160,3 +160,30 @@
     bottom: -22px;
   }
 }
+
+
+// Ссылки на интересные материалы
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    margin-bottom: 11px;
+    padding-left: 35px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+
+    &:before {
+      position: absolute;
+      content: '';
+      @include size(10px, 8px);
+      top: 8px;
+      left: 10px;
+      background-image: svg-load('check-small.svg', fill=#63a824);
+    }
+  }
+}
