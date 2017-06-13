@@ -27,4 +27,21 @@
     @include size(18px);
     background-image: svg-load('pause.svg', fill=#63a824);
   }
+
+  &-chevron {
+    @include size(10px, 7px);
+    background-image: svg-load('chevron.svg', fill=#63a824);
+
+    &.gray {
+      background-image: svg-load('chevron.svg', fill=rgb(173, 177, 185));
+    }
+
+    &.left {
+      transform: rotate(90deg);
+    }
+
+    &.right {
+      transform: rotate(-90deg);
+    }
+  }
 }

@@ -165,7 +165,7 @@
 .list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 15px 0;
 
   &__item {
     margin-bottom: 11px;
@@ -191,6 +191,11 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(214, 217, 220);
   border-radius: 2px;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &__box {
     padding: 26px 39px;
@@ -213,6 +218,12 @@
     display: flex;
     align-content: space-between;
     align-items: flex-end;
+  }
+
+  &__item {
+    background-color: rgb(247, 247, 248);
+    padding: 26px 39px;
+    border-top: 1px solid rgb(214, 217, 220);
   }
 }
 
@@ -259,4 +270,25 @@
 .course-more {
   flex: 1 30%;
   text-align: right;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &-link {
+
+    .ico {
+      position: relative;
+      top: -2px;
+
+      &.left {
+        margin-right: 12px;
+      }
+
+      &.right {
+        margin-left: 12px;
+      }
+    }
+  }
 }
