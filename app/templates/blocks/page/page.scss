@@ -11,6 +11,114 @@
 
   &__aside {
     flex-basis: 378px;
+    min-width: 378px;
     border-left: 1px solid rgb(214, 217, 220);
+  }
+}
+
+.curriculum {
+  padding: 25px 0 25px 0;
+
+  &--active {
+    background-color: rgb(247, 247, 248);
+
+    .curriculum__desc {
+      color: rgb(0, 0, 0);
+    }
+  }
+
+  &--end {
+
+    .curriculum-status {
+      border-color: rgb(99, 168, 36);
+
+      &:before,
+      &:after {
+        background-color: rgb(99, 168, 36);
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    padding: 20px 40px;
+  }
+
+  &__status {
+    flex-basis: 60px;
+    margin-right: 20px;
+  }
+
+  &__desc {
+    color: rgb(99, 168, 36);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    flex: 1 100%;
+  }
+}
+
+.curriculum-status {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgb(214, 217, 220);
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+
+  &.no-top:before {
+    display: none;
+  }
+
+  &.no-bottom:after {
+    display: none;
+  }
+
+  &__box {
+    position: absolute;
+    top: 9px;
+    left: -2px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__course {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__text {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &:before,
+  &:after {
+    @include pseudo;
+    width: 2px;
+    height: 20px;
+    background-color: rgb(214, 217, 220);
+    left: 50%;
+  }
+
+  &:before {
+    top: -22px;
+  }
+
+  &:after {
+    bottom: -22px;
   }
 }
