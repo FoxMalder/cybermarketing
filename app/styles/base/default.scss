@@ -40,14 +40,8 @@ main {
 
 .hide {
   @include hidden;
+}
 
-  @media #{$lg} {
-    display: block;
-    visibility: visible;
-  }
-
-  @media #{$md} {
-    display: block;
-    visibility: visible;
-  }
+.container {
+  min-width: 1280px;
 }

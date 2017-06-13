@@ -1,4 +1,6 @@
 .header {
   background-color: rgb(255, 255, 255);
-  padding: 50px;
+  &__box {
+    padding: 35px 40px;
+  }
 }
