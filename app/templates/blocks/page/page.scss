@@ -32,14 +32,14 @@
 
         &:before {
           @include pseudo;
-          width: 60px;
-          height: 60px;
+          width: 56px;
+          height: 56px;
           border: 2px solid rgb(99, 168, 36);
           border-radius: 50%;
-        }
-
-        &:before {
-          top: -22px;
+          clip: rect(40px, auto, auto, 40px);
+          transform: rotate(-108deg);
+          top: -11px;
+          left: 0;
         }
       }
     }
@@ -85,6 +85,11 @@
   &__status {
     flex-basis: 60px;
     margin-right: 20px;
+
+    span {
+      position: relative;
+      left: 1px;
+    }
   }
 
   &__desc {
