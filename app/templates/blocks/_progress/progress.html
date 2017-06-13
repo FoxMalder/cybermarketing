@@ -1,0 +1,10 @@
+@@include('blocks/_progress/list/list.html')
+
+@@loop("blocks/_progress/list/item.html", [
+  { "href": "index.html", "name": "Главная страница", "design": "100", "html": "100" }
+])
+
+@@include('blocks/_progress/structure/structure.html", {
+  "git": "github.com/4enki/spt",
+  "version": "1.0.0"
+})

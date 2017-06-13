@@ -1,0 +1,25 @@
+*::placeholder {
+  color: $PlaceholderColor;
+  opacity: 1;
+}
+
+*::placeholder-shown {
+  color: $PlaceholderColor;
+}
+
+::selection {
+  background: $SelectBackground;
+  color: $SelectColor;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  font-family: $GeneralFontFamily;
+}
+
+input[placeholder],
+input:placeholder {
+  text-overflow: ellipsis;
+}
