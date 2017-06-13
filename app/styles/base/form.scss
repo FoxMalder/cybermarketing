@@ -23,3 +23,44 @@ input[placeholder],
 input:placeholder {
   text-overflow: ellipsis;
 }
+
+.form-group {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-status {
+    position: relative;
+
+    &-type {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .form-control {
+      padding-left: 40px;
+    }
+  }
+}
+
+.form-control {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 2px;
+  color: rgb(49, 52, 54);
+  background-image: none;
+  height: 40px;
+  display: block;
+  width: 100%;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 11px 14px 12px 19px;
+  transition: border-color ease-in-out .15s;
+  &:hover {
+    border-color: rgb(195, 200, 204);
+  }
+}

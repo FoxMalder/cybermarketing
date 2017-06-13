@@ -7,4 +7,14 @@
     @include size(20px, 14px);
     background-image: svg-load('check.svg', fill=#63a824);
   }
+
+  &-loupe {
+    @include size(20px, 20px);
+    background-image: svg-load('loupe.svg', fill=#adb1b9);
+  }
+
+  &-bell {
+    @include size(18px, 20px);
+    background-image: svg-load('bell.svg', fill=#adb1b9);
+  }
 }

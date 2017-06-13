@@ -1,6 +1,52 @@
 .header {
   background-color: rgb(255, 255, 255);
+
   &__box {
     padding: 35px 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  &__search {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1 100%;
+  }
+
+  &__contacts {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__user {
+    margin-left: 20px;
+    min-width: 90px;
+    text-align: right;
+    line-height: 1;
+  }
+}
+
+.user {
+  text-align: right;
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__avatar {
+
+    span {
+      display: block;
+      background-color: #f7f7f8;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
   }
 }
