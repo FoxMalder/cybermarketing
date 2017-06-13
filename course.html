@@ -85,13 +85,14 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css" rel="stylesheet" />
+  <link href="assets/styles/style.css?v=7227c5db62d550df3a67c17e29c5e359" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
 
   <body>
-    <!-- в случае тестирования разбейте стекло комментариев
+    <main>
+      <!-- в случае тестирования разбейте стекло комментариев
   <div class="px2px"></div>
 -->
 <div class="container">
@@ -129,6 +130,9 @@
           <div class="form-group">
             <label for="search" class="form-control-label hide">Поиск по сайту</label>
             <div class="form-group-status">
+              <div class="form-group-status-type">
+                <span><i class="ico ico-loupe"></i></span>
+              </div><!-- /.form-group-status-type -->
               <input id="search" type="text" class="form-control" placeholder="Что хотите найти?">
             </div><!-- /.form-group-status -->
           </div><!-- /.form-group -->
@@ -136,17 +140,25 @@
 
       </div><!-- /.header__search -->
       <div class="contacts header__contacts">
-
+        <div class="tel contacts__tel">
+          <a href="tel:+74956628758" class="contacts__link">+7 (495) 662-87-58</a>
+        </div>
+        <div class="tel contacts__mail">
+          <a href="mailto:info@cybermarketing.ru" class="contacts__link">info@cybermarketing.ru</a>
+        </div>
       </div><!-- /.header__contacts -->
 
       <div class="user header__user">
-
+        <div class="user-box">
+          <div class="user__notify"><i class="ico ico-bell"></i></div>
+          <div class="user__avatar"><span><img src="assets/images/dmitry-klimchukov.png" alt=""></span></div>
+        </div>
       </div><!-- /.header__user -->
     </div><!-- /.header__box -->
   </header>
 </div><!-- /.container -->
 
-    <div class="container">
+      <div class="container">
   <div class="main-menu outline">
     <ul class="menu">
       <li class="menu__item menu__item--active"><a href="" class="menu__link">Институт</a></li>
@@ -161,7 +173,7 @@
   </div><!-- /.menu -->
 </div><!-- /.container -->
 
-    <div class="container">
+      <div class="container">
   <div class="where-you outline">
 
     <div class="where-you__box">
@@ -184,7 +196,7 @@
   </div>
 </div><!-- /.container -->
 
-    <div class="container">
+      <div class="container">
   <div class="page page-sidebar outline">
 
     <div class="page__content content">
@@ -381,6 +393,7 @@
   </div><!-- /.page -->
 </div><!-- /.container -->
 
+    </main>
     <footer>
 
   <section>
@@ -448,7 +461,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js"></script>
+<script src="assets/scripts/scripts.js?v=dac8768eb25d15e3e9cc9ec0405b96d1"></script>
 
   </body>
 </html>
