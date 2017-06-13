@@ -22,6 +22,28 @@
   &--active {
     background-color: rgb(247, 247, 248);
 
+    .curriculum-status {
+
+      &:before {
+        background-color: rgb(99, 168, 36);
+      }
+
+      &__box {
+
+        &:before {
+          @include pseudo;
+          width: 60px;
+          height: 60px;
+          border: 2px solid rgb(99, 168, 36);
+          border-radius: 50%;
+        }
+
+        &:before {
+          top: -22px;
+        }
+      }
+    }
+
     .curriculum__desc {
       color: rgb(0, 0, 0);
     }
@@ -36,6 +58,11 @@
       &:after {
         background-color: rgb(99, 168, 36);
       }
+
+      &__text {
+        color: rgb(99, 168, 36);
+        font-weight: 700;
+      }
     }
   }
 
@@ -47,6 +74,12 @@
 
   &__item {
     padding: 20px 40px;
+    transition: all .3s ease;
+
+    &:hover {
+      background-color: rgb(247, 247, 248);
+      cursor: pointer;
+    }
   }
 
   &__status {

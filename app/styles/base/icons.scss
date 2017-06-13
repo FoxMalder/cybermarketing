@@ -1,0 +1,9 @@
+.ico {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease;
+  &-check {
+    @include size(20px, 14px);
+    background-image: svg-load('check.svg', fill=#63a824);
+  }
+}
