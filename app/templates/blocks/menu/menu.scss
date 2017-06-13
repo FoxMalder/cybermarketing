@@ -17,10 +17,10 @@
     }
 
     &--active {
-      border-bottom: 3px solid rgb(99, 168, 36);
+      border-bottom: 3px solid #00b402;
 
       .menu__link {
-        color: rgb(99, 168, 36);
+        color: #00b402;
       }
     }
   }
@@ -38,7 +38,7 @@
     display: block;
 
     &:hover {
-      color: rgb(99, 168, 36);
+      color: #00b402;
     }
   }
 }
