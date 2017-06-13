@@ -36,3 +36,17 @@ button:disabled,
   color: rgb(195, 200, 204);
   border-color: rgb(233, 239, 240);
 }
+
+.more-link {
+  position: relative;
+  transition: .3s ease;
+  padding-right: 15px;
+
+  &:after {
+    @include pseudo;
+    @include size(10px, 7px);
+    top: 7px;
+    right: 0;
+    background-image: svg-load('chevron.svg', fill=#63a824);
+  }
+}
