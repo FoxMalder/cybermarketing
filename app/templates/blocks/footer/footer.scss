@@ -2,7 +2,24 @@
   padding-top: 48px;
 
   &__item {
-    padding-left: 40px;
+    min-width: 320px;
+
+    &--first {
+      padding-left: 45px;
+    }
+
+    &--second {
+      padding-left: 27px;
+    }
+
+    &--three {
+      padding-left: 7px;
+      min-width: 300px;
+    }
+
+    &--four {
+      padding-left: 8px;
+    }
   }
 
   .company-info {
@@ -11,7 +28,7 @@
 
   .company-links {
     border-top: 1px solid rgb(214, 217, 220);
-    padding: 29px 0 29px 0;
+    padding: 35px 0 35px 0;
 
     &-box {
       padding-left: 40px;
@@ -21,18 +38,34 @@
     }
 
     .copy__item {
-      margin-right: 41px;
+      margin-right: 25px;
       display: inline-block;
+      vertical-align: middle;
 
       &:last-child {
         margin-right: 0;
       }
     }
+
+    &__apps {
+      margin-right: 40px;
+
+      .apps__download {
+
+        &-link {
+          margin-right: 16px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 
-  address {
+  .address {
     font-style: normal;
-    margin-bottom: 19px;
+    margin-bottom: 21px;
 
     p {
       line-height: 30px;
@@ -49,7 +82,7 @@
   }
 
   .logo-footer {
-    margin-bottom: 19px;
+    margin-bottom: 16px;
   }
 
   .footer-menu {
