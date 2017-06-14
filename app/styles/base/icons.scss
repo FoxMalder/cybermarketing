@@ -44,4 +44,9 @@
       transform: rotate(-90deg);
     }
   }
+
+  &-star {
+    @include size(20px);
+    background-image: svg-load('star.svg', fill=#adb1b9);
+  }
 }

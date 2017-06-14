@@ -221,7 +221,7 @@
   }
 
   &__item {
-    padding: 26px 39px;
+    padding: 15px 39px;
     border-top: 1px solid rgb(214, 217, 220);
 
     &--gray {
@@ -236,6 +236,23 @@
     display: flex;
     align-content: space-between;
     align-items: center;
+  }
+
+  &__name {
+    display: flex;
+    flex: 1 100%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  &__time {
+    min-width: 100px;
+    text-align: left;
+    margin-right: 29px;
+
+    .course-time {
+      margin-left: 0;
+    }
   }
 
   &__result {
@@ -267,6 +284,19 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 20px;
+
+    &-box {
+      background-color: rgb(247, 247, 248);
+      border-radius: 2px;
+      padding: 15px 28px 14px 20px;
+
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 10px;
+      }
+    }
   }
 }
 
