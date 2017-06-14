@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="10" height="20" viewBox="0 0 10 20">
+  <defs>
+    <style>
+      .facebook {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path d="M6.492,20.000 L6.492,10.879 L9.442,10.879 L9.884,7.325 L6.492,7.325 L6.492,5.056 C6.492,4.027 6.768,3.325 8.190,3.325 L10.003,3.325 L10.003,0.146 C9.690,0.102 8.613,0.006 7.361,0.006 C4.745,0.006 2.955,1.662 2.955,4.704 L2.955,7.325 L-0.002,7.325 L-0.002,10.879 L2.955,10.879 L2.955,20.000 L6.492,20.000 Z" class="facebook"/>
+</svg>

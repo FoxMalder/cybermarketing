@@ -32,7 +32,11 @@
 
   address {
     font-style: normal;
-    line-height: 30px;
+    margin-bottom: 19px;
+
+    p {
+      line-height: 30px;
+    }
   }
 
   h4 {
@@ -45,7 +49,7 @@
   }
 
   .logo-footer {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 
   .footer-menu {
@@ -56,6 +60,10 @@
     &__item {
       margin-bottom: 15px;
     }
+  }
+
+  .tel-link {
+    color: rgb(0, 0, 0);
   }
 }
 
@@ -83,25 +91,70 @@
     overflow: hidden;
     text-indent: -9999px;
     position: relative;
+    transition: all .3s ease;
 
     &--vk {
       background-color: #45668e;
+      span {
+        display: block;
+        @include size(21px, 12px);
+        background-image: svg-load('social/vk.svg', fill=#ffffff);
+        position: relative;
+        top: 14px;
+        left: 8px;
+      }
     }
 
     &--facebook {
       background-color: #3b5998;
+      span {
+        display: block;
+        @include size(10px, 20px);
+        background-image: svg-load('social/facebook.svg', fill=#ffffff);
+        position: relative;
+        top: 10px;
+        left: 14px;
+      }
     }
 
     &--youtube {
       background-color: #cd201f;
+      span {
+        display: block;
+        @include size(20px, 14px);
+        background-image: svg-load('social/youtube.svg', fill=#ffffff);
+        position: relative;
+        top: 12px;
+        left: 10px;
+      }
     }
 
     &--twitter {
       background-color: #1da1f2;
+      span {
+        display: block;
+        @include size(20px, 16px);
+        background-image: svg-load('social/twitter.svg', fill=#ffffff);
+        position: relative;
+        top: 11px;
+        left: 10px;
+      }
     }
 
     &--instagram {
       background-color: #e1306c;
+      span {
+        display: block;
+        @include size(22px);
+        background-image: svg-load('social/instagram.svg', fill=#ffffff);
+        position: relative;
+        top: 9px;
+        left: 9px;
+      }
+    }
+
+    &:hover {
+      opacity: .89;
     }
   }
 }
