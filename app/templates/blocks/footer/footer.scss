@@ -95,6 +95,7 @@
 
     &--vk {
       background-color: #45668e;
+
       span {
         display: block;
         @include size(21px, 12px);
@@ -107,6 +108,7 @@
 
     &--facebook {
       background-color: #3b5998;
+
       span {
         display: block;
         @include size(10px, 20px);
@@ -119,6 +121,7 @@
 
     &--youtube {
       background-color: #cd201f;
+
       span {
         display: block;
         @include size(20px, 14px);
@@ -131,6 +134,7 @@
 
     &--twitter {
       background-color: #1da1f2;
+
       span {
         display: block;
         @include size(20px, 16px);
@@ -143,6 +147,7 @@
 
     &--instagram {
       background-color: #e1306c;
+
       span {
         display: block;
         @include size(22px);
