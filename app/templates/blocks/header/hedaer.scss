@@ -56,9 +56,10 @@
     .label {
       display: block;
       border-radius: 50%;
-      width: 10px;
-      height: 10px;
-      background-color: rgb(255, 153, 0);
+      width: 11px;
+      height: 11px;
+      border: 2px solid #ffffff;
+      background-color: #00b402;
       position: absolute;
       top: -3px;
       right: -3px;
