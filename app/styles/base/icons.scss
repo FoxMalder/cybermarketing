@@ -5,7 +5,7 @@
 
   &-check {
     @include size(20px, 14px);
-    background-image: svg-load('check.svg', fill=#63a824);
+    background-image: svg-load('check.svg', fill=#00b402);
   }
 
   &-loupe {
@@ -25,7 +25,7 @@
 
   &-pause {
     @include size(18px);
-    background-image: svg-load('pause.svg', fill=#63a824);
+    background-image: svg-load('pause.svg', fill=#00b402);
   }
 
   &-chevron {
