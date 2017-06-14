@@ -5,7 +5,7 @@
   align-content: flex-start;
 
   &__content {
-    padding: 40px;
+    padding: 40px 39px 39px 39px;
     flex: 1 100%;
   }
 
@@ -17,7 +17,7 @@
 }
 
 .curriculum {
-  padding: 25px 0 25px 0;
+  padding: 21px 0 25px 0;
 
   &--active {
     background-color: rgb(247, 247, 248);
@@ -73,7 +73,7 @@
   }
 
   &__item {
-    padding: 20px 40px;
+    padding: 20px 29px 20px 38px;
     transition: all .3s ease;
 
     &:hover {
@@ -84,7 +84,7 @@
 
   &__status {
     flex-basis: 60px;
-    margin-right: 20px;
+    margin-right: 40px;
 
     span {
       position: relative;
@@ -121,7 +121,7 @@
   &__box {
     position: absolute;
     top: 9px;
-    left: -2px;
+    left: -3px;
     text-align: center;
     width: 60px;
     height: 60px;
@@ -149,7 +149,7 @@
     width: 2px;
     height: 20px;
     background-color: rgb(214, 217, 220);
-    left: 50%;
+    left: 27px;
   }
 
   &:before {
@@ -165,11 +165,11 @@
 .list {
   list-style: none;
   margin: 0;
-  padding: 0 0 15px 0;
+  padding: 5px 0 26px 0;
 
   &__item {
-    margin-bottom: 11px;
-    padding-left: 35px;
+    margin-bottom: 20px;
+    padding-left: 38px;
     position: relative;
     color: rgb(0, 0, 0);
     font-family: Arial;
@@ -198,11 +198,11 @@
   }
 
   &__box {
-    padding: 26px 39px;
+    padding: 22px 39px 27px 39px;
   }
 
   &__name {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 
   &__desc {
@@ -221,7 +221,7 @@
   }
 
   &__item {
-    padding: 15px 39px;
+    padding: 14px 39px 12px 39px;
     border-top: 1px solid rgb(214, 217, 220);
 
     &--gray {
@@ -248,7 +248,7 @@
   &__time {
     min-width: 100px;
     text-align: left;
-    margin-right: 29px;
+    margin-right: 39px;
 
     .course-time {
       margin-left: 0;
@@ -288,7 +288,7 @@
     &-box {
       background-color: rgb(247, 247, 248);
       border-radius: 2px;
-      padding: 15px 28px 14px 20px;
+      padding: 11px 27px 11px 19px;
 
       display: flex;
       align-items: center;
@@ -356,7 +356,7 @@
       top: -2px;
 
       &.left {
-        margin-right: 12px;
+        margin-right: 17px;
       }
 
       &.right {
