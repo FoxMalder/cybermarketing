@@ -221,9 +221,52 @@
   }
 
   &__item {
-    background-color: rgb(247, 247, 248);
     padding: 26px 39px;
     border-top: 1px solid rgb(214, 217, 220);
+
+    &--gray {
+      background-color: rgb(247, 247, 248);
+    }
+  }
+}
+
+.module-item {
+
+  &__box {
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+  }
+
+  &__result {
+    display: flex;
+    flex: 1 100%;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(120, 122, 128);
+    font-weight: 400;
+
+    span {
+      color: rgb(0, 0, 0);
+      font-weight: 700;
+    }
+
+    .result__item {
+      margin-right: 39px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__rating {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
   }
 }
 
