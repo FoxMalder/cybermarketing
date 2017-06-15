@@ -30,7 +30,7 @@
 
   &-chevron {
     @include size(10px, 7px);
-    background-image: svg-load('chevron.svg', fill=#63a824);
+    background-image: svg-load('chevron.svg', fill=#00b402);
 
     &.gray {
       background-image: svg-load('chevron.svg', fill=rgb(173, 177, 185));
