@@ -5,7 +5,6 @@
   align-content: flex-start;
 
   &__content {
-    padding: 40px 39px 39px 39px;
     flex: 1 100%;
   }
 
@@ -13,6 +12,13 @@
     flex-basis: 378px;
     min-width: 378px;
     border-left: 1px solid rgb(214, 217, 220);
+  }
+
+  .content {
+
+    &__box {
+      padding: 40px 39px 39px 39px;
+    }
   }
 }
 
@@ -351,6 +357,10 @@
 
   &-link {
 
+    &__right {
+      padding: 11px 13px 11px 18px;
+    }
+
     .ico {
       position: relative;
       top: -2px;
@@ -360,7 +370,7 @@
       }
 
       &.right {
-        margin-left: 12px;
+        margin-left: 17px;
       }
     }
   }
