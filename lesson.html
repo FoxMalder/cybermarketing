@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css" rel="stylesheet" />
+  <link href="assets/styles/style.css?v=ead7d6cf1e824b83ea726c714dce2d3c" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -149,7 +149,7 @@
       </div><!-- /.header__contacts -->
 
       <div class="user header__user">
-        <div class="user-box">
+        <div class="user-box user-box--auth">
           <a href="" class="btn btn-green">Вход</a>
         </div>
       </div><!-- /.header__user -->
@@ -177,14 +177,19 @@
 
     <div class="headline__box">
       <div class="headline__status">
-        <div class="you-status">
-          <span><i class="ico ico-pause"></i></span>
-        </div><!-- /.you-status -->
-      </div><!-- /.headline__icon -->
+
+        <div class="curriculum-status curriculum-status--active no-top no-bottom">
+          <div class="curriculum-status__box">
+            <div class="curriculum-status__course">2</div><!-- /.curriculum-status__course -->
+            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
+          </div><!-- /.curriculum-status__box -->
+        </div><!-- /.curriculum-status -->
+
+      </div><!-- /.headline__status -->
 
       <div class="headline__desc">
         <div class="headline__text">
-          <a class="headline__text-link">Тема 3. Маркетинговые исследования</a>
+          <a class="headline__text-link"><i class="ico ico-chevron left"></i>Тема 3. Маркетинговые исследования</a>
         </div><!-- /.headline__text -->
         <div class="headline__name">
           <div class="course-name"><h1>Методы сбора и анализа данных</h1></div>
@@ -209,8 +214,11 @@
     <div class="page__content content">
 
       <div class="content__full">
-
-      </div>
+        <div class="content__progress"></div><!-- /.content__progress -->
+        <div class="content__full-box">
+          <img src="assets/images/lessong.png" alt="">
+        </div><!-- /.content__full-box -->
+      </div><!-- /.content__full -->
 
       <div class="content__box">
         <h3>Ответы на вопросы студентов</h3>
@@ -337,7 +345,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js"></script>
+<script src="assets/scripts/scripts.js?v=dac8768eb25d15e3e9cc9ec0405b96d1"></script>
 
   </body>
 </html>
