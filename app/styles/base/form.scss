@@ -65,3 +65,9 @@ input:placeholder {
     border-color: rgb(195, 200, 204);
   }
 }
+
+textarea.form-control {
+  min-height: 80px;
+  max-height: 160px;
+  resize: vertical;
+}
