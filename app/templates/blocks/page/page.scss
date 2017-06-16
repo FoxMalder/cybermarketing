@@ -417,6 +417,7 @@
 .comments {
   display: block;
   margin-top: 25px;
+  margin-bottom: 25px;
 
   &__item {
     margin-bottom: 20px;
@@ -439,8 +440,7 @@
   }
 
   &__user {
-    flex-basis: 150px;
-    margin-right: 40px;
+    flex-basis: 200px;
     display: flex;
     align-content: flex-start;
     align-items: center;
@@ -461,5 +461,6 @@
 
   &__descr {
     flex: 1 100%;
+    margin-left: 40px;
   }
 }
