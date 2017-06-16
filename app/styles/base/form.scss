@@ -46,6 +46,16 @@ input:placeholder {
   }
 }
 
+.form-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .form-add-file {
+    margin-left: 40px;
+  }
+}
+
 .form-control {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(214, 217, 220);
@@ -70,4 +80,16 @@ textarea.form-control {
   min-height: 80px;
   max-height: 160px;
   resize: vertical;
+}
+
+.custom-file {
+  display: block;
+
+  &-control {
+    color: #00b402;
+  }
+}
+
+.form-add-file input[type="file"]{
+  display: none;
 }

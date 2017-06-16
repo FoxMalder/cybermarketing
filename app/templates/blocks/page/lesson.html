@@ -64,7 +64,14 @@
             <div class="form-group">
               <div class="form-actions">
                 <button class="btn green disabled">Отправить</button>
-                <div class="add-file">Прикрепить фаил</div>
+
+                <div class="form-add-file">
+                  <label class="custom-file">
+                    <input type="file" name="file" id="file" class="custom-file-input" data-multiple-caption="{count} файла будет загружено" multiple>
+                    <span class="custom-file-control"><span>Прикрепить фаил</span></span>
+                  </label>
+                </div><!-- /.form-add-file -->
+
               </div>
             </div>
           </form>
