@@ -64,4 +64,14 @@
     @include size(16px, 20px);
     background-image: svg-load('book.svg', fill=#adb1b9);
   }
+
+  &-presentation {
+    @include size(60px, 50px);
+    background-image: svg-load('presentation.svg', fill=#adb1b9);
+  }
+
+  &-manual {
+    @include size(60px, 50px);
+    background-image: svg-load('manual.svg', fill=#adb1b9);
+  }
 }

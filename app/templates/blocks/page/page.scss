@@ -28,7 +28,7 @@
 
       img {
         display: block;
-        vertical-align: text-bottom;
+        //vertical-align: text-bottom;
         vertical-align: bottom;
         font-size: 0;
       }
@@ -475,9 +475,35 @@
 }
 
 .list-icon {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25gpx;
+  margin-bottom: 30px;
   display: block;
+
+  &--big {
+    margin-top: 30px;
+
+    .list-icon__item {
+      padding-top: 16px;
+      padding-bottom: 36px;
+      border-bottom: 1px solid rgb(214, 217, 220);
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    .list-icon__box {
+      align-items: center;
+    }
+
+    .list-icon__icon {
+      flex-basis: 60px;
+    }
+
+    .list-icon__desc {
+      margin-left: 39px;
+    }
+  }
 
   &__box {
     display: flex;
@@ -491,6 +517,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--speaker {
+
+      .list-icon__desc--text {
+        color: rgb(0, 0, 0);
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 2px;
+      }
+    }
   }
 
   &__icon {
@@ -499,6 +537,14 @@
     &-box {
       position: relative;
       top: 5px;
+    }
+
+    .speaker-photka-big {
+      display: block;
+      background-color: #f7f7f8;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
     }
   }
 
