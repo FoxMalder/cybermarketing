@@ -51,8 +51,12 @@ input:placeholder {
   justify-content: flex-start;
   align-items: center;
 
+  .btn {
+    padding: 13px 32px 12px 32px;
+  }
+
   .form-add-file {
-    margin-left: 40px;
+    margin-left: 38px;
   }
 }
 

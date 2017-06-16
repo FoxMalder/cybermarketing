@@ -18,7 +18,7 @@
 .content {
 
   &__box {
-    padding: 40px 39px 39px 39px;
+    padding: 34px 39px 39px 39px;
   }
 
   &__full {
@@ -417,7 +417,7 @@
 .comments {
   display: block;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 
   &__item {
     margin-bottom: 20px;
@@ -437,7 +437,7 @@
   border-radius: 2px;
 
   &__box {
-    padding: 19px;
+    padding: 15px 19px 15px 20px;
     display: flex;
     align-content: space-between;
     align-items: flex-start;
@@ -451,7 +451,7 @@
 
     &-photka {
       flex-basis: 40px;
-      margin-right: 25px;
+      margin-right: 20px;
 
       span {
         display: block;
@@ -465,10 +465,10 @@
 
   &__descr {
     flex: 1 100%;
-    margin-left: 40px;
+    margin-left: 26px;
 
     &--text {
-      margin-bottom: 15px;
+      margin-bottom: 11px;
     }
   }
 }
@@ -479,7 +479,7 @@
   display: block;
 
   &--big {
-    margin-top: 30px;
+    margin-top: 34px;
 
     .list-icon__item {
       padding-top: 16px;
