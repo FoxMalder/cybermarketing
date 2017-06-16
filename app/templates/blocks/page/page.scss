@@ -473,3 +473,47 @@
     }
   }
 }
+
+.list-icon {
+  margin-top: 20px;
+  display: block;
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  &__icon {
+    flex-basis: 20px;
+
+    &-box {
+      position: relative;
+      top: 5px;
+    }
+  }
+
+  &__desc {
+    flex: 1 100%;
+    margin-left: 20px;
+    line-height: 20px;
+
+    &--text {
+      color: rgb(0, 0, 0);
+    }
+
+    &--info {
+      color: rgb(120, 122, 128);
+    }
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    margin-left: 39px;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

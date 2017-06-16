@@ -49,4 +49,19 @@
     @include size(20px);
     background-image: svg-load('star.svg', fill=#adb1b9);
   }
+
+  &-play-in-circle {
+    @include size(20px);
+    background-image: svg-load('play-in-circle.svg', fill=#adb1b9);
+  }
+
+  &-article {
+    @include size(16px, 20px);
+    background-image: svg-load('article.svg', fill=#adb1b9);
+  }
+
+  &-book {
+    @include size(16px, 20px);
+    background-image: svg-load('book.svg', fill=#adb1b9);
+  }
 }
