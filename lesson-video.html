@@ -149,9 +149,8 @@
       </div><!-- /.header__contacts -->
 
       <div class="user header__user">
-        <div class="user-box">
-          <div class="user__notify"><i class="ico ico-bell"></i><span class="label"></span></div>
-          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt=""></span></div>
+        <div class="user-box user-box--auth">
+          <a href="" class="btn btn-green">Вход</a>
         </div>
       </div><!-- /.header__user -->
     </div><!-- /.header__box -->
@@ -174,19 +173,26 @@
 </div><!-- /.container -->
 
       <div class="container">
-  <div class="headline outline">
+  <div class="headline headline--lesson outline">
 
     <div class="headline__box">
       <div class="headline__status">
-        <div class="you-status">
-          <span><i class="ico ico-pause"></i></span>
-        </div><!-- /.you-status -->
+
+        <div class="curriculum-status curriculum-status--active no-top no-bottom">
+          <div class="curriculum-status__box">
+            <div class="curriculum-status__course">2</div><!-- /.curriculum-status__course -->
+            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
+          </div><!-- /.curriculum-status__box -->
+        </div><!-- /.curriculum-status -->
+
       </div><!-- /.headline__status -->
 
       <div class="headline__desc">
-        <div class="headline__text">Вы остановились на уроке:</div><!-- /.headline__text -->
+        <div class="headline__text">
+          <a class="headline__text-link"><i class="ico ico-chevron left"></i>Тема 3. Маркетинговые исследования</a>
+        </div><!-- /.headline__text -->
         <div class="headline__name">
-          <div class="course-name"><h2>Правила оформления HTML-документа. Основной синтаксис</h2></div>
+          <div class="course-name"><h1>Методы сбора и анализа данных</h1></div>
           <div class="course-time">
             <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
             <div class="course-time-t"><strong>35</strong> минут</div><!-- /.course-time-t -->
@@ -195,7 +201,7 @@
       </div><!-- /.headline__text -->
 
       <div class="headline__action">
-        <a href="" class="btn btn-green">Продолжить</a>
+        <a href="" class="btn btn-green">Пройти тест</a>
       </div><!-- /.headline__action -->
     </div><!-- /.headline__box -->
 
@@ -206,375 +212,208 @@
   <div class="page page-sidebar outline">
 
     <div class="page__content content">
+      <div class="content__full">
+        <div class="content__full-box">
+          <div class="video-container">
+            <iframe width="100%" height="510" src="http://www.youtube.com/embed/SXUMtDYLKxs?&theme=light" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div><!-- /.content__full-box -->
+      </div><!-- /.content__full -->
+
       <div class="content__box">
+        <h3>Ответы на вопросы студентов</h3>
 
-        <h2>Курс 3. Базовый курс интернет технологии</h2>
-        <p>По окончании курса вы будете уметь:</p>
+        <div class="comments">
 
-        <ul class="list">
-          <li class="list__item">изучать и уметь использовать основные маркетинговые модели и концепции на практике;</li>
-          <li class="list__item">разрабатывать маркетинговую стратегию;</li>
-          <li class="list__item">сегментировать рынок, выбирать целевые сегменты и разрабатывать позиционирование;</li>
-          <li class="list__item">проводить маркетинговые исследования;</li>
-          <li class="list__item">знать и использовать SWOT-анализ;</li>
-          <li class="list__item">понимать и использовать особенности средств рекламы;</li>
-          <li class="list__item">уметь оценивать эффективность и результативность рекламной кампании/маркетингового плана/плана брендинга</li>
-        </ul>
+          <div class="comments__item">
+            <div class="comment">
+              <div class="comment__box">
 
-        <div class="course-module">
-          <div class="course-module__box">
-            <div class="course-module__name"><h3>Модуль 1. Работа с хостингом</h3></div><!-- /.course-module__name -->
-            <div class="course-module__desc">Мы расскажем вам что такое хостинг и основных проблемах, а так же вариантах их решения.</div><!-- /.course-module__desc -->
-            <div class="course-module__footer">
+                <div class="comment__user">
+                  <div class="comment__user-photka">
+                    <span><img src="assets/images/valentina.png" alt="Валентина" height="40" width="40"></span>
+                  </div><!-- /.comment__user-photka -->
+                  <div class="comment__user-name"><span>Валентина</span></div><!-- /.comment__user-name -->
+                </div><!-- /.comment__user -->
 
-              <div class="course-speaker">
-                <div class="course-speaker__photka"><span><img src="assets/images/dmitry-klimchukov.png" alt=""></span></div><!-- /.course-speaker__photka -->
-                <div class="course-speaker__who">
-                  <div class="course-speaker__name">Дмитрий Климчуков</div><!-- /.course-speaker__name -->
-                  <div class="course-speaker__position">Генеральный директор агентства Click.ru</div><!-- /.course-speaker__position -->
-                </div><!-- /.course-speaker__who -->
-              </div><!-- /.course-speaker -->
+                <div class="comment__descr">
+                  <div class="comment__descr--text">Какое приблизительно время уходит на индексацию ссылок яндексом?</div>
+                  <a href="#" class="more-link">Показать ответ</a>
+                </div><!-- /.comment__descr -->
+              </div><!-- /.comment__box -->
+            </div><!-- /.comment -->
+          </div><!-- /.comments__item -->
 
-              <div class="course-more">
-                <a href="#" class="more-link">Показать занятия</a>
-              </div><!-- /.course-more -->
+          <div class="comments__item">
+            <div class="comment">
+              <div class="comment__box">
 
-            </div><!-- /.course-module__footer -->
-          </div><!-- /.course-module__box -->
-          <div class="course-module__item course-module__item--gray module-item">
-            <div class="module-item__box">
-              <div class="module-item__result">
-                <div class="result__item">Промежуточное тестирование: <span>5.0</span></div>
-                <div class="result__item">Экзаминационная работа: <span>5.0</span></div>
-              </div><!-- /.module-item__result -->
-              <div class="module-item__rating">
-                <div class="module-item__rating-box">
-                  <i class="ico ico-star gray"></i><span>5.0</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-        </div><!-- /.course-module -->
-        <div class="course-module">
-          <div class="course-module__box">
-            <div class="course-module__name"><h3>Модуль 2. Основы сайтостроения</h3></div><!-- /.course-module__name -->
-            <div class="course-module__desc">Разберемся, во всех этих странных названиях: домен, хостинг, ip-адрес, днс-сервер, веб-сервер, php, html, javascript, css, сайт, страница, скрипт,  верстальщик, дизайнер, веб-программист.</div><!-- /.course-module__desc -->
-            <div class="course-module__footer">
+                <div class="comment__user">
+                  <div class="comment__user-photka">
+                    <span><img src="assets/images/evgeniy.png" alt="Евгений" height="40" width="40"></span>
+                  </div><!-- /.comment__user-photka -->
+                  <div class="comment__user-name"><span>Евгений</span></div><!-- /.comment__user-name -->
+                </div><!-- /.comment__user -->
 
-              <div class="course-speaker">
-                <div class="course-speaker__photka"><span><img src="assets/images/nikolay-smirnov.png" alt=""></span></div><!-- /.course-speaker__photka -->
-                <div class="course-speaker__who">
-                  <div class="course-speaker__name">Николай Смирнов</div><!-- /.course-speaker__name -->
-                  <div class="course-speaker__position">Директор по маркетингу Hiconversion.ru </div><!-- /.course-speaker__position -->
-                </div><!-- /.course-speaker__who -->
-              </div><!-- /.course-speaker -->
+                <div class="comment__descr">
+                  <div class="comment__descr--text">Будет ли система продолжать покупать ссылки по достижению установленного ТОПа в одной из поисковых систем?</div>
+                  <a href="#" class="more-link">Показать ответ</a>
+                </div><!-- /.comment__descr -->
+              </div><!-- /.comment__box -->
+            </div><!-- /.comment -->
+          </div><!-- /.comments__item -->
 
-              <div class="course-more hide">
-                <a href="#" class="more-link">Показать занятия</a>
-              </div><!-- /.course-more -->
+        </div><!-- /.comments -->
 
-            </div><!-- /.course-module__footer -->
-          </div><!-- /.course-module__box -->
+        <h3>Задайте свой вопрос</h3>
 
-          <div class="course-module__item module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Как работают браузеры с сайтами, как работает интернет
+        <div class="comments comments-form">
+          <form action="" class="form">
+            <div class="form-group">
+              <textarea name="" id="commentnew" cols="30" rows="10" class="form-control" placeholder="Задайте ваш вопрос"></textarea>
+            </div><!-- /.form-group -->
+            <div class="form-group">
+              <div class="form-actions">
+                <button class="btn btn-green" id="submit" disabled>Отправить</button>
+
+                <div class="form-add-file">
+                  <label class="custom-file">
+                    <input type="file" name="file" id="file" class="custom-file-input" data-multiple-caption="{count} файла будет загружено" multiple>
+                    <span class="custom-file-control"><span>Прикрепить фаил</span></span>
+                  </label>
+                </div><!-- /.form-add-file -->
+
               </div>
-              <div class="module-item__time">
-                <div class="course-time">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>17</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <div class="module-item__rating-box">
-                  <i class="ico ico-star gray"></i><span>4.8</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-          <div class="course-module__item module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Что такое язык разметки HTML. Основные теги
-              </div>
-              <div class="module-item__time">
-                <div class="course-time">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>28</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <div class="module-item__rating-box">
-                  <i class="ico ico-star gray"></i><span>4.5</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-          <div class="course-module__item module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Правила оформления HTML-документа. Основной синтаксис
-              </div>
-              <div class="module-item__time">
-                <div class="course-time">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>35</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <a href="" class="btn btn-green">Начать</a>
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-          <div class="course-module__item course-module__item--gray module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Основные понятия CSS и способы определения стилей
-              </div>
-              <div class="module-item__time">
-                <div class="course-time">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>47</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <div class="module-item__rating-box hide">
-                  <i class="ico ico-star gray"></i><span>4.5</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-          <div class="course-module__item course-module__item--gray module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Что такое кодировки текста и как с ними работать
-              </div>
-              <div class="module-item__time">
-                <div class="course-time">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>19</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <div class="module-item__rating-box hide">
-                  <i class="ico ico-star gray"></i><span>4.5</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-          <div class="course-module__item course-module__item--gray module-item">
-            <div class="module-item__box">
-              <div class="module-item__name">
-                Экзаминационная работа
-              </div>
-              <div class="module-item__time">
-                <div class="course-time hide">
-                  <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-                  <div class="course-time-t"><strong>19</strong> минут</div><!-- /.course-time-t -->
-                </div><!-- /.course-time -->
-              </div>
-              <div class="module-item__rating">
-                <div class="module-item__rating-box hide">
-                  <i class="ico ico-star gray"></i><span>4.5</span>
-                </div><!-- /.module-item__rating-box -->
-              </div><!-- /.module-item__rating -->
-            </div><!-- /.module-item__box -->
-          </div><!-- /.course-module__item -->
-
-        </div><!-- /.course-module -->
-        <div class="course-module">
-          <div class="course-module__box">
-            <div class="course-module__name"><h3>Модуль 3.Современное сайтостроение</h3></div><!-- /.course-module__name -->
-            <div class="course-module__desc">Мы расскажем вам что такое хостинг и основных проблемах, а так же вариантах их решения.</div><!-- /.course-module__desc -->
-            <div class="course-module__footer">
-
-              <div class="course-speaker">
-                <div class="course-speaker__photka"><span><img src="assets/images/dmitry-klimchukov.png" alt=""></span></div><!-- /.course-speaker__photka -->
-                <div class="course-speaker__who">
-                  <div class="course-speaker__name">Дмитрий Климчуков</div><!-- /.course-speaker__name -->
-                  <div class="course-speaker__position">Генеральный директор агентства Click.ru</div><!-- /.course-speaker__position -->
-                </div><!-- /.course-speaker__who -->
-              </div><!-- /.course-speaker -->
-
-              <div class="course-more">
-                <a href="#" class="more-link">Показать занятия</a>
-              </div>
-
-            </div><!-- /.course-module__footer -->
-          </div><!-- /.course-module__box -->
-        </div><!-- /.course-module -->
-
-        <div class="page-navigation">
-          <div class="navigation">
-            <div class="navigation__item">
-              <a href="" class="btn btn-outline navigation-link navigation-link__left"><i class="ico ico-chevron gray left"></i>2 курс</a>
-            </div><!-- /.navigation__item -->
-            <div class="navigation__item">
-              <a href="" class="btn btn-outline navigation-link navigation-link__right">4 курс<i class="ico ico-chevron gray right"></i></a>
-            </div><!-- /.navigation__item -->
-          </div><!-- /.navigation -->
-        </div><!-- /.page-navigation -->
+            </div>
+          </form>
+        </div><!-- /.comments-form -->
 
       </div><!-- /.content__box -->
+
     </div><!-- /.page__content -->
 
     <div class="page__aside aside">
 
-      <div class="curriculum">
+      <div class="aside__box">
 
-  <div class="curriculum__item curriculum--end">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
+        <div class="list-icon list-icon--big">
 
-        <div class="curriculum-status no-top">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course"><span><i class="ico ico-check"></i></span></div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">4.8</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
+  <div class="list-icon__item list-icon__item--speaker">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="speaker-photka-big">
+                  <img src="assets/images/dmitry-klimchukov-60x60.png" alt="Дмитрий Климчуков" width="60" height="60">
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <div class="list-icon__desc--text">Дмитрий Климчуков</div>
+        <div class="list-icon__desc--info">Генеральный директор агентства Click.ru</div>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Маркетинг и реклама: введение</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-presentation"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">Презентацию по уроку: «Стратегический маркетинг»</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-  <div class="curriculum__item curriculum--end">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-manual"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">Методичка по курсу: «Маркетинг и реклама: введение»</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course"><span><i class="ico ico-check"></i></span></div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">4.5</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
+</div><!-- /.list-icon -->
 
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Правовое регулирование маркетинговой деятельности</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
+<h3>Дополнительные материалы</h3>
 
-  <div class="curriculum__item curriculum--active">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
+<div class="list-icon">
 
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">3</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-play-in-circle"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">Конверсия. Секреты продвижения в высококонкурентных тематиках при ограниченном бюджете</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Базовый курс интернет технологии</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-play-in-circle"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-article"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">4</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-article"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <a href="">4 способа проверить сайт на фильтры поисковых систем</a>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
+  <div class="list-icon__item">
+    <div class="list-icon__box">
+      <div class="list-icon__icon">
+                <span class="list-icon__icon-box">
+                  <i class="ico ico-book"></i>
+                </span>
+      </div><!-- /.list-icon__icon -->
+      <div class="list-icon__desc">
+        <div class="list-icon__desc--text">Маркетинг-менеджмент</div>
+        <div class="list-icon__desc--info">Филип Котлер, Кевин Лейн Келлер</div>
+      </div><!-- /.list-icon__desc -->
+    </div><!-- /.list-icon__box -->
+  </div><!-- /.list-icon__item -->
 
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
+</div><!-- /.list-icon -->
 
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">5</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
 
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
-
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
-
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">6</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
-
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
-
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
-
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">7</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
-
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
-
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
-
-        <div class="curriculum-status">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">8</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
-
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
-
-  <div class="curriculum__item">
-    <div class="curriculum__box">
-      <div class="curriculum__status">
-
-        <div class="curriculum-status no-bottom">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">9</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
-
-      </div><!-- /.curriculum__status -->
-      <div class="curriculum__desc">Основы юзабилити сайтов: базовый курс</div><!-- /.curriculum__desc -->
-    </div><!-- /.curriculum__box -->
-  </div><!-- /.curriculum__item -->
-
-</div><!-- /.curriculum -->
-
+      </div><!-- /.aside__box -->
 
     </div><!-- /.page__aside -->
 
