@@ -41,6 +41,14 @@
     background-color: #fff;
     flex-basis: 300px;
 
+    a {
+      color: rgb(33, 170, 0);
+
+      &:hover {
+        color: #000000;
+      }
+    }
+
     .url {
       &__info {
         margin: -2px 0 0 0;
@@ -138,13 +146,13 @@
   }
 
   .pseudo {
-    color: $link;
+    color: rgb(33, 170, 0);
     border-bottom: 1px dashed;
     transition: .3s ease;
     cursor: pointer;
 
     &:hover {
-      color: $link-hover;
+      color: #000;
       border-bottom-color: inherit;
     }
   }
