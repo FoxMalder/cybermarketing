@@ -76,6 +76,13 @@ input:placeholder {
   padding: 11px 14px 12px 19px;
   transition: border-color ease-in-out .15s;
 
+  &:disabled,
+  &[readonly] {
+    color: rgb(173, 177, 185);
+    background-color: rgb(247, 247, 248);
+    border-color: rgb(214, 218, 221);
+  }
+
   &:hover {
     border-color: rgb(173, 177, 185);
   }

@@ -28,13 +28,20 @@
 
   .company-links {
     border-top: 1px solid rgb(214, 217, 220);
-    padding: 35px 0 35px 0;
+    padding: 20px 0 20px 0;
 
     &-box {
       padding-left: 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .copy__text {
+      color: #787a80;
+      font-family: Arial;
+      font-size: 15px;
+      font-weight: 400;
     }
 
     .copy__item {
@@ -58,17 +65,78 @@
           &:last-child {
             margin-right: 0;
           }
+
+          img {
+            vertical-align: bottom;
+          }
         }
       }
     }
   }
 
   .address {
-    font-style: normal;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 
-    p {
-      line-height: 30px;
+    &-box {
+      display: flex;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__icon {
+      flex-basis: 20px;
+
+      &-box {
+        position: relative;
+        top: 1px;
+        left: 1px;
+      }
+    }
+
+    &__desc {
+      flex: 1 100%;
+      margin-left: 20px;
+      line-height: 20px;
+
+      &--text {
+        color: rgb(0, 0, 0);
+        margin-bottom: 5px;
+      }
+
+      &--info {
+        color: #787a80;
+        margin-bottom: 6px;
+      }
+
+      .metro-line {
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+        vertical-align: middle;
+        margin-right: 10px;
+
+        &.lyublinskaya {
+          background-color: #9c3;
+        }
+
+        &.kalininskaya {
+          background-color: #f6dd34;
+        }
+
+        &.tagansko-krasnopresnenskaya {
+          background-color: #92007b;
+        }
+      }
     }
   }
 
@@ -93,10 +161,6 @@
     &__item {
       margin-bottom: 20px;
     }
-  }
-
-  .tel-link {
-    color: rgb(0, 0, 0);
   }
 }
 
@@ -135,7 +199,7 @@
         background-image: svg-load('social/vk.svg', fill=#ffffff);
         position: relative;
         top: 14px;
-        left: 8px;
+        left: 9px;
       }
     }
 

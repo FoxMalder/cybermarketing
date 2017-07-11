@@ -30,13 +30,17 @@ button:disabled,
 
   &-green {
     background-color: #21aa00;
+    border-color: #21aa00;
 
-    &:hover {
+    &:hover,
+    &.hover {
       background-color: rgb(49, 197, 9);
+      border-color: rgb(49, 197, 9);
       color: #fff;
     }
 
-    &:focus {
+    &:focus,
+    &.focus {
       background-color: rgb(30, 155, 0);
     }
 
@@ -51,16 +55,17 @@ button:disabled,
   }
 
   &-outline {
-    border: 1px solid rgb(173, 177, 185);
-    padding: 11px 18px 11px 13px;
+    border-color: rgb(173, 177, 185);
     color: rgb(0, 0, 0);
 
-    &:hover {
+    &:hover,
+    &.hover {
       border-color: rgb(120, 122, 128);
       color: rgb(0, 0, 0);
     }
 
-    &:focus {
+    &:focus,
+    &.focus {
       background-color: rgb(247, 247, 248);
       border: 1px solid rgb(120, 122, 128);
       color: rgb(0, 0, 0);
@@ -73,6 +78,11 @@ button:disabled,
       color: rgb(173, 177, 185);
       background-color: rgb(247, 247, 248);
       border-color: rgb(214, 218, 221);
+    }
+
+    .mee-ink {
+      animation-timing-function: ease-out;
+      background: rgba(255, 255, 255, 1);
     }
   }
 }

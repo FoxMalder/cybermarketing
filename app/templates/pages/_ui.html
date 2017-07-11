@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  @@include('blocks/_base/head.html', {
+    "title": "Курс 3. Базовый курс интернет технологии",
+    "description": "Курс 3. Базовый курс интернет технологии"
+  })
+  <body>
+    <main>
+      @@include('blocks/header/header-login.html')
+      @@include('blocks/menu/menu.html')
+      <div class="ui-page">
+        <div class="container">
+          <div class="page outline">
+
+            <div class="page__content content">
+
+              <div class="content__box">
+
+                <button type="button" class="btn btn-green disabled">Записаться</button>
+                <button type="button" class="btn btn-green">Записаться</button>
+
+                <button type="button" class="btn btn-outline disabled">Записаться</button>
+                <button type="button" class="btn btn-outline">Записаться</button>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
+                  <small class="form-text text-muted"></small>
+                </div>
+
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                  <small class="form-text text-muted"></small>
+                </div>
+
+              </div><!-- /.content__box -->
+
+            </div><!-- /.page__content -->
+          </div><!-- /.page -->
+        </div><!-- /.container -->
+      </div>
+    </main>
+    @@include('blocks/footer/footer.html')
+  </body>
+</html>
