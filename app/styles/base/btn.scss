@@ -1,3 +1,14 @@
+button[disabled=disabled],
+button:disabled,
+.btn:disabled,
+.btn.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color: rgb(173, 177, 185);
+  background-color: rgb(247, 247, 248);
+  border-color: rgb(214, 218, 221);
+}
+
 .btn {
   background-color: transparent;
   border: 1px solid transparent;
@@ -17,32 +28,51 @@
 
   &-green {
     background-color: #21aa00;
+
+    &:hover {
+      background-color: rgb(49, 197, 9);
+      color: #fff;
+    }
+
+    &:focus {
+      background-color: rgb(30, 155, 0);
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
   }
 
   &-outline {
     border: 1px solid rgb(173, 177, 185);
     padding: 11px 18px 11px 13px;
     color: rgb(0, 0, 0);
-  }
 
-  &:hover {
-    color: #fff;
-  }
+    &:hover {
+      border-color: rgb(120, 122, 128);
+      color: rgb(0, 0, 0);
+    }
 
-  &:focus {
-    background-color: rgb(242, 245, 245);
-  }
-}
+    &:focus {
+      background-color: rgb(247, 247, 248);
+      border: 1px solid rgb(120, 122, 128);
+      color: rgb(0, 0, 0);
+    }
 
-button[disabled=disabled],
-button:disabled,
-.btn:disabled,
-.btn.disabled {
-  cursor: not-allowed;
-  pointer-events: none;
-  color: rgb(173, 177, 185);
-  background-color: rgb(247, 247, 248);
-  border-color: rgb(214, 218, 221);
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(173, 177, 185);
+      background-color: rgb(247, 247, 248);
+      border-color: rgb(214, 218, 221);
+    }
+  }
 }
 
 .more-link {

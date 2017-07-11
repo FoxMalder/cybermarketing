@@ -62,21 +62,26 @@ input:placeholder {
 
 .form-control {
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(214, 217, 220);
+  border: 1px solid rgb(214, 218, 221);
   border-radius: 2px;
-  color: rgb(49, 52, 54);
   background-image: none;
   height: 40px;
   display: block;
   width: 100%;
+  color: rgb(0, 0, 0);
   font-family: Arial;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
+  line-height: 20px;
   padding: 11px 14px 12px 19px;
   transition: border-color ease-in-out .15s;
 
   &:hover {
-    border-color: rgb(195, 200, 204);
+    border-color: rgb(173, 177, 185);
+  }
+
+  &:focus {
+    border-color: rgb(33, 170, 0);
   }
 }
 
@@ -90,7 +95,11 @@ textarea.form-control {
   display: block;
 
   &-control {
-    color: #00b402;
+    color: rgb(33, 170, 0);
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 

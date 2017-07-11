@@ -21,7 +21,6 @@ require('require-dir')('./tasks', {recurse: true});
       'copy',
       ['html', 'scripts', 'styles'],
       'watch',
-      'cache',
       'server',
       cb
     );
