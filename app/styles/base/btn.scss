@@ -16,7 +16,7 @@
   vertical-align: middle;
 
   &-green {
-    background-color: #00b402;
+    background-color: #21aa00;
   }
 
   &-outline {
@@ -40,20 +40,21 @@ button:disabled,
 .btn.disabled {
   cursor: not-allowed;
   pointer-events: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(214, 217, 220);
+  color: rgb(173, 177, 185);
+  background-color: rgb(247, 247, 248);
+  border-color: rgb(214, 218, 221);
 }
 
 .more-link {
   position: relative;
   transition: .3s ease;
-  padding-right: 15px;
+  padding-right: 20px;
 
   &:after {
     @include pseudo;
-    @include size(10px, 7px);
-    top: 7px;
+    @include size(10px, 10px);
+    top: 5px;
     right: 0;
-    background-image: svg-load('chevron.svg', fill=#00b402);
+    background-image: svg-load('arrow.svg', fill=#21aa00);
   }
 }
