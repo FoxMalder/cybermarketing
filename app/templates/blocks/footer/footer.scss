@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 48px;
+  padding-top: 38px;
 
   &__item {
     min-width: 320px;
@@ -96,8 +96,11 @@
 
       &-box {
         position: relative;
-        top: 1px;
-        left: 1px;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
