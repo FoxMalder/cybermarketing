@@ -475,7 +475,7 @@
     line-height: 20px;
 
     &--text {
-      margin-bottom: 11px;
+      margin-bottom: 15px;
     }
   }
 }
@@ -546,6 +546,8 @@
 
   &__icon {
     flex-basis: 20px;
+    position: relative;
+    top: 2px;
 
     &-box {
       position: relative;
