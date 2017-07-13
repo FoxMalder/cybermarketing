@@ -3,6 +3,11 @@
   display: inline-block;
   transition: all .3s ease;
 
+  &-logo {
+    @include size(300px, 30px);
+    background-image: svg-load('logo.svg');
+  }
+
   &-check {
     @include size(20px, 14px);
     background-image: svg-load('check.svg', fill=#00b402);
