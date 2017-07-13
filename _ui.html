@@ -149,8 +149,9 @@
       </div><!-- /.header__contacts -->
 
       <div class="user header__user">
-        <div class="user-box user-box--auth">
-          <a href="" class="btn btn-green">Вход</a>
+        <div class="user-box">
+          <div class="user__notify"><i class="ico ico-bell"></i><span class="label"></span></div>
+          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt=""></span></div>
         </div>
       </div><!-- /.header__user -->
     </div><!-- /.header__box -->
@@ -172,255 +173,36 @@
   </div><!-- /.menu -->
 </div><!-- /.container -->
 
-      <div class="container">
-  <div class="headline headline--lesson outline">
+      <div class="ui-page">
+        <div class="container">
+          <div class="page outline">
 
-    <div class="headline__box">
-      <div class="headline__status">
+            <div class="page__content content">
 
-        <div class="curriculum-status curriculum-status--active no-top no-bottom">
-          <div class="curriculum-status__box">
-            <div class="curriculum-status__course">2</div><!-- /.curriculum-status__course -->
-            <div class="curriculum-status__text">курс</div><!-- /.curriculum-status__text -->
-          </div><!-- /.curriculum-status__box -->
-        </div><!-- /.curriculum-status -->
+              <div class="content__box">
 
-      </div><!-- /.headline__status -->
+                <button type="button" class="btn btn-green disabled">Записаться</button>
+                <button type="button" class="btn btn-green">Записаться</button>
 
-      <div class="headline__desc">
-        <div class="headline__text">
-          <a class="headline__text-link">Тема 3. Маркетинговые исследования</a>
-        </div><!-- /.headline__text -->
-        <div class="headline__name">
-          <div class="course-name"><h1>Методы сбора и анализа данных</h1></div>
-          <div class="course-time">
-            <div class="course-time__icon"><i class="ico ico-watch"></i></div><!-- /.course-time__icon -->
-            <div class="course-time-t"><strong>35</strong> минут</div><!-- /.course-time-t -->
-          </div><!-- /.course-time -->
-        </div><!-- /.headline__name -->
-      </div><!-- /.headline__text -->
+                <button type="button" class="btn btn-outline disabled">Записаться</button>
+                <button type="button" class="btn btn-outline">Записаться</button>
 
-      <div class="headline__action">
-        <!--<a href="" class="btn btn-green">Пройти тест</a>-->
-      </div><!-- /.headline__action -->
-    </div><!-- /.headline__box -->
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
+                  <small class="form-text text-muted"></small>
+                </div>
 
-  </div><!-- /.headline -->
-</div><!-- /.container -->
+                <div class="form-group">
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                  <small class="form-text text-muted"></small>
+                </div>
 
-      <div class="container">
-  <div class="page page-sidebar outline">
+              </div><!-- /.content__box -->
 
-    <div class="page__content content">
-      <div class="content__full">
-        <div class="content__full-box">
-          <div class="video-container">
-            <iframe width="100%" height="510" src="https://www.youtube.com/embed/SXUMtDYLKxs?&theme=light" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </div><!-- /.content__full-box -->
-      </div><!-- /.content__full -->
-
-      <div class="content__box">
-        <h3>Ответы на вопросы студентов</h3>
-
-        <div class="comments">
-
-          <div class="comments__item">
-            <div class="comment">
-              <div class="comment__box">
-
-                <div class="comment__user">
-                  <div class="comment__user-photka">
-                    <span><img src="assets/images/valentina.png" alt="Валентина" height="40" width="40"></span>
-                  </div><!-- /.comment__user-photka -->
-                  <div class="comment__user-name"><span>Валентина</span></div><!-- /.comment__user-name -->
-                </div><!-- /.comment__user -->
-
-                <div class="comment__descr">
-                  <div class="comment__descr--text">Какое приблизительно время уходит на индексацию ссылок яндексом?</div>
-                  <a href="#" class="more-link">Показать ответ</a>
-                </div><!-- /.comment__descr -->
-              </div><!-- /.comment__box -->
-            </div><!-- /.comment -->
-          </div><!-- /.comments__item -->
-
-          <div class="comments__item">
-            <div class="comment">
-              <div class="comment__box">
-
-                <div class="comment__user">
-                  <div class="comment__user-photka">
-                    <span><img src="assets/images/evgeniy.png" alt="Евгений" height="40" width="40"></span>
-                  </div><!-- /.comment__user-photka -->
-                  <div class="comment__user-name"><span>Евгений</span></div><!-- /.comment__user-name -->
-                </div><!-- /.comment__user -->
-
-                <div class="comment__descr">
-                  <div class="comment__descr--text">Будет ли система продолжать покупать ссылки по достижению установленного ТОПа в одной из поисковых систем?</div>
-                  <a href="#" class="more-link">Показать ответ</a>
-                </div><!-- /.comment__descr -->
-              </div><!-- /.comment__box -->
-            </div><!-- /.comment -->
-          </div><!-- /.comments__item -->
-
-        </div><!-- /.comments -->
-
-        <h3>Задайте свой вопрос</h3>
-
-        <div class="comments comments-form">
-          <form action="" class="form">
-            <div class="form-group">
-              <textarea name="" id="commentnew" cols="30" rows="10" class="form-control" placeholder="Задайте ваш вопрос"></textarea>
-            </div><!-- /.form-group -->
-            <div class="form-group">
-              <div class="form-actions">
-                <button class="btn btn-green" id="submit" disabled>Отправить</button>
-
-                <div class="form-add-file">
-                  <label class="custom-file">
-                    <input type="file" name="file" id="file" class="custom-file-input" data-multiple-caption="{count} файла будет загружено" multiple>
-                    <span class="custom-file-control"><span>Прикрепить фаил</span></span>
-                  </label>
-                </div><!-- /.form-add-file -->
-
-              </div>
-            </div>
-          </form>
-        </div><!-- /.comments-form -->
-
-      </div><!-- /.content__box -->
-
-    </div><!-- /.page__content -->
-
-    <div class="page__aside aside">
-
-      <div class="aside__box">
-
-        <div class="list-icon list-icon--big">
-
-  <div class="list-icon__item list-icon__item--speaker">
-    <div class="list-icon__box">
-      <div class="list-icon__icon">
-        <div class="speaker-photka-big">
-          <img src="assets/images/dmitry-klimchukov-60x60.png" alt="Дмитрий Климчуков" width="60" height="60">
-        </div>
-      </div><!-- /.list-icon__icon -->
-      <div class="list-icon__desc">
-        <div class="list-icon__desc--text">Дмитрий Климчуков</div>
-        <div class="list-icon__desc--info">Генеральный директор агентства Click.ru</div>
-      </div><!-- /.list-icon__desc -->
-    </div><!-- /.list-icon__box -->
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="#">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-presentation"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          Презентацию по уроку: «Стратегический маркетинг»
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-manual"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          Методичка по курсу: «Маркетинг и реклама: введение»
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-</div><!-- /.list-icon -->
-
-<h3>Дополнительные материалы</h3>
-
-<div class="list-icon">
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-microphone"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Семинар, 15 мая 13:00</div>
-          Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-play-in-circle"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Запись вебинара</div>
-          Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-article"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Статья</div>
-          4 способа проверить сайт на фильтры поисковых систем
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <div class="list-icon__box">
-      <div class="list-icon__icon">
-        <div class="list-icon__icon-box">
-          <i class="ico ico-book"></i>
-        </div><!-- /.list-icon__icon-box -->
-      </div><!-- /.list-icon__icon -->
-      <div class="list-icon__desc">
-        <div class="list-icon__desc--info">Книга</div>
-        <div class="list-icon__desc--text">Маркетинг-менеджмент</div>
-        <div class="list-icon__desc--info">Филип Котлер, Кевин Лейн Келлер</div>
-      </div><!-- /.list-icon__desc -->
-    </div><!-- /.list-icon__box -->
-  </div><!-- /.list-icon__item -->
-
-</div><!-- /.list-icon -->
-
-
-      </div><!-- /.aside__box -->
-
-    </div><!-- /.page__aside -->
-
-  </div><!-- /.page -->
-</div><!-- /.container -->
-
+            </div><!-- /.page__content -->
+          </div><!-- /.page -->
+        </div><!-- /.container -->
+      </div>
     </main>
     <footer class="footer">
 
