@@ -54,6 +54,16 @@
       min-width: 75px;
     }
   }
+
+  &__burger {
+    display: none;
+    visibility: hidden;
+
+    @media #{$sm} {
+      display: block;
+      visibility: visible;
+    }
+  }
 }
 
 .user {
