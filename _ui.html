@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css?v=c7a7736c59840a543335d994ff552d14" rel="stylesheet" />
+  <link href="assets/styles/style.css?v=765672fc1c708938ed06d1893c7c80e3" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -110,7 +110,7 @@
             <label for="search" class="form-control-label hide">Поиск по сайту</label>
             <div class="form-group-status">
               <div class="form-group-status-type">
-                <span><i class="ico ico-loupe"></i></span>
+                <span><i class="ico ico-loupe" aria-hidden=”true”></i></span>
               </div><!-- /.form-group-status-type -->
               <input id="search" type="text" class="form-control" placeholder="Что хотите найти?">
             </div><!-- /.form-group-status -->
@@ -129,8 +129,8 @@
 
       <div class="user header__user">
         <div class="user-box">
-          <div class="user__notify"><i class="ico ico-bell"></i><span class="label"></span></div>
-          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt=""></span></div>
+          <div class="user__notify"><i class="ico ico-bell" aria-hidden=”true”></i><span class="label"></span></div>
+          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt="Имя пользователя" width="40" height="40"></span></div>
         </div>
       </div><!-- /.header__user -->
     </div><!-- /.header__box -->
@@ -140,18 +140,21 @@
       <div class="container">
   <div class="main-menu outline">
     <ul class="menu">
-      <li class="menu__item menu__item--active"><a href="" class="menu__link">Институт</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Интенсивные курсы</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Конференции</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Семинары</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Вебинары</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Видео</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Учебные материалы</a></li>
-      <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+      <li class="menu__item @@link1"><a href="" class="menu__link">Институт</a></li>
+      <li class="menu__item @@link2"><a href="" class="menu__link">Интенсивные курсы</a></li>
+      <li class="menu__item @@link3"><a href="" class="menu__link">Конференции</a></li>
+      <li class="menu__item @@link4"><a href="" class="menu__link">Семинары</a></li>
+      <li class="menu__item @@link5"><a href="" class="menu__link">Вебинары</a></li>
+      <li class="menu__item @@link6"><a href="" class="menu__link">Видео</a></li>
+      <li class="menu__item @@link7"><a href="" class="menu__link">Учебные материалы</a></li>
+      <li class="menu__item @@link8"><a href="" class="menu__link">Контакты</a></li>
     </ul>
   </div><!-- /.menu -->
 </div><!-- /.container -->
 
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
       <div class="ui-page">
         <div class="container">
           <div class="page outline">
@@ -160,23 +163,120 @@
 
               <div class="content__box">
 
-                <button type="button" class="btn btn-green disabled">Записаться</button>
-                <button type="button" class="btn btn-green">Записаться</button>
+                <h2>Компоненты и элементы</h2>
 
-                <button type="button" class="btn btn-outline disabled">Записаться</button>
-                <button type="button" class="btn btn-outline">Записаться</button>
+                <div class="row">
 
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
-                  <small class="form-text text-muted"></small>
+                  <div class="col-xs-4">
+
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-green disabled">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+
+                  </div>
+                  <div class="col-xs-4">
+
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-outline disabled">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
+                          <small class="form-text text-muted"></small>
+                        </div>
+                      </div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code">
+
+                        <pre><code class="html">&lt;div class="form-group"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />&lt;/div&gt;</code></pre>
+
+                      </div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+
                 </div>
 
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
-                  <small class="form-text text-muted"></small>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-green">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-outline">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                          <small class="form-text text-muted"></small>
+                        </div>
+                      </div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />&lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
                 </div>
 
               </div><!-- /.content__box -->
+
+              <div class="content__box content__box-icon">
+                <h2>Иконки и графика</h2>
+                <p>Все иконки есть в CSS. Работают через тег <code>&lt;i class="ico" aria-hidden=”true”&gt;</code>. Цвета иконок меняются классами цветов: <code>white</code> — белый, <code>gray</code> — серый, <code>green</code> — зелёный. Исходник файла с иконками расположен в <code>app/styles/base/icons.pcss</code>. Название иконки соответствует названию файла в дирректории <code>app/images/svg</code>.</p>
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div class="ui-demo ui-demo--icon">
+                      <div class="ui-demo-element"><i class="ico ico-loupe" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-loupe" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="ui-demo ui-demo--icon">
+                      <div class="ui-demo-element"><i class="ico ico-play-in-circle" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-play-in-circle" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="ui-demo ui-demo--icon">
+                      <div class="ui-demo-element"><i class="ico ico-bell" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-bell" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-3">
+                    <div class="ui-demo ui-demo--icon">
+                      <div class="ui-demo-element"><i class="ico ico-geotag" aria-hidden=”true”></i></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;i class="ico ico-geotag" aria-hidden=”true”&gt;&lt;/i&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__box">
+                <h2>Типографика и текстовые элементы</h2>
+
+                <h3>Оформление текста</h3>
+                <p>Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и&nbsp;<em>курсивное</em> начертания. Подробнее: <a class="external" href="http://www.artlebedev.ru/kovodstvo/sections/79/" target="_blank">§&nbsp;79. Делать фонт болдом или италиком?</a></p>
+                <p>На&nbsp;этом сайте есть дополнительный способ выделения при помощи подсвечивания, для чего используется элемент <span class="highlighted">«Подсвеченный»</span> (класс <code>.highlighted</code>).</p>
+
+                <h3>Ссылки</h3>
+                <p>На сайте может встречаться несколько видов ссылок. Например, ссылка на <a href="https://yandex.ru/" class="external link" target="_blank">Яндекс</a> является внешней. Внутренние ссылки могут открываться по умолчанию в текущем окне (например, переход на <a href="/" class="link">главную страницу</a>) или в <a target="_blank" href="/" class="link">новом окне</a> (например, для показа изображений в оригинальном размере). Подробнее: §&nbsp;171. <a href="https://www.artlebedev.ru/kovodstvo/sections/171/" class="external" target="_blank">Правила оформления ссылок</a>.</p>
+                <p>Стиль <span class="link pseudo">псевдоссылки</span> обеспечивается добавлением к нужному элементу класса <code>.pseudo</code>.</p>
+
+                <h3>Цитата</h3>
+                <blockquote>
+                  <p>Я увидел всю сущность нашей правящей системы. Там было много очень послушных дураков и неучей.</p>
+                  <footer>— Л. Н. Толстой. <cite title="Из письма к Л. Андрееву от 02.09.1902">Из письма к Л. Андрееву от 02.09.1902</cite></footer>
+                </blockquote>
+              </div>
 
             </div><!-- /.page__content -->
           </div><!-- /.page -->
@@ -226,7 +326,7 @@
             <div class="address__item">
               <div class="address-box">
                 <div class="address__icon">
-                  <span class="address__icon-box"><i class="ico ico-geotag"></i></span>
+                  <span class="address__icon-box"><i class="ico ico-geotag" aria-hidden=”true”></i></span>
                 </div><!-- /.address__icon -->
                 <div class="address__desc">
                   <div class="address__desc--text">г. Москва, ул. Марксистская, д. 34, корп. 7</div>
@@ -241,7 +341,7 @@
             <div class="address__item">
               <div class="address-box">
                 <div class="address__icon">
-                  <span class="address__icon-box"><i class="ico ico-phone"></i></span>
+                  <span class="address__icon-box"><i class="ico ico-phone" aria-hidden=”true”></i></span>
                 </div><!-- /.address__icon -->
                 <div class="address__desc">
                   <a href="tel:+74956628758">+7 (495) 662-87-58</a>
@@ -252,7 +352,7 @@
             <div class="address__item">
               <div class="address-box">
                 <div class="address__icon">
-                  <span class="address__icon-box"><i class="ico ico-mail"></i></span>
+                  <span class="address__icon-box"><i class="ico ico-mail" aria-hidden=”true”></i></span>
                 </div><!-- /.address__icon -->
                 <div class="address__desc">
                   <a href="mailto:info@cybermarketing.ru">info@cybermarketing.ru</a>
