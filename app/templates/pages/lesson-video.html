@@ -6,7 +6,7 @@
   })
   <body>
     <main>
-      @@include('blocks/header/header-nologin.html')
+      @@include('blocks/header/header.html', { "nologin": false, "login": true })
       @@include('blocks/menu/menu.html', {
         "link1": "menu__item--active"
       })

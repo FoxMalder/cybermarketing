@@ -6,7 +6,7 @@
   })
   <body>
     <main>
-      @@include('blocks/header/header-login.html')
+      @@include('blocks/header/header.html', { "nologin": true, "login": false })
       @@include('blocks/menu/menu.html')
       <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
       <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
@@ -147,7 +147,7 @@
             </div><!-- /.page__content -->
           </div><!-- /.page -->
         </div><!-- /.container -->
-      </div>
+      </div><!-- /.ui-page -->
     </main>
     @@include('blocks/footer/footer.html')
   </body>
