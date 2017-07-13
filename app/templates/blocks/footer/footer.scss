@@ -1,25 +1,55 @@
 .footer {
   padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &__item {
     min-width: 320px;
 
+    @media #{$sm} {
+      min-width: 100%;
+    }
+
     &--first {
       padding-left: 47px;
+
+      @media #{$sm} {
+        padding-left: 0;
+        display: none;
+        visibility: hidden;
+      }
     }
 
     &--second {
       padding-left: 27px;
+
+      @media #{$sm} {
+        padding-left: 0;
+        display: none;
+        visibility: hidden;
+      }
     }
 
     &--three {
       padding-left: 7px;
       min-width: 300px;
+
+      @media #{$sm} {
+        padding-left: 0;
+        min-width: 100%;
+        display: none;
+        visibility: hidden;
+      }
     }
 
     &--four {
       padding-left: 10px;
       margin-top: 7px;
+
+      @media #{$sm} {
+        padding-left: 0;
+        margin-top: 0;
+      }
     }
   }
 
@@ -278,3 +308,4 @@
     }
   }
 }
+

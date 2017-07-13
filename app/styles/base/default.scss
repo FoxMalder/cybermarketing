@@ -36,6 +36,11 @@ main {
   border-left: 1px solid rgb(214, 217, 220);
   border-right: 1px solid rgb(214, 217, 220);
   border-bottom: 1px solid rgb(214, 217, 220);
+
+  @media #{$sm} {
+    border-left: 0;
+    border-right: 0;
+  }
 }
 
 .hide {
@@ -44,6 +49,11 @@ main {
 
 .container {
   min-width: 1280px;
+
+  @media #{$sm} {
+    min-width: 100%;
+    width: 100%;
+  }
 }
 
 img {

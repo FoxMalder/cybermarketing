@@ -5,23 +5,43 @@
     padding: 28px 38px 27px 40px;
     display: flex;
     align-items: center;
+
+    @media #{$sm} {
+      padding: 15px 20px;
+      justify-content: space-between;
+    }
   }
 
   &__logo {
     margin-right: 20px;
     position: relative;
     top: 2px;
+
+    @media #{$sm} {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__search {
     margin-left: 20px;
     margin-right: 20px;
     flex: 1 100%;
+
+    @media #{$sm} {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__contacts {
     margin-left: 20px;
     margin-right: 20px;
+
+    @media #{$sm} {
+      display: none;
+      visibility: hidden;
+    }
   }
 
   &__user {
@@ -29,6 +49,10 @@
     min-width: 100px;
     text-align: right;
     line-height: 1;
+
+    @media #{$sm} {
+      min-width: 75px;
+    }
   }
 }
 
@@ -101,4 +125,12 @@
   &__mail {
     padding-top: 5px;
   }
+}
+
+.header__burger {
+  width: 18px;
+  height: 18px;
+  display: block;
+  background-color: #3b5998;
+  padding: 20px;
 }
