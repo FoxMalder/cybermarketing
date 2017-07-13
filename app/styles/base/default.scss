@@ -46,18 +46,53 @@ main {
   min-width: 1280px;
 }
 
+img {
+  vertical-align: bottom;
+}
+
+// Демо-страница, в бовой версии этот блок CSS-стилей можно удалить
 .ui-page {
 
   pre > code {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 13px;
+    line-height: 17px;
     font-family: "Sans Mono", "Consolas", "Courier", monospace;
   }
 
   .ui-demo {
 
+    &--icon {
+
+      .ui-demo-element {
+        margin-bottom: 0;
+        margin-left: 5px;
+      }
+    }
+
     &-element {
       margin-bottom: 15px;
     }
+
+    .ui-demo-code pre {
+      margin-bottom: 0;
+    }
+  }
+
+  .content__box-icon {
+    background-color: #f7f7f8;
+    //border-top: 1px solid #d6d9dc;
+    //border-bottom: 1px solid #d6d9dc;
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+   p code {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #2f6f9f;
+    background-color: #f7f7f9;
+    border-radius: .25rem;
   }
 }

@@ -29,6 +29,14 @@ a {
   //}
 }
 
+p > a {
+  color: rgb(33, 170, 0);
+
+  &:hover {
+    color: #000;
+  }
+}
+
 // адаптивный видео-блок
 .video-container {
   position: relative;
