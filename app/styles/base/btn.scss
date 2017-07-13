@@ -93,6 +93,14 @@ button:disabled,
   padding-right: 20px;
   color: #21aa00;
 
+  &:hover {
+    color: #000;
+
+    &:after {
+      background-image: svg-load('arrow.svg', fill=#000);
+    }
+  }
+
   &:after {
     @include pseudo;
     @include size(10px, 10px);

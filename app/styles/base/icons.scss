@@ -53,6 +53,10 @@
   &-star {
     @include size(20px);
     background-image: svg-load('star.svg', fill=#adb1b9);
+
+    &.white {
+      background-image: svg-load('star.svg', fill=#fff);
+    }
   }
 
   &-play-in-circle {
