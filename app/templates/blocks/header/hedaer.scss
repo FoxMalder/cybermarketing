@@ -2,13 +2,15 @@
   background-color: rgb(255, 255, 255);
 
   &__box {
-    padding: 29px 40px 27px 40px;
+    padding: 28px 38px 27px 40px;
     display: flex;
     align-items: center;
   }
 
   &__logo {
-    margin-right: 19px;
+    margin-right: 20px;
+    position: relative;
+    top: 2px;
   }
 
   &__search {
@@ -42,7 +44,7 @@
       justify-content: flex-end;
 
       .btn {
-        padding: 13px 32px 12px 32px;
+        padding: 12px 32px 11px 32px;
       }
     }
   }

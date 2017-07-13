@@ -481,17 +481,18 @@
 }
 
 .list-icon {
-  margin-top: 20px;
+  margin-top: 28px;
   margin-bottom: 35px;
   display: block;
 
   &--big {
-    margin-top: 34px;
+    margin-top: 33px;
 
     .list-icon__item {
-      padding-top: 16px;
-      padding-bottom: 33px;
+      padding-top: 31px;
+      padding-bottom: 32px;
       border-bottom: 1px solid rgb(214, 217, 220);
+      margin-bottom: 0;
 
       &:first-child {
         padding-top: 0;
@@ -499,22 +500,26 @@
     }
 
     .list-icon__box {
-      align-items: center;
+      align-items: flex-start;
       width: auto;
       height: auto;
+      padding-right: 20px;
     }
 
     .list-icon__icon {
       flex-basis: 60px;
+      top: 0;
 
       &-box {
         width: auto;
         height: auto;
+        position: relative;
+        top: 8px;
       }
     }
 
     .list-icon__desc {
-      margin-left: 39px;
+      margin-left: 40px;
     }
   }
 
@@ -525,7 +530,7 @@
   }
 
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     &:last-child {
       margin-bottom: 0;
@@ -538,7 +543,7 @@
         font-family: Arial;
         font-size: 18px;
         font-weight: 400;
-        line-height: 20px;
+        line-height: 24px;
         margin-bottom: 2px;
       }
     }
