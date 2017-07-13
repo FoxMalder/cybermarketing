@@ -2,6 +2,14 @@
 .progress-page {
   font-size: 14px;
 
+  a {
+    color: rgb(33, 170, 0);
+
+    &:hover {
+      color: #000000;
+    }
+  }
+
   .navigation {
 
     display: block;
@@ -35,19 +43,18 @@
     display: block;
     margin: 8px 0 16px 24px;
     padding: 0;
+
+    li {
+
+      .progress-design {
+        margin-left: -25px;
+      }
+    }
   }
 
   .progress {
     background-color: #fff;
     flex-basis: 300px;
-
-    a {
-      color: rgb(33, 170, 0);
-
-      &:hover {
-        color: #000000;
-      }
-    }
 
     .url {
       &__info {
