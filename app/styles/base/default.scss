@@ -45,3 +45,19 @@ main {
 .container {
   min-width: 1280px;
 }
+
+.ui-page {
+
+  pre > code {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "Sans Mono", "Consolas", "Courier", monospace;
+  }
+
+  .ui-demo {
+
+    &-element {
+      margin-bottom: 15px;
+    }
+  }
+}

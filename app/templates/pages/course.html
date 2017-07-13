@@ -7,7 +7,9 @@
   <body>
     <main>
       @@include('blocks/header/header-login.html')
-      @@include('blocks/menu/menu.html')
+      @@include('blocks/menu/menu.html', {
+        "link1": "menu__item--active"
+      })
       @@include('blocks/headline/headline.html')
       @@include('blocks/page/page.html')
     </main>

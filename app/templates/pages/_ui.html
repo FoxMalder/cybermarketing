@@ -8,6 +8,9 @@
     <main>
       @@include('blocks/header/header-login.html')
       @@include('blocks/menu/menu.html')
+      <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script>
       <div class="ui-page">
         <div class="container">
           <div class="page outline">
@@ -16,20 +19,68 @@
 
               <div class="content__box">
 
-                <button type="button" class="btn btn-green disabled">Записаться</button>
-                <button type="button" class="btn btn-green">Записаться</button>
+                <h2>Компоненты и элементы</h2>
 
-                <button type="button" class="btn btn-outline disabled">Записаться</button>
-                <button type="button" class="btn btn-outline">Записаться</button>
+                <div class="row">
 
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
-                  <small class="form-text text-muted"></small>
+                  <div class="col-xs-4">
+
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-green disabled">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+
+                  </div>
+                  <div class="col-xs-4">
+
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-outline disabled">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline disabled"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled>
+                          <small class="form-text text-muted"></small>
+                        </div>
+                      </div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code">
+
+                        <pre><code class="html">&lt;div class="form-group"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email" disabled&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />&lt;/div&gt;</code></pre>
+
+                      </div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+
                 </div>
 
-                <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
-                  <small class="form-text text-muted"></small>
+                <div class="row">
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-green">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-green"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element"><button type="button" class="btn btn-outline">Записаться</button></div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="btn btn-outline"&gt;Записаться&lt;/button&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
+                  <div class="col-xs-4">
+                    <div class="ui-demo">
+                      <div class="ui-demo-element">
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                          <small class="form-text text-muted"></small>
+                        </div>
+                      </div><!-- /.ui-demo-element -->
+                      <div class="ui-demo-code"><pre><code class="html">&lt;div class="form-group"&gt;<br />  &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email"&gt;<br />  &lt;small class="form-text text-muted"&gt;&lt;/small&gt;<br />&lt;/div&gt;</code></pre></div><!-- /.ui-demo-code -->
+                    </div><!-- /.ui-demo -->
+                  </div>
                 </div>
 
               </div><!-- /.content__box -->
