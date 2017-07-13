@@ -113,3 +113,64 @@ textarea.form-control {
 .form-add-file input[type="file"] {
   display: none;
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+
+  input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(173, 177, 185);
+    transition: .4s;
+    border-radius: 34px;
+
+    &:hover {
+      background-color: rgb(214, 218, 221);
+    }
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: rgb(255, 255, 255);
+    left: 1px;
+    bottom: 1px;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: rgb(33, 170, 0);
+
+    &:hover {
+      background-color: rgb(49, 197, 9);
+    }
+  }
+
+  input:disabled:checked + .slider {
+    background-color: rgb(120, 122, 128);
+  }
+
+  input:disabled + .slider {
+    background-color: rgb(214, 218, 221);
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(10px);
+  }
+}
