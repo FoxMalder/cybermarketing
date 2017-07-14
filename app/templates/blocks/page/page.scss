@@ -562,6 +562,14 @@
         line-height: 24px;
         margin-bottom: 2px;
       }
+
+      .list-icon__desc--text {
+        transition: all .3s ease;
+
+        &:hover {
+          color: #21aa00;
+        }
+      }
     }
   }
 
