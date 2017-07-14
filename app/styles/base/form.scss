@@ -120,9 +120,20 @@ textarea.form-control {
   width: 30px;
   height: 20px;
 
-  input {display: none;}
+  input {
+    display: none;
+  }
 
-  .slider {
+  &__text {
+    padding-left: 40px;
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  &__slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -136,21 +147,21 @@ textarea.form-control {
     &:hover {
       background-color: rgb(214, 218, 221);
     }
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-color: rgb(255, 255, 255);
+      left: 1px;
+      bottom: 1px;
+      transition: .4s;
+      border-radius: 50%;
+    }
   }
 
-  .slider:before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 18px;
-    background-color: rgb(255, 255, 255);
-    left: 1px;
-    bottom: 1px;
-    transition: .4s;
-    border-radius: 50%;
-  }
-
-  input:checked + .slider {
+  input:checked + .switch__slider {
     background-color: rgb(33, 170, 0);
 
     &:hover {
@@ -158,19 +169,23 @@ textarea.form-control {
     }
   }
 
-  input:disabled:checked + .slider {
+  input:disabled:checked + .switch__slider {
     background-color: rgb(120, 122, 128);
   }
 
-  input:disabled + .slider {
+  input:disabled + .switch__slider {
     background-color: rgb(214, 218, 221);
   }
 
-  input:focus + .slider {
+  input:disabled + .switch__slider + .switch__text {
+    color: rgb(173, 177, 185);
+  }
+
+  input:focus + .switch__slider {
     box-shadow: 0 0 1px #2196F3;
   }
 
-  input:checked + .slider:before {
+  input:checked + .switch__slider:before {
     transform: translateX(10px);
   }
 }
