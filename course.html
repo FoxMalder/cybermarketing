@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css" rel="stylesheet" />
+  <link href="assets/styles/style.css?v=f95ee59242de0a5c98e5a2e4b5248b31" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -98,6 +98,15 @@
 <div class="container">
   <header class="header outline">
     <div class="header__box">
+
+      <div class="header__burger">
+        <button class="hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div><!-- /.burger -->
+
       <div class="logo header__logo">
         <a href="index.html" title="Вернуться на главную страницу CyberMarketing">
           <span class="logo-box"><i class="ico ico-logo"></i></span>
@@ -127,12 +136,15 @@
         </div>
       </div><!-- /.header__contacts -->
 
+      
       <div class="user header__user">
-        <div class="user-box">
-          <div class="user__notify"><i class="ico ico-bell" aria-hidden=”true”></i><span class="label"></span></div>
-          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt="Имя пользователя" width="40" height="40"></span></div>
-        </div>
+        <div class="user-box user-box--auth">
+          <a href="" class="btn btn-green">Вход</a>
+        </div><!-- /.user-box -->
       </div><!-- /.header__user -->
+      
+      
+
     </div><!-- /.header__box -->
   </header>
 </div><!-- /.container -->
@@ -406,7 +418,8 @@
 
     <div class="page__aside aside">
 
-      <div class="curriculum">
+      
+  <div class="curriculum">
 
   <div class="curriculum__item curriculum--end">
     <div class="curriculum__box">
@@ -555,6 +568,9 @@
 </div><!-- /.curriculum -->
 
 
+
+
+
     </div><!-- /.page__aside -->
 
   </div><!-- /.page -->
@@ -566,7 +582,7 @@
   <section class="company-info">
 
     <div class="container">
-      <div class="row">
+      <div class="row row--footer">
 
         <div class="footer__item footer__item--first">
           <h4>Учебный процесс</h4>
@@ -607,7 +623,7 @@
                   <span class="address__icon-box"><i class="ico ico-geotag" aria-hidden=”true”></i></span>
                 </div><!-- /.address__icon -->
                 <div class="address__desc">
-                  <div class="address__desc--text"><a href="">г. Москва, ул. Марксистская, д. 34, корп. 7</a></div>
+                  <div class="address__desc--text"><a href="">г. Москва, ул. Марксистская, д. 34к7</a></div>
                   <div class="address__desc--info">вход в Институт МИРБИС</div>
                   <div class="address__desc--info"><span class="metro-line lyublinskaya"></span>Крестьянская Застава</div>
                   <div class="address__desc--info"><span class="metro-line kalininskaya"></span>Марксистская</div>
@@ -681,7 +697,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js"></script>
+<script src="assets/scripts/scripts.js?v=b8aa7ab8a9886830496f77939e6403f0"></script>
 
   </body>
 </html>

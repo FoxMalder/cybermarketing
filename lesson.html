@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css" rel="stylesheet" />
+  <link href="assets/styles/style.css?v=f95ee59242de0a5c98e5a2e4b5248b31" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -98,6 +98,15 @@
 <div class="container">
   <header class="header outline">
     <div class="header__box">
+
+      <div class="header__burger">
+        <button class="hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div><!-- /.burger -->
+
       <div class="logo header__logo">
         <a href="index.html" title="Вернуться на главную страницу CyberMarketing">
           <span class="logo-box"><i class="ico ico-logo"></i></span>
@@ -127,11 +136,16 @@
         </div>
       </div><!-- /.header__contacts -->
 
+      
+      
       <div class="user header__user">
-        <div class="user-box user-box--auth">
-          <a href="" class="btn btn-green">Вход</a>
-        </div>
+        <div class="user-box">
+          <div class="user__notify"><i class="ico ico-bell" aria-hidden=”true”></i><span class="label"></span></div>
+          <div class="user__avatar"><span><img src="assets/images/chak-norris.png" alt="Имя пользователя" width="40" height="40"></span></div>
+        </div><!-- /.user-box -->
       </div><!-- /.header__user -->
+      
+
     </div><!-- /.header__box -->
   </header>
 </div><!-- /.container -->
@@ -339,124 +353,128 @@
 
       <div class="aside__box">
 
-        <div class="list-icon list-icon--big">
+        
 
-  <div class="list-icon__item list-icon__item--speaker">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="speaker-photka-big">
-            <img src="assets/images/dmitry-klimchukov-60x60.png" alt="Дмитрий Климчуков" width="60" height="60">
-          </div>
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--text">Дмитрий Климчуков</div>
-          <div class="list-icon__desc--info">Генеральный директор агентства Click.ru</div>
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
 
-  <div class="list-icon__item">
-    <a href="#">
+  <div class="list-icon list-icon--big">
+
+    <div class="list-icon__item list-icon__item--speaker">
+      <a href="">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="speaker-photka-big">
+              <img src="assets/images/dmitry-klimchukov-60x60.png" alt="Дмитрий Климчуков" width="60" height="60">
+            </div>
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            <div class="list-icon__desc--text">Дмитрий Климчуков</div>
+            <div class="list-icon__desc--info">Генеральный директор агентства Click.ru</div>
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+    <div class="list-icon__item">
+      <a href="#">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="list-icon__icon-box">
+              <i class="ico ico-presentation"></i>
+            </div><!-- /.list-icon__icon-box -->
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            Презентацию по уроку: «Стратегический маркетинг»
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+    <div class="list-icon__item">
+      <a href="">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="list-icon__icon-box">
+              <i class="ico ico-manual"></i>
+            </div><!-- /.list-icon__icon-box -->
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            Методичка по курсу: «Маркетинг и реклама: введение»
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+  </div><!-- /.list-icon -->
+
+  <h3>Дополнительные материалы</h3>
+
+  <div class="list-icon">
+
+    <div class="list-icon__item">
+      <a href="">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="list-icon__icon-box">
+              <i class="ico ico-microphone"></i>
+            </div><!-- /.list-icon__icon-box -->
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            <div class="list-icon__desc--info">Семинар, 15 мая 13:00</div>
+            Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+    <div class="list-icon__item">
+      <a href="">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="list-icon__icon-box">
+              <i class="ico ico-play-in-circle"></i>
+            </div><!-- /.list-icon__icon-box -->
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            <div class="list-icon__desc--info">Запись вебинара</div>
+            Конверсия. Секреты продвижения в высококонкурентных тематиках при ограниченном бюджете
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+    <div class="list-icon__item">
+      <a href="">
+        <div class="list-icon__box">
+          <div class="list-icon__icon">
+            <div class="list-icon__icon-box">
+              <i class="ico ico-article"></i>
+            </div><!-- /.list-icon__icon-box -->
+          </div><!-- /.list-icon__icon -->
+          <div class="list-icon__desc">
+            <div class="list-icon__desc--info">Статья</div>
+            4 способа проверить сайт на фильтры поисковых систем
+          </div><!-- /.list-icon__desc -->
+        </div><!-- /.list-icon__box -->
+      </a>
+    </div><!-- /.list-icon__item -->
+
+    <div class="list-icon__item">
       <div class="list-icon__box">
         <div class="list-icon__icon">
           <div class="list-icon__icon-box">
-            <i class="ico ico-presentation"></i>
+            <i class="ico ico-book"></i>
           </div><!-- /.list-icon__icon-box -->
         </div><!-- /.list-icon__icon -->
         <div class="list-icon__desc">
-          Презентацию по уроку: «Стратегический маркетинг»
+          <div class="list-icon__desc--info">Книга</div>
+          <div class="list-icon__desc--text">Маркетинг-менеджмент</div>
+          <div class="list-icon__desc--info">Филип Котлер, Кевин Лейн Келлер</div>
         </div><!-- /.list-icon__desc -->
       </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
+    </div><!-- /.list-icon__item -->
 
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-manual"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          Методичка по курсу: «Маркетинг и реклама: введение»
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
+  </div><!-- /.list-icon -->
 
-</div><!-- /.list-icon -->
-
-<h3>Дополнительные материалы</h3>
-
-<div class="list-icon">
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-microphone"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Семинар, 15 мая 13:00</div>
-          Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-play-in-circle"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Запись вебинара</div>
-          Как сократить в 2-5 раз стоимость клиента в таргетированной рекламе
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <a href="">
-      <div class="list-icon__box">
-        <div class="list-icon__icon">
-          <div class="list-icon__icon-box">
-            <i class="ico ico-article"></i>
-          </div><!-- /.list-icon__icon-box -->
-        </div><!-- /.list-icon__icon -->
-        <div class="list-icon__desc">
-          <div class="list-icon__desc--info">Статья</div>
-          4 способа проверить сайт на фильтры поисковых систем
-        </div><!-- /.list-icon__desc -->
-      </div><!-- /.list-icon__box -->
-    </a>
-  </div><!-- /.list-icon__item -->
-
-  <div class="list-icon__item">
-    <div class="list-icon__box">
-      <div class="list-icon__icon">
-        <div class="list-icon__icon-box">
-          <i class="ico ico-book"></i>
-        </div><!-- /.list-icon__icon-box -->
-      </div><!-- /.list-icon__icon -->
-      <div class="list-icon__desc">
-        <div class="list-icon__desc--info">Книга</div>
-        <div class="list-icon__desc--text">Маркетинг-менеджмент</div>
-        <div class="list-icon__desc--info">Филип Котлер, Кевин Лейн Келлер</div>
-      </div><!-- /.list-icon__desc -->
-    </div><!-- /.list-icon__box -->
-  </div><!-- /.list-icon__item -->
-
-</div><!-- /.list-icon -->
 
 
       </div><!-- /.aside__box -->
@@ -472,7 +490,7 @@
   <section class="company-info">
 
     <div class="container">
-      <div class="row">
+      <div class="row row--footer">
 
         <div class="footer__item footer__item--first">
           <h4>Учебный процесс</h4>
@@ -513,7 +531,7 @@
                   <span class="address__icon-box"><i class="ico ico-geotag" aria-hidden=”true”></i></span>
                 </div><!-- /.address__icon -->
                 <div class="address__desc">
-                  <div class="address__desc--text"><a href="">г. Москва, ул. Марксистская, д. 34, корп. 7</a></div>
+                  <div class="address__desc--text"><a href="">г. Москва, ул. Марксистская, д. 34к7</a></div>
                   <div class="address__desc--info">вход в Институт МИРБИС</div>
                   <div class="address__desc--info"><span class="metro-line lyublinskaya"></span>Крестьянская Застава</div>
                   <div class="address__desc--info"><span class="metro-line kalininskaya"></span>Марксистская</div>
@@ -587,7 +605,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js"></script>
+<script src="assets/scripts/scripts.js?v=b8aa7ab8a9886830496f77939e6403f0"></script>
 
   </body>
 </html>
