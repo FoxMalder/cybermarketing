@@ -42,6 +42,7 @@ button:disabled,
     &:focus,
     &.focus {
       background-color: rgb(30, 155, 0);
+      border-color: rgb(30, 155, 0);
     }
 
     &[disabled=disabled],
@@ -67,7 +68,7 @@ button:disabled,
     &:focus,
     &.focus {
       background-color: rgb(247, 247, 248);
-      border: 1px solid rgb(120, 122, 128);
+      border-color: rgb(120, 122, 128);
       color: rgb(0, 0, 0);
     }
 
