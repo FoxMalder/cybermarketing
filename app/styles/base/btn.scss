@@ -3,7 +3,7 @@ button:disabled,
 .btn:disabled,
 .btn.disabled {
   cursor: not-allowed;
-  pointer-events: none;
+  //pointer-events: none;
   color: rgb(173, 177, 185);
   background-color: rgb(247, 247, 248);
   border-color: rgb(214, 218, 221);
