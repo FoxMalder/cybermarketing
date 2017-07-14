@@ -13,12 +13,21 @@
     min-width: 378px;
     border-left: 1px solid rgb(214, 217, 220);
   }
+
+  &-navigation {
+    padding: 39px 39px 38px 39px;
+    border-top: 1px solid #d6d9dc;
+  }
 }
 
 .content {
 
   &__box {
     padding: 34px 39px 58px 39px;
+
+    &--pb {
+      padding-bottom: 39px;
+    }
   }
 
   &__full {
@@ -219,10 +228,14 @@
     margin-bottom: 20px;
     padding-left: 38px;
     position: relative;
-    color: rgb(0, 0, 0);
+    color: rgb(120, 122, 128);
     font-family: Arial;
     font-size: 15px;
     font-weight: 400;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:before {
       position: absolute;
@@ -230,7 +243,7 @@
       @include size(10px, 8px);
       top: 8px;
       left: 10px;
-      background-image: svg-load('check-small.svg', fill=#21aa00);
+      background-image: svg-load('check-small.svg', fill=#63a827);
     }
   }
 }
@@ -710,5 +723,15 @@
         margin-right: 10px;
       }
     }
+  }
+}
+
+.course-info {
+  display: block;
+  position: relative;
+
+  .info-list {
+    border-top: 1px solid rgb(214, 217, 220);
+    padding: 26px 0 38px 0;
   }
 }
