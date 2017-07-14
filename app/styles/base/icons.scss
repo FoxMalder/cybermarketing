@@ -57,6 +57,10 @@
     &.white {
       background-image: svg-load('star.svg', fill=#fff);
     }
+
+    &.green {
+      background-image: svg-load('star.svg', fill=#21aa00);
+    }
   }
 
   &-play-in-circle {

@@ -53,7 +53,7 @@
     .curriculum-status {
 
       &:before {
-        background-color: #00b402;
+        background-color: #21aa00;
       }
 
       &__box {
@@ -62,7 +62,7 @@
           @include pseudo;
           width: 56px;
           height: 56px;
-          border: 2px solid #00b402;
+          border: 2px solid #21aa00;
           border-radius: 50%;
           clip: rect(40px, auto, auto, 40px);
           transform: rotate(-108deg);
@@ -79,16 +79,20 @@
 
   &--end {
 
+    .curriculum__desc {
+      color: #21aa00;
+    }
+
     .curriculum-status {
-      border-color: #00b402;
+      border-color: #21aa00;
 
       &:before,
       &:after {
-        background-color: #00b402;
+        background-color: #21aa00;
       }
 
       &__text {
-        color: #00b402;
+        color: #21aa00;
         font-weight: 700;
       }
     }
@@ -116,16 +120,15 @@
 
     span {
       position: relative;
-      left: 1px;
     }
   }
 
   &__desc {
-    color: #00b402;
+    color: rgb(0, 0, 0);
     font-family: Arial;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 25px;
     flex: 1 100%;
   }
 }
@@ -146,7 +149,7 @@
         @include pseudo;
         width: 56px;
         height: 56px;
-        border: 2px solid #00b402;
+        border: 2px solid #21aa00;
         border-radius: 50%;
         clip: rect(40px, auto, auto, 40px);
         transform: rotate(-108deg);
@@ -167,7 +170,7 @@
   &__box {
     position: absolute;
     top: 9px;
-    left: -3px;
+    left: -2px;
     text-align: center;
     width: 60px;
     height: 60px;
@@ -227,7 +230,7 @@
       @include size(10px, 8px);
       top: 8px;
       left: 10px;
-      background-image: svg-load('check-small.svg', fill=#00b402);
+      background-image: svg-load('check-small.svg', fill=#21aa00);
     }
   }
 }
@@ -236,7 +239,7 @@
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(214, 217, 220);
   border-radius: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -271,6 +274,10 @@
 
     &--gray {
       background-color: rgb(247, 247, 248);
+
+      .module-item__name {
+        color: rgb(120, 122, 128);
+      }
     }
   }
 }
