@@ -116,4 +116,9 @@
     @include size(60px, 60px);
     background-image: svg-load('stop.svg', fill=#ff0000);
   }
+
+  &-attention {
+    @include size(20px, 18px);
+    background-image: svg-load('attention.svg', fill=#adb3bb);
+  }
 }

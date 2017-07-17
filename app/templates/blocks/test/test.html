@@ -86,12 +86,14 @@
   </div><!-- /.test-page__body -->
   @@if (notify === true) {
     <div class="test-page__notify">
+
       <div class="attention">
         <div class="attention__box">
-          <div class="attention__icon"><span><i class="ico-ico-attention"></i></span></div><!-- /.attention__icon -->
-          <div class="attention__text">Внимание! Не покидайте данную страницу и не открывайте другие программы, вопрос на котором вы находитесь будет засчитан как неотвеченный</div><!-- /.attention__text -->
+          <div class="attention__icon"><div class="attention__icon-box"><i class="ico ico-attention"></i></div></div><!-- /.attention__icon-box -->
+          <div class="attention__desc">Внимание! Не покидайте данную страницу и не открывайте другие программы, вопрос на котором вы находитесь будет засчитан как неотвеченный</div><!-- /.attention__desc -->
         </div><!-- /.attention__box -->
       </div><!-- /.attention -->
+
     </div><!-- /.test-page__notify -->
   }
 </div><!-- /.test-page -->
