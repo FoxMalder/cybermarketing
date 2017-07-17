@@ -44,10 +44,12 @@ main {
 
 .container {
   min-width: 1280px;
+  width: 1280px;
 
   @media only screen and (max-width: 1320px) {
     margin: 0 10px;
     min-width: 100%;
+    width: 1280px;
   }
 }
 
