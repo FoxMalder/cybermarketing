@@ -43,6 +43,10 @@
       padding-top: 10px;
       padding-bottom: 10px;
 
+      &:hover {
+        background-color: #f7f7f8;
+      }
+
       label {
         width: 100%;
         display: block;
