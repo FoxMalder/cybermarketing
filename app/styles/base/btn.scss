@@ -114,4 +114,10 @@ button:disabled,
     right: 0;
     background-image: svg-load('arrow.svg', fill=#21aa00);
   }
+
+  &--expand {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
 }
