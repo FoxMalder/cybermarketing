@@ -96,14 +96,15 @@ button:disabled,
   color: #21aa00;
 
   span {
-    transition: .3s ease;
     border-bottom: 1px solid transparent;
+    transition: .3s ease;
   }
 
   &:hover {
 
     span {
       border-bottom-color: rgb(33, 170, 0);
+      transition: .3s ease;
     }
   }
 
