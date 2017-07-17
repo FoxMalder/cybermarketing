@@ -22,6 +22,20 @@
 
   </ul>
 </li>
+<li>
+  <li class="navigation__header">
+    <div class="progress navigation-name">Тестирование</div>
+  </li>
+  <ul>
+  @@loop("blocks/_progress/list/item.html", [
+    { "href": "test-alert.html", "name": "Предупреждение", "design": "100", "html": "12" },
+    { "href": "test-result.html", "name": "Результат теста", "design": "100", "html": "12" },
+    { "href": "test.html", "name": "Тест", "design": "100", "html": "12" },
+    { "href": "test-begin.html", "name": "Заглушка перед тестом", "design": "100", "html": "12" }
+  ])
+
+  </ul>
+</li>
 @@loop("blocks/_progress/list/item.html", [
   { "href": "ui.html", "name": "UI: Контролы и компоненты", "design": "100", "html": "100" }
 ])
