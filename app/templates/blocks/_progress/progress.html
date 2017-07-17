@@ -8,7 +8,7 @@
 @@include('blocks/_progress/list/list.html')
 
 @@loop("blocks/_progress/list/item.html", [
-  { "href": "course.html", "name": "Страница курса", "design": "100", "html": "98" }
+  { "href": "course.html", "name": "Страница курса", "design": "100", "html": "99" }
 ])
 <li>
   <li class="navigation__header">
@@ -28,12 +28,21 @@
   </li>
   <ul>
   @@loop("blocks/_progress/list/item.html", [
-    { "href": "test-alert.html", "name": "Предупреждение", "design": "100", "html": "12" },
-    { "href": "test-result.html", "name": "Результат теста", "design": "100", "html": "12" },
-    { "href": "test.html", "name": "Тест", "design": "100", "html": "12" },
-    { "href": "test-begin.html", "name": "Заглушка перед тестом", "design": "100", "html": "12" }
+    { "href": "test-alert.html", "name": "Предупреждение", "design": "100", "html": "0" },
+    { "href": "test-result.html", "name": "Результат теста", "design": "100", "html": "0" },
+    { "href": "test.html", "name": "Тест", "design": "100", "html": "0" },
+    { "href": "test-begin.html", "name": "Заглушка перед тестом", "design": "100", "html": "0" }
   ])
-
+  </ul>
+</li>
+<li>
+  <li class="navigation__header">
+    <div class="progress navigation-name">Мобильный вид <sup>скоро</sup></div>
+  </li>
+  <ul>
+    @@loop("blocks/_progress/list/item.html", [
+      { "href": "mobile-lesson.html", "name": "Страница урока", "design": "100", "html": "0" }
+    ])
   </ul>
 </li>
 @@loop("blocks/_progress/list/item.html", [
