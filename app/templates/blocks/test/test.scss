@@ -75,6 +75,21 @@
 
       .test-icon {
         margin-bottom: 37px;
+        position: relative;
+
+        .test-rating {
+          position: absolute;
+          color: #000;
+          font-family: Arial;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 20px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+        }
       }
 
       .h2 {
@@ -83,6 +98,10 @@
         font-weight: 400;
         line-height: 45px;
         margin-bottom: 15px;
+      }
+
+      .text {
+        margin-bottom: 30px;
       }
     }
   }

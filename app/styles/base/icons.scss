@@ -121,4 +121,9 @@
     @include size(20px, 18px);
     background-image: svg-load('attention.svg', fill=#adb3bb);
   }
+
+  &-star-big {
+    @include size(120px, 120px);
+    background-image: svg-load('star-big.svg', fill=#21aa00);
+  }
 }

@@ -82,6 +82,20 @@
       </div><!-- /.test-actions -->
     }
 
+    @@if (result == true) {
+      <div class="test-content__center">
+        <div class="test-content__center-box">
+          <div class="test-icon">
+            <i class="ico ico-star-big"></i>
+            <div class="test-rating"><span>4.5</span></div>
+          </div>
+          <h2 class="h2">Хорошо!</h2>
+          <p class="text">Ты красавчик и можешь учиться ещё лучше, продолжай в том же духе.</p>
+          <a href="" class="btn btn-green">Следующий урок</a>
+        </div><!-- /.test-content__center-box -->
+      </div><!-- /.test-content__center -->
+    }
+
     </div><!-- /.test-content -->
   </div><!-- /.test-page__body -->
   @@if (notify === true) {
