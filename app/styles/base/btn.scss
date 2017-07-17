@@ -30,12 +30,13 @@ button:disabled,
 
   &-green {
     background-color: #21aa00;
-    border-color: #21aa00;
+    border: none;
+    padding: 14px 27px 13px 27px;
 
     &:hover,
     &.hover {
       background-color: rgb(49, 197, 9);
-      border-color: rgb(49, 197, 9);
+      border-color: transparent;
       color: #fff;
     }
 
@@ -83,7 +84,7 @@ button:disabled,
 
     .mee-ink {
       animation-timing-function: ease-out;
-      background: rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, .85);
     }
   }
 }
