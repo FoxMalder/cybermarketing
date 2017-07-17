@@ -9,6 +9,8 @@
   <div class="test-page__body">
     <div class="test-content">
 
+    @@if (test === true) {
+
       <div class="test-header">
         <div class="test-progress"><span>Вопрос 5 из 12</span></div><!-- /.test-progress -->
         <div class="test-time">
@@ -21,13 +23,68 @@
 
       <form action="" class="form form-test">
         <p>Сфера деятельности фирмы, включающая принятие решений о товарной номенклатуре, товарном ассортименте, использовании марочного названия, сервисном обслуживании, разработке нового товара и др., называется:</p>
+        <div class="form-check">
+          <input type="checkbox" name="group2" id="answer1">
+          <label for="answer1">
+            <span class="form-check-control">формированием ассортимента</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="group2" id="answer2">
+          <label for="answer2">
+            <span class="form-check-control">товарной политикой</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="group2" id="answer3">
+          <label for="answer3">
+            <span class="form-check-control">товарно-ценовой политикой</span>
+          </label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="group2" id="answer4">
+          <label for="answer4">
+            <span class="form-check-control">товарной стратегией</span>
+          </label>
+        </div>
       </form>
 
       <div class="test-actions">
-        <button class="btn btn-green" id="submit" disabled>Отправить</button>
+        <div class="form-actions">
+          <button class="btn btn-green" id="submit" disabled>Отправить</button>
+        </div><!-- /.form-actions -->
       </div><!-- /.test-actions -->
+    }
+
+    @@if (alert == true) {
+      <div class="test-header">
+        <div class="test-progress"><span>Вопрос 5 из 12</span></div><!-- /.test-progress -->
+        <div class="test-time">
+          <div class="time">
+            <div class="time-watch"><span>12:32</span></div><!-- /.time-watch -->
+            <div class="time-icon"><span><i class="ico ico-spinner"></i></span></div><!-- /.time-icon -->
+          </div><!-- /.time -->
+        </div><!-- /.test-time -->
+      </div><!-- /.text-header -->
+
+      <div class="test-content__center">
+        <div class="test-content__center-box">
+          <div class="test-icon"><i class="ico ico-stop"></i></div>
+          <h2 class="h2">Вопрос не будет засчитан</h2>
+          <p>Вы покинули страницу, а это мы расцениваем как списывание</p>
+        </div><!-- /.test-content__center-box -->
+      </div><!-- /.test-content__center -->
+
+      <div class="test-actions">
+        <div class="form-actions">
+          <button class="btn btn-green" id="submit">Далее</button>
+        </div><!-- /.form-actions -->
+      </div><!-- /.test-actions -->
+    }
 
     </div><!-- /.test-content -->
   </div><!-- /.test-page__body -->
-  <div class="test-page__notify"></div><!-- /.test-page__notify -->
+  @@if (notify === true) {
+    <div class="test-page__notify"></div><!-- /.test-page__notify -->
+  }
 </div><!-- /.test-page -->

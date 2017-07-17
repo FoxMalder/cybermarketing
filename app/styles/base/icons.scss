@@ -111,4 +111,9 @@
     @include size(16px, 20px);
     background-image: svg-load('microphone.svg', fill=#adb1b9);
   }
+
+  &-stop {
+    @include size(60px, 60px);
+    background-image: svg-load('stop.svg', fill=#ff0000);
+  }
 }
