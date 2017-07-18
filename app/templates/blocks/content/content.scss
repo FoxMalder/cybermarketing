@@ -744,3 +744,27 @@
     padding: 26px 0 38px 0;
   }
 }
+
+.lesson-end {
+  min-height: 510px;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    text-align: center;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 30px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
