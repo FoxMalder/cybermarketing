@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css?v=889568846a8e16fb2772be13526aab2f" rel="stylesheet" />
+  <link href="assets/styles/style.css" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -186,7 +186,9 @@
       </div><!-- /.headline__text -->
 
       <div class="headline__action">
-        <!--<a href="" class="btn btn-green">Пройти тест</a>-->
+        
+          <a href="" class="btn btn-green">Пройти тест</a>
+        
       </div><!-- /.headline__action -->
     </div><!-- /.headline__box -->
 
@@ -203,14 +205,26 @@
           
           
           
-            <div class="go-test" style="height: 510px;">
-              <h2 class="h2">Вы закончили урок</h2>
-              <p>Для закрепления полученых знаний и их оценки, необходимо пройти тестирование.
-                Тест сдаётся один раз, в случае плохой оценки вы можете перездать его по окончании курса.
-                При покидании или закрытия страницы мы подсчитаем балы только на отвеченные вопросы.
-                На исправление ошибок даётся три попытки на весь курс. Успеха!
-                Подробную информацию вы найдёте в <a href="">правилах для студента</a></p>
-              <a href="" class="btn btn-green">Пройти тест</a>
+            <div class="lesson-end">
+
+              <div class="lesson-end__content">
+                <h2 class="h2">Вы закончили урок</h2>
+                <p>Для закрепления полученых знаний и их оценки, необходимо пройти тестирование. <br>Тест сдаётся один раз, в случае плохой оценки вы можете перездать его по окончании курса.<br>При покидании или закрытия страницы мы подсчитаем балы только на отвеченные вопросы. <br>На исправление ошибок даётся три попытки на весь курс. Успеха!<br> Подробную информацию вы найдёте в <a href="">правилах для студента</a></p>
+
+                <div class="time-to-test">
+                  <div class="time-to-test__name"><span>Время на прохождение</span></div>
+                  <div class="course-time">
+                    <div class="course-time__icon"><i class="ico ico-watch" aria-hidden=”true”></i></div><!-- /.course-time__icon -->
+                    <div class="course-time-t"><strong>15</strong> минут</div><!-- /.course-time-t -->
+                  </div><!-- /.course-time -->
+                </div>
+                <a href="" class="btn btn-green">Пройти тест</a>
+
+              </div>
+
+              <div class="lesson-end__footer">
+                <a href="#" class="reload-link"><span>Посмотреть урок ещё раз</span></a>
+              </div>
             </div>
           
         </div><!-- /.content__full-box -->
@@ -610,7 +624,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js?v=b8aa7ab8a9886830496f77939e6403f0"></script>
+<script src="assets/scripts/scripts.js"></script>
 
   </body>
 </html>
