@@ -750,13 +750,28 @@
   position: relative;
 
   &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    flex-direction: column;
+    padding-top: 70px;
+
+    p > a {
+      color: #000;
+      border-bottom: 1px solid #000;
+
+      &:hover {
+        border-bottom: 0;
+        color: #21aa00;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 45px;
+    }
   }
 
   &__footer {
@@ -766,5 +781,22 @@
     width: 100%;
     left: 0;
     right: 0;
+  }
+
+  .time-to-test {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: #787a80;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 35px;
+
+    .course-time {
+      margin-left: 0;
+    }
   }
 }

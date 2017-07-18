@@ -122,3 +122,31 @@ button:disabled,
     }
   }
 }
+
+.reload-link {
+  position: relative;
+  transition: .3s ease;
+  padding-left: 40px;
+  color: #21aa00;
+
+  span {
+    border-bottom: 1px solid transparent;
+    transition: .3s ease;
+  }
+
+  &:hover {
+
+    span {
+      border-bottom-color: rgb(33, 170, 0);
+      transition: .3s ease;
+    }
+  }
+
+  &:after {
+    @include pseudo;
+    @include size(20px);
+    top: -2px;
+    left: 0;
+    background-image: svg-load('reload.svg', fill=#21aa00);
+  }
+}
