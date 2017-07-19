@@ -82,6 +82,20 @@
       </div><!-- /.test-actions -->
     }
 
+    @@if (fail == true) {
+      <div class="test-content__center">
+        <div class="test-content__center-box">
+          <div class="test-icon">
+            <i class="ico ico-star-big red"></i>
+            <div class="test-rating red"><span>1.8</span></div>
+          </div>
+          <h2 class="h2">Вы не сдали!</h2>
+          <p class="text">Очень плохо! Смотрите урок внимательнее и у вас всё получится.</p>
+          <a href="#" class="reload-link"><span>Посмотреть урок ещё раз</span></a>
+        </div><!-- /.test-content__center-box -->
+      </div><!-- /.test-content__center -->
+    }
+
     @@if (result == true) {
       <div class="test-content__center">
         <div class="test-content__center-box">

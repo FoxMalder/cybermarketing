@@ -125,6 +125,10 @@
   &-star-big {
     @include size(120px, 120px);
     background-image: svg-load('star-big.svg', fill=#21aa00);
+
+    &.red {
+      background-image: svg-load('star-big.svg', fill=#ff0000);
+    }
   }
 }
 
