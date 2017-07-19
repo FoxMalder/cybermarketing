@@ -1,6 +1,6 @@
 // Ссылки
 a {
-  //transition: all .3s ease;
+  transition: all .3s ease;
   text-decoration: none;
   color: $link;
 
@@ -11,6 +11,7 @@ a {
   &:hover,
   &.hover {
     color: $link-hover;
+    transition: all 0s ease;
   }
 
   //&:visited {

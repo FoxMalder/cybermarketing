@@ -24,6 +24,15 @@ input:placeholder {
   text-overflow: ellipsis;
 }
 
+input[type=checkbox],
+input[type=radio] {
+  margin: 4px 0 0;
+  margin-top: 1px\9;
+  line-height: normal;
+  box-sizing: border-box;
+  padding: 0;
+}
+
 .form-group {
   margin-bottom: 21px;
 
@@ -94,6 +103,7 @@ input:placeholder {
     color: rgb(173, 177, 185);
     background-color: rgb(247, 247, 248);
     border-color: rgb(214, 218, 221);
+    cursor: not-allowed;
   }
 
   &:hover {
@@ -203,20 +213,13 @@ textarea.form-control {
   }
 }
 
-input[type=checkbox],
-input[type=radio] {
-  margin: 4px 0 0;
-  margin-top: 1px\9;
-  line-height: normal;
-  box-sizing: border-box;
-  padding: 0;
-}
-
 .form-check {
   position: relative;
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-left: 30px;
+  cursor: pointer;
 
   label {
     min-height: 20px;
@@ -229,18 +232,13 @@ input[type=radio] {
     font-size: 15px;
     line-height: 25px;
   }
-}
 
-.form-check input[type=checkbox],
-.form-check input[type=radio] {
-  position: absolute;
-  margin-top: 4px\9;
-  margin-left: -20px;
-}
-
-.form-check {
-  padding-left: 30px;
-  cursor: pointer;
+  input[type=checkbox],
+  input[type=radio] {
+    position: absolute;
+    margin-top: 4px\9;
+    margin-left: -20px;
+  }
 
   label {
     position: relative;
@@ -313,5 +311,25 @@ input[type=radio] {
 
   input[type="checkbox"]:checked + label .form-check-control:hover:before {
     background-color: #f7f7f8;
+  }
+
+  input[type="checkbox"]:disabled {
+
+    & + label .form-check-control {
+      color: #adb1b9;
+      cursor: not-allowed;
+
+      &:before {
+        border: 1px solid #d6dadd;
+        background-color: #f7f7f8;
+      }
+    }
+
+    &:checked {
+
+      & + label .form-check-control:after {
+        background-image: svg-load('check-small.svg', fill=#adb1b9);
+      }
+    }
   }
 }
