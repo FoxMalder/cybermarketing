@@ -127,3 +127,19 @@
     background-image: svg-load('star-big.svg', fill=#21aa00);
   }
 }
+
+.spinner svg {
+  stroke: #21aa00;
+  fill: #21aa00;
+  width: 16px;
+  height: 16px;
+
+  .stop1 {
+    stop-color: #21aa00;
+    stop-opacity: 0;
+  }
+
+  .stop2 {
+    stop-color: #21aa00;
+  }
+}

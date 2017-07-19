@@ -154,3 +154,26 @@ button:disabled,
     background-image: svg-load('reload.svg', fill=#21aa00);
   }
 }
+
+.loading {
+  display: flex;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  color: #adb1b9;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 9px;
+  }
+
+  &__text {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
