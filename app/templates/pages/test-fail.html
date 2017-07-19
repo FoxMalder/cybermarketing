@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  @@include('blocks/_base/head.html', {
+    "title": "Результат прохождения теста",
+    "description": "Результат прохождения теста"
+  })
+  <body>
+    <main>
+      @@include('blocks/test/test.html', { "test": false, "alert": true, "notify": true, "result": false })
+    </main>
+  </body>
+</html>
