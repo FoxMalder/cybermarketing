@@ -39,3 +39,40 @@
 
 })();
 
+
+(function(){
+
+  $('.comment').each(function() {
+    let $e = $(this);
+    $e.find('._comment__answer').hide();
+  })
+
+
+  $('._more-comment').click(function(e) {
+    e.preventDefault();
+    $(this).toggleClass("more-link--expand");
+    $(this).parents('.comment').find('._comment__answer').toggleClass("folded").toggleClass("unfolded").slideToggle();
+
+    let close = $(this).attr("data-text-close");
+    let  open = $(this).attr("data-text-open");
+
+
+    if($(this).parents('.comment').find('._comment__answer').hasClass('folded')) {
+      if (close) {
+        $(this).html(close);
+      } else {
+        $(this).html('Скрыть ответ');
+      }
+    } else {
+      if (open) {
+        $(this).html(open);
+      } else {
+        $(this).html('Показать ответ');
+      }
+    }
+
+  });
+
+})();
+
+
