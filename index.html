@@ -193,8 +193,8 @@
   </div><!-- /.progress-design -->
 
   <div class="progress progress-html">
-    <progress max="100" value="99"></progress>
-    <span class="progress_value">99%</span>
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
   </div><!-- /.progress-html -->
 
   <div class="progress progress-time">
@@ -226,8 +226,8 @@
   </div><!-- /.progress-design -->
 
   <div class="progress progress-html">
-    <progress max="100" value="99"></progress>
-    <span class="progress_value">99%</span>
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
   </div><!-- /.progress-html -->
 
   <div class="progress progress-time">
@@ -253,8 +253,8 @@
   </div><!-- /.progress-design -->
 
   <div class="progress progress-html">
-    <progress max="100" value="99"></progress>
-    <span class="progress_value">99%</span>
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
   </div><!-- /.progress-html -->
 
   <div class="progress progress-time">
@@ -682,5 +682,33 @@
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 <script src="assets/scripts/scripts.js"></script>
 
+    <script>
+      $(document).ready(function() {
+
+        // спойлер-блок на странице
+        $('._foldable__content').hide();
+        $('._foldable__control').click(function(){
+          $(this).toggleClass("folded").toggleClass("unfolded").next().slideToggle();
+          let close = $('._foldable__link').attr("data-text-close");
+          let  open = $('._foldable__link').attr("data-text-open");
+          if($(this).hasClass('folded')) {
+            if (close) {
+              $('._foldable__link').html(close);
+            } else {
+              $('._foldable__link').html('Свернуть раскрывающийся контент');
+            }
+          }
+          else {
+            if (open) {
+              $('._foldable__link').html(open);
+            } else {
+              $('._foldable__link').html('Показать раскрывающийся контент');
+            }
+          }
+        });
+        // /спойлер-блок на странице
+
+      });
+    </script>
   </body>
 </html>

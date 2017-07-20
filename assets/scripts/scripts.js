@@ -121,32 +121,6 @@ if ($) $(function () {
   });
 });
 // /подсвечиваем ссылки с одинаковым адресом
-'use strict';
-
-$(document).ready(function () {
-
-  // спойлер-блок на странице
-  $('._foldable__content').hide();
-  $('._foldable__control').click(function () {
-    $(this).toggleClass("folded").toggleClass("unfolded").next().slideToggle();
-    var close = $('._foldable__link').attr("data-text-close");
-    var open = $('._foldable__link').attr("data-text-open");
-    if ($(this).hasClass('folded')) {
-      if (close) {
-        $('._foldable__link').html(close);
-      } else {
-        $('._foldable__link').html('Свернуть раскрывающийся контент');
-      }
-    } else {
-      if (open) {
-        $('._foldable__link').html(open);
-      } else {
-        $('._foldable__link').html('Показать раскрывающийся контент');
-      }
-    }
-  });
-  // /спойлер-блок на странице
-});
 
 /*
  By Osvaldas Valutis, www.osvaldas.info
@@ -182,3 +156,71 @@ $(document).ready(function () {
 $('#commentnew').keyup(function () {
   if ($(this).val().length != 0) $('#submit').attr('disabled', false);else $('#submit').attr('disabled', true);
 });
+'use strict';
+
+// Сворачиваем и разворачиваем список уроков
+
+
+(function () {
+
+  $('._more-link').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("more-link--expand");
+    $(this).parents('.course-module').find('._course-module__items').toggleClass("folded").toggleClass("unfolded");
+
+    var close = $(this).attr("data-text-close");
+    var open = $(this).attr("data-text-open");
+
+    if ($(this).parents('.course-module').find('._course-module__items').hasClass('folded')) {
+      if (close) {
+        $(this).html(close);
+      } else {
+        $(this).html('Свернуть уроки');
+      }
+    } else {
+      if (open) {
+        $(this).html(open);
+      } else {
+        $(this).html('Показать уроки');
+      }
+    }
+  });
+
+  $('.course-module').each(function () {
+    var $e = $(this);
+    if ($e.find('._course-module__items').hasClass('folded')) {
+      $e.find('._more-link').toggleClass("more-link--expand").html('Свернуть уроки');
+    }
+  });
+})();
+
+(function () {
+
+  $('.comment').each(function () {
+    var $e = $(this);
+    $e.find('._comment__answer').hide();
+  });
+
+  $('._more-comment').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass("more-link--expand");
+    $(this).parents('.comment').find('._comment__answer').toggleClass("folded").toggleClass("unfolded").slideToggle();
+
+    var close = $(this).attr("data-text-close");
+    var open = $(this).attr("data-text-open");
+
+    if ($(this).parents('.comment').find('._comment__answer').hasClass('folded')) {
+      if (close) {
+        $(this).html(close);
+      } else {
+        $(this).html('Скрыть ответ');
+      }
+    } else {
+      if (open) {
+        $(this).html(open);
+      } else {
+        $(this).html('Показать ответ');
+      }
+    }
+  });
+})();
