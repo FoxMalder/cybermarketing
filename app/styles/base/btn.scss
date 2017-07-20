@@ -118,11 +118,12 @@ button:disabled,
     top: 4px;
     right: 0;
     background-image: svg-load('arrow.svg', fill=#21aa00);
+    transition: all .2s ease;
   }
 
   &--expand {
     &:after {
-      transform: rotate(180deg);
+      transform: rotate(-180deg);
     }
   }
 }

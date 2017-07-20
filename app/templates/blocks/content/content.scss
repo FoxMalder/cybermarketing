@@ -293,6 +293,18 @@
       }
     }
   }
+
+  &__items {
+    overflow-y: hidden;
+    max-height: 0;
+
+    transition: max-height .3s ease;
+
+    &.folded {
+      max-height: 1000px;
+      transition: max-height .75s ease;
+    }
+  }
 }
 
 .module-item {
