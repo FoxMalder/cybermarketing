@@ -176,10 +176,6 @@
     margin-bottom: 15px;
   }
 
-  .logo-footer {
-    margin-bottom: 16px;
-  }
-
   .footer-menu {
     list-style: none;
     margin: 0;
@@ -190,7 +186,7 @@
     }
 
     &__link {
-      color: #000;
+      color: $link;
       font-family: Arial;
       font-size: 15px;
       font-weight: 400;
