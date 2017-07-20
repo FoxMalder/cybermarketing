@@ -195,6 +195,12 @@
       font-size: 15px;
       font-weight: 400;
       line-height: 15px;
+
+      &:hover,
+      &.hover {
+        color: $link-hover;
+        transition: all 0s ease;
+      }
     }
   }
 }
