@@ -22,7 +22,7 @@ const errorHandler = require('../errorHandler');
 
 // Стили
 gulp.task('styles', function() {
-  return runSequence('styles:build', 'styles:lint');
+  return runSequence('styles:build', 'styles:mobile', 'styles:lint');
 });
 
 // Список PostCSS-плагинов
@@ -54,6 +54,21 @@ gulp.task('styles:build', function () {
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write('./maps'))
 		.pipe(gulp.dest(paths.build.styles));
+});
+
+// Компиляция стилей
+gulp.task('styles:mobile', function () {
+  return gulp.src(paths.source.styles + 'mobile.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sassGlob())
+    .pipe(sass({
+      outputStyle: 'compressed',
+      errLogToConsole: true,
+      precision: 8
+    }).on('error', errorHandler))
+    .pipe(postcss(processors))
+    .pipe(sourcemaps.write('./maps'))
+    .pipe(gulp.dest(paths.build.styles));
 });
 
 // Линтинг стилей

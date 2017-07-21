@@ -37,11 +37,13 @@
 </li>
 <li>
   <li class="navigation__header">
-    <div class="progress navigation-name"><span style="opacity: .3;">Мобильный вид</span> <sup>скоро</sup></div>
+    <div class="progress navigation-name"><span>Мобильный вид</span></div>
   </li>
-  <ul style="opacity: .3;">
+  <ul>
     @@loop("blocks/_progress/list/item.html", [
-      { "href": "mobile-lesson.html", "name": "Страница урока", "design": "100", "html": "0" }
+      { "href": "mobile-lesson.html", "name": "Страница урока", "design": "100", "html": "0" },
+      { "href": "mobile-lesson.html", "name": "Меню", "design": "100", "html": "0" },
+      { "href": "mobile-lesson.html", "name": "Задать вопрос", "design": "100", "html": "0" }
     ])
   </ul>
 </li>
