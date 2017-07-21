@@ -140,6 +140,12 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    margin-left: 10px;
+  }
 }
 
 .attention {
