@@ -27,9 +27,9 @@ class ProgressCircle {
     document.querySelectorAll(`.${this._elementClass} .donut__svg .donut__svg__circle--one`)[0].style.strokeDashoffset = this.calcDashOffset();
   }
 
-  updateText() {
-    document.querySelectorAll(`.${this.elementClass} .js-donut-figure`)[0].innerText = this.percent;
-  }
+  // updateText() {
+  //   document.querySelectorAll(`.${this.elementClass} .js-donut-figure`)[0].innerText = this.percent;
+  // }
 
   updateFigure(newStat) {
     this._percent = newStat;
