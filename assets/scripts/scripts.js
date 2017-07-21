@@ -158,6 +158,78 @@ $('#commentnew').keyup(function () {
 });
 'use strict';
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var ProgressCircle = function () {
+  function ProgressCircle(percent, radius, elementClass) {
+    _classCallCheck(this, ProgressCircle);
+
+    this._percent = percent;
+    this._radius = radius;
+    this._elementClass = elementClass;
+  }
+
+  _createClass(ProgressCircle, [{
+    key: 'calcDashOffset',
+    value: function calcDashOffset() {
+      var circumference = Math.PI * (2 * this.radius);
+      return Math.floor(circumference - this.percent / 100 * circumference);
+    }
+  }, {
+    key: 'createCSS',
+    value: function createCSS() {
+      document.querySelectorAll('.' + this._elementClass + ' .donut__svg .donut__svg__circle--one')[0].style.strokeDashoffset = this.calcDashOffset();
+    }
+
+    // updateText() {
+    //   document.querySelectorAll(`.${this.elementClass} .js-donut-figure`)[0].innerText = this.percent;
+    // }
+
+  }, {
+    key: 'updateFigure',
+    value: function updateFigure(newStat) {
+      this._percent = newStat;
+      this.updateText();
+      this.createCSS();
+    }
+  }, {
+    key: 'init',
+    value: function init() {
+      var _this = this;
+
+      this.updateText();
+
+      setTimeout(function () {
+        _this.createCSS();
+      }, 1000);
+    }
+  }, {
+    key: 'percent',
+    get: function get() {
+      return this._percent;
+    }
+  }, {
+    key: 'radius',
+    get: function get() {
+      return this._radius;
+    }
+  }, {
+    key: 'elementClass',
+    get: function get() {
+      return this._elementClass;
+      return document.getElementsByClassName(this._elementClass)[0];
+    }
+  }]);
+
+  return ProgressCircle;
+}();
+
+var progress = new ProgressCircle(47, 90, 'donut');
+progress.init();
+'use strict';
+
 // Сворачиваем и разворачиваем список уроков
 
 
