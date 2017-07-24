@@ -2,12 +2,18 @@ const gulp = require('gulp');
 const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');
 const fileinclude = require("gulp-file-include");
+const runSequence = require('run-sequence');
 
 const paths = require('../paths');
 const errorHandler = require('../errorHandler');
 
 
 // Шаблонизация
+gulp.task('html', function() {
+  return runSequence('html:desktop', 'html:mobile', 'html:main');
+});
+
+// Шаблонизация для компа
 gulp.task('html:desktop', function() {
   return gulp.src(paths.sourceDesktop.templates + '*.html')
     .pipe(plumber({errorHandler: errorHandler}))
@@ -18,7 +24,7 @@ gulp.task('html:desktop', function() {
     .pipe(gulp.dest(paths.buildDesktop.html));
 });
 
-// Шаблонизация
+// Шаблонизация для мобил
 gulp.task('html:mobile', function() {
   return gulp.src(paths.sourceMobile.templates + '*.html')
     .pipe(plumber({errorHandler: errorHandler}))
@@ -29,7 +35,7 @@ gulp.task('html:mobile', function() {
     .pipe(gulp.dest(paths.buildMobile.html));
 });
 
-// Шаблонизация
+// Шаблонизация базовых странц
 gulp.task('html:main', function() {
   return gulp.src(paths.sourceDesktop.index + '*.html')
     .pipe(plumber({errorHandler: errorHandler}))

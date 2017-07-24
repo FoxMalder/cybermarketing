@@ -12,7 +12,7 @@ gulp.task('server', function() {
       },
       host: 'localhost',
       notify: false,
-      port: 8001
+      port: 8000
     });
   });
 });

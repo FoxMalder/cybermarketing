@@ -11,7 +11,6 @@ const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const postcss = require('gulp-postcss');
 const assets = require('postcss-assets');
-const sprites = require('postcss-sprites');
 const inlinesvg = require('postcss-inline-svg');
 const mqpacker = require('css-mqpacker');
 const runSequence = require('run-sequence');
@@ -22,7 +21,7 @@ const errorHandler = require('../errorHandler');
 
 // Стили
 gulp.task('styles', function() {
-  return runSequence('styles:build', 'styles:mobile', 'styles:lint');
+  return runSequence('styles:desktop', 'styles:mobile', 'styles:lint');
 });
 
 // Список PostCSS-плагинов
@@ -33,17 +32,13 @@ const processors = [
     basePath: 'dist/',
     loadPaths: ['assets/images/']
   }),
-	sprites({
-		stylesheetPath: 'dist/assets/styles/',
-		spritePath: 'dist/assets/images/sprites/'
-	}),
   inlinesvg({path: 'dist/assets/images/svg/'}),
   mqpacker()
 ];
 
 // Компиляция стилей
-gulp.task('styles:build', function () {
-  return gulp.src(paths.source.styles + 'style.scss')
+gulp.task('styles:desktop', function () {
+  return gulp.src(paths.sourceDesktop.styles + 'style.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sassGlob())
 		.pipe(sass({
@@ -53,12 +48,12 @@ gulp.task('styles:build', function () {
 		}).on('error', errorHandler))
 		.pipe(postcss(processors))
 		.pipe(sourcemaps.write('./maps'))
-		.pipe(gulp.dest(paths.build.styles));
+		.pipe(gulp.dest(paths.buildDesktop.styles));
 });
 
 // Компиляция стилей
 gulp.task('styles:mobile', function () {
-  return gulp.src(paths.source.styles + 'mobile.scss')
+  return gulp.src(paths.sourceMobile.styles + 'style.scss')
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({
@@ -68,7 +63,7 @@ gulp.task('styles:mobile', function () {
     }).on('error', errorHandler))
     .pipe(postcss(processors))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(gulp.dest(paths.build.styles));
+    .pipe(gulp.dest(paths.buildMobile.styles));
 });
 
 // Линтинг стилей
