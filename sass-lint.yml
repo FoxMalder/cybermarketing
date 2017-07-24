@@ -2,10 +2,14 @@ files:
   include:
     - assets/**/*.scss
   ignore:
-    - app/styles/_debug/**/*.scss
-    - app/styles/helpers/normalize.scss
-    - app/styles/helpers/mixins.scss
-    - app/styles/helpers/flexboxgrid.scss
+    - desktop/styles/_debug/**/*.scss
+    - mobile/styles/_debug/**/*.scss
+    - desktop/styles/helpers/normalize.scss
+    - mobile/styles/helpers/normalize.scss
+    - desktop/styles/helpers/mixins.scss
+    - mobile/styles/helpers/mixins.scss
+    - desktop/styles/helpers/flexboxgrid.scss
+    - mobile/styles/helpers/flexboxgrid.scss
 
 options:
   merge-default-rules: false

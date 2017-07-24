@@ -21,10 +21,10 @@ module.exports = {
   },
 
   // Для вотчеров версии для компа
-  watchDesktop: {
-    templates:       [desktop + 'templates/**/*.html'],
-    scripts:         [desktop + 'scripts/**/*.js', desktop + 'templates/**/*.js'],
-    styles:          [desktop + 'styles/**/*.scss', desktop + 'templates/**/*.scss'],
+  watch: {
+    templates:       [desktop + 'templates/**/*.html', mobile + 'templates/**/*.html'],
+    scripts:         [desktop + 'scripts/**/*.js', desktop + 'templates/**/*.js', mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
+    styles:          [desktop + 'styles/**/*.scss', desktop + 'templates/**/*.scss', mobile + 'styles/**/*.scss', mobile + 'templates/**/*.scss'],
     images:          [desktop + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
     imagesblocks:    [desktop + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
     resources:       [desktop + 'resources/**/*.*']
@@ -46,13 +46,6 @@ module.exports = {
     templates:       [mobile + 'templates/pages/'],
     scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
     styles:          [mobile + 'styles/'],
-  },
-
-  // Для вотчеров версии для компа
-  watchMobile: {
-    templates:       [mobile + 'templates/**/*.html'],
-    scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
-    styles:          [mobile + 'styles/**/*.scss', mobile + 'templates/**/*.scss'],
   },
 
   // Куда всё собирать-то (версия для компа)?
