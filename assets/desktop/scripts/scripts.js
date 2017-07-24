@@ -199,7 +199,7 @@ var ProgressCircle = function () {
     value: function init() {
       var _this = this;
 
-      this.updateText();
+      // this.updateText();
 
       setTimeout(function () {
         _this.createCSS();
