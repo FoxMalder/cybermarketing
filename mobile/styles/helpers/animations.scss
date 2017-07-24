@@ -1,0 +1,37 @@
+@keyframes mee-ink {
+
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.mee-ink-el {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* sass-lint:disable-line no-vendor-prefixes */
+}
+
+.mee-ink-animated {
+  animation-duration: .65s;
+  animation-fill-mode: both;
+}
+
+.mee-ink-animation {
+  animation-name: mee-ink;
+}
+
+.mee-ink-pos-relative {
+  position: relative;
+}
+
+.mee-ink-overflow-hidden {
+  overflow: hidden;
+}
+
+.mee-ink {
+  animation-timing-function: ease-out;
+  background: rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  transform: scale(0);
+}

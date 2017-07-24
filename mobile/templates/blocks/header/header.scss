@@ -1,0 +1,104 @@
+.header {
+  background-color: rgb(255, 255, 255);
+
+  &__box {
+    padding: 28px 38px 27px 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 20px;
+    position: relative;
+    top: 2px;
+  }
+
+  &__search {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex: 1 100%;
+  }
+
+  &__contacts {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &__user {
+    margin-left: 20px;
+    min-width: 100px;
+    text-align: right;
+    line-height: 1;
+  }
+}
+
+.user {
+  text-align: right;
+
+  &-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--auth {
+      justify-content: flex-end;
+
+      .btn {
+        padding: 12px 32px 11px 32px;
+      }
+    }
+  }
+
+  &__avatar {
+
+    span {
+      display: block;
+      background-color: #f7f7f8;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  &__notify {
+    position: relative;
+
+    .label {
+      display: block;
+      border-radius: 50%;
+      width: 11px;
+      height: 11px;
+      border: 2px solid #ffffff;
+      background-color: #00b402;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      text-indent: -9999px;
+    }
+  }
+}
+
+.contacts {
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+
+  &__link {
+    color: rgb(0, 0, 0);
+  }
+
+  &__tel {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__mail {
+    padding-top: 5px;
+  }
+}

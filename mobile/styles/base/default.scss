@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-size-adjust: none;
+}
+
+html,
+.root {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+body {
+  font-family: $GeneralFontFamily;
+  background-color: $BodyBackground;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  @include antialias;
+  @include text-size-adjust(100%);
+}
+
+body {
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.outline {
+  border-left: 1px solid rgb(214, 217, 220);
+  border-right: 1px solid rgb(214, 217, 220);
+  border-bottom: 1px solid rgb(214, 217, 220);
+}
+
+.hide {
+  @include hidden;
+}
+
+.container {
+  min-width: 1280px;
+  width: 1280px;
+
+  @media only screen and (max-width: 1320px) {
+    margin: 0 10px;
+    min-width: 100%;
+    width: 1280px;
+  }
+}
+
+img {
+  vertical-align: bottom;
+}
+
+// Демо-страница, в бовой версии этот блок CSS-стилей можно удалить
+.ui-page {
+
+  pre > code {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "Sans Mono", "Consolas", "Courier", monospace;
+  }
+
+  .ui-demo {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+
+    &--icon {
+
+      .ui-demo-element {
+        margin-bottom: 0;
+        margin-left: 5px;
+      }
+    }
+
+    &-element {
+      margin-bottom: 10px;
+    }
+
+    .ui-demo-code pre {
+      margin-bottom: 0;
+    }
+  }
+
+  .content__box-icon {
+    background-color: #f7f7f8;
+    //border-top: 1px solid #d6d9dc;
+    //border-bottom: 1px solid #d6d9dc;
+
+    p {
+      margin-bottom: 25px;
+    }
+  }
+
+  p code {
+    padding: .2rem .4rem;
+    font-size: 90%;
+    color: #2f6f9f;
+    background-color: #f7f7f9;
+    border-radius: .25rem;
+  }
+}

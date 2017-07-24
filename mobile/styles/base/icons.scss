@@ -1,0 +1,149 @@
+.ico {
+  position: relative;
+  display: inline-block;
+  transition: all .3s ease;
+
+  &-logo {
+    @include size(300px, 30px);
+    background-image: svg-load('logo.svg');
+  }
+
+  &-check {
+    @include size(20px, 14px);
+    background-image: svg-load('check.svg', fill=#00b402);
+  }
+
+  &-loupe {
+    @include size(20px);
+    background-image: svg-load('loupe.svg', fill=#adb1b9);
+  }
+
+  &-bell {
+    @include size(18px, 20px);
+    background-image: svg-load('bell.svg', fill=#adb1b9);
+
+    &:hover {
+      background-image: svg-load('bell.svg', fill=#21aa00);
+    }
+  }
+
+  &-watch {
+    @include size(20px);
+    background-image: svg-load('watch.svg', fill=#adb1b9);
+  }
+
+  &-pause {
+    @include size(18px);
+    background-image: svg-load('pause.svg', fill=#00b402);
+  }
+
+  &-chevron {
+    @include size(10px, 7px);
+    background-image: svg-load('chevron.svg', fill=#00b402);
+
+    &.gray {
+      background-image: svg-load('chevron.svg', fill=rgb(173, 177, 185));
+    }
+
+    &.left {
+      transform: rotate(90deg);
+    }
+
+    &.right {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &-star {
+    @include size(20px);
+    background-image: svg-load('star.svg', fill=#adb1b9);
+
+    &.white {
+      background-image: svg-load('star.svg', fill=#fff);
+    }
+
+    &.green {
+      background-image: svg-load('star.svg', fill=#21aa00);
+    }
+  }
+
+  &-play-in-circle {
+    @include size(20px);
+    background-image: svg-load('play-in-circle.svg', fill=#adb1b9);
+  }
+
+  &-article {
+    @include size(16px, 20px);
+    background-image: svg-load('article.svg', fill=#adb1b9);
+  }
+
+  &-book {
+    @include size(16px, 20px);
+    background-image: svg-load('book.svg', fill=#adb1b9);
+  }
+
+  &-presentation {
+    @include size(60px, 50px);
+    background-image: svg-load('presentation.svg', fill=#adb1b9);
+  }
+
+  &-manual {
+    @include size(60px, 50px);
+    background-image: svg-load('manual.svg', fill=#adb1b9);
+  }
+
+  &-mail {
+    @include size(20px, 16px);
+    background-image: svg-load('mail.svg', fill=#adb1b9);
+  }
+
+  &-phone {
+    @include size(14px, 20px);
+    background-image: svg-load('phone.svg', fill=#adb1b9);
+  }
+
+  &-geotag {
+    @include size(18px, 20px);
+    background-image: svg-load('geotag.svg', fill=#adb1b9);
+  }
+
+  &-microphone {
+    @include size(16px, 20px);
+    background-image: svg-load('microphone.svg', fill=#adb1b9);
+  }
+
+  &-stop {
+    @include size(60px, 60px);
+    background-image: svg-load('stop.svg', fill=#ff0000);
+  }
+
+  &-attention {
+    @include size(20px, 18px);
+    background-image: svg-load('attention.svg', fill=#adb3bb);
+  }
+
+  &-star-big {
+    @include size(120px, 120px);
+    background-image: svg-load('star-big.svg', fill=#21aa00);
+
+    &.red {
+      background-image: svg-load('star-big.svg', fill=#ff0000);
+    }
+  }
+}
+
+.spinner svg {
+  stroke: #21aa00;
+  fill: #21aa00;
+  width: 16px;
+  height: 16px;
+
+  .stop1 {
+    stop-color: #21aa00;
+    stop-opacity: 0;
+  }
+
+  .stop2 {
+    stop-color: #21aa00;
+  }
+}

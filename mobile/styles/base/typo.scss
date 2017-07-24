@@ -1,0 +1,111 @@
+// Ссылки
+a {
+  transition: all .3s ease;
+  text-decoration: none;
+  color: $link;
+
+  :focus {
+    outline: none;
+  }
+
+  &:hover,
+  &.hover {
+    color: $link-hover;
+    transition: all 0s ease;
+  }
+
+  //&:visited {
+  //  color: $link-visited;
+  //
+  //  &:hover {
+  //    color: $link-hover;
+  //    transition: .1s ease;
+  //  }
+  //}
+
+  // Стиль ссылок по умолчанию
+  //&[href]:not([class]) {
+  //  color: $link;
+  //}
+}
+
+p > a {
+  color: rgb(33, 170, 0);
+
+  &:hover {
+    color: #000;
+  }
+}
+
+// адаптивный видео-блок
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  & iframe,
+  & object,
+  & embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Полпробела
+span.tsp {
+  display: inline-block;
+  width: .12em;
+  overflow: hidden;
+  text-decoration: inherit;
+}
+
+// Заголовки
+
+h1, .h1 {
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+h2, .h2 {
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 21px;
+}
+
+h3, .h3 {
+  color: rgb(0, 0, 0);
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+p, .p {
+  color: rgb(120, 122, 128);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+// Отступы
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

@@ -2,37 +2,70 @@
    Пути к файлам, с котороыми работаем:
    сборка, исходники и файлы для watch
 */
-const src  = 'app/';
 const dist = 'dist/';
+const desktop  = 'desktop/';
+const mobile  = 'mobile/';
 
 
 module.exports = {
 
-  // Исходники
-  source: {
-    templates:       [src + 'templates/pages/'],
-    scripts:         [src + 'scripts/**/*.js', src + 'templates/**/*.js'],
-    styles:          [src + 'styles/'],
-    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    resources:       [src + 'resources/**/*']
+  // Исходники версии для компа
+  sourceDesktop: {
+    templates:       [desktop + 'templates/pages/'],
+    index:           [desktop + 'templates/'],
+    scripts:         [desktop + 'scripts/**/*.js', desktop + 'templates/**/*.js'],
+    styles:          [desktop + 'styles/'],
+    images:          [desktop + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    imagesblocks:    [desktop + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    resources:       [desktop + 'resources/**/*']
   },
 
-  // Для вотчеров
-  watch: {
-    templates:       [src + 'templates/**/*.html'],
-    scripts:         [src + 'scripts/**/*.js', src + 'templates/**/*.js'],
-    styles:          [src + 'styles/**/*.scss', src + 'templates/**/*.scss'],
-    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    resources:       [src + 'resources/**/*.*']
+  // Для вотчеров версии для компа
+  watchDesktop: {
+    templates:       [desktop + 'templates/**/*.html'],
+    scripts:         [desktop + 'scripts/**/*.js', desktop + 'templates/**/*.js'],
+    styles:          [desktop + 'styles/**/*.scss', desktop + 'templates/**/*.scss'],
+    images:          [desktop + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    imagesblocks:    [desktop + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    resources:       [desktop + 'resources/**/*.*']
   },
 
-  // Куда всё собирать-то?
-  build: {
-    html:            dist,
-    scripts:         dist + 'assets/scripts',
-    styles:          dist + 'assets/styles',
+  // Куда всё собирать-то (версия для компа)?
+  buildDesktop: {
+    html:            dist + 'desktop/',
+    main:            dist,
+    scripts:         dist + 'assets/desktop/scripts',
+    styles:          dist + 'assets/desktop/styles',
+    images:          dist + 'assets/images',
+    resources:       dist
+  },
+
+
+  // Исходники версии для компа
+  sourceMobile: {
+    templates:       [mobile + 'templates/pages/'],
+    scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
+    styles:          [mobile + 'styles/'],
+    images:          [mobile + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    imagesblocks:    [mobile + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    resources:       [mobile + 'resources/**/*']
+  },
+
+  // Для вотчеров версии для компа
+  watchMobile: {
+    templates:       [mobile + 'templates/**/*.html'],
+    scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
+    styles:          [mobile + 'styles/**/*.scss', mobile + 'templates/**/*.scss'],
+    images:          [mobile + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    imagesblocks:    [mobile + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    resources:       [mobile + 'resources/**/*.*']
+  },
+
+  // Куда всё собирать-то (версия для компа)?
+  buildMobile: {
+    html:            dist + 'mobile/',
+    scripts:         dist + 'assets/mobile/scripts',
+    styles:          dist + 'assets/mobile/styles',
     images:          dist + 'assets/images',
     resources:       dist
   }

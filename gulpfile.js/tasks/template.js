@@ -8,12 +8,34 @@ const errorHandler = require('../errorHandler');
 
 
 // Шаблонизация
-gulp.task('html', function() {
-  return gulp.src(paths.source.templates + '*.html')
+gulp.task('html:desktop', function() {
+  return gulp.src(paths.sourceDesktop.templates + '*.html')
     .pipe(plumber({errorHandler: errorHandler}))
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: 'app/templates'
+      basepath: 'desktop/templates'
     }))
-    .pipe(gulp.dest(paths.build.html));
+    .pipe(gulp.dest(paths.buildDesktop.html));
+});
+
+// Шаблонизация
+gulp.task('html:mobile', function() {
+  return gulp.src(paths.sourceMobile.templates + '*.html')
+    .pipe(plumber({errorHandler: errorHandler}))
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: 'mobile/templates'
+    }))
+    .pipe(gulp.dest(paths.buildMobile.html));
+});
+
+// Шаблонизация
+gulp.task('html:main', function() {
+  return gulp.src(paths.sourceDesktop.index + '*.html')
+    .pipe(plumber({errorHandler: errorHandler}))
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: 'desktop/templates'
+    }))
+    .pipe(gulp.dest(paths.buildDesktop.main));
 });
