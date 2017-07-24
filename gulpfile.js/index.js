@@ -20,8 +20,8 @@ require('require-dir')('./tasks', {recurse: true});
     return runSequence(
       'copy',
       ['html', 'scripts', 'styles'],
-      'cache',
       'watch',
+      'cache',
       'server',
       cb
     );
