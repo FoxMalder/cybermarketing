@@ -130,6 +130,11 @@
       background-image: svg-load('star-big.svg', fill=#ff0000);
     }
   }
+
+  &-university {
+    @include size(180px, 124px);
+    background-image: svg-load('university.svg', fill=#fff);
+  }
 }
 
 .spinner svg {

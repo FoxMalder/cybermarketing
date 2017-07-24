@@ -1,4 +1,38 @@
 .lead {
   background-color: #21aa00;
   height: 440px;
+  background-image: url('../../../assets/images/lead-bg.png');
+  margin: 0;
+  background-attachment: fixed;
+  background-position: 50% -50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &__box {
+    display: flex;
+    height: 440px;
+    justify-content: center;
+  }
+
+  &__center {
+    display: block;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  p {
+    color: #fff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+  }
 }
