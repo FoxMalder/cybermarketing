@@ -8,8 +8,8 @@ const paths = require('../paths');
 
 // Очистка кэша для CSS- и JS-файлов
 gulp.task('cache', function() {
-  gulp.src(paths.build.html + '*.html')
+  gulp.src(paths.buildDesktop.main + '/**/*.html')
     .pipe(cachebust())
-    .pipe(gulp.dest(paths.build.html))
+    .pipe(gulp.dest(paths.buildDesktop.html))
     .pipe(reload({stream: true}));
 });
