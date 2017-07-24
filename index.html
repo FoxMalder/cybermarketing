@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
   <head>
   <meta charset="utf-8"/>
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
 
   <title>Что происходит и что делать? </title>
@@ -85,7 +85,7 @@
 
   <link rel="image_src" href="" />
 
-  <link href="assets/styles/style.css?v=57e47636d502431ac55f2da805a26008" rel="stylesheet" />
+  <link href="/assets/desktop/styles/style.css" rel="stylesheet" />
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
@@ -100,7 +100,7 @@
     <div class="header__box">
 
       <div class="logo header__logo">
-        <a href="index.html" title="Вернуться на главную страницу CyberMarketing">
+        <a href="/index.html" title="Вернуться на главную страницу CyberMarketing">
           <span class="logo-box"><i class="ico ico-logo"></i></span>
         </a>
       </div><!-- /.header__logo -->
@@ -147,7 +147,7 @@
       <li class="menu__item @@link1"><a href="course.html" class="menu__link">Институт</a></li>
       <li class="menu__item @@link2"><a href="" class="menu__link">Интенсивные курсы</a></li>
       <li class="menu__item @@link3"><a href="" class="menu__link">Конференции</a></li>
-      <li class="menu__item @@link4"><a href="" class="menu__link">Семинары</a></li>
+      <li class="menu__item @@link4"><a href="seminar.html" class="menu__link">Семинары</a></li>
       <li class="menu__item @@link5"><a href="" class="menu__link">Вебинары</a></li>
       <li class="menu__item @@link6"><a href="" class="menu__link">Видео</a></li>
       <li class="menu__item @@link7"><a href="" class="menu__link">Учебные материалы</a></li>
@@ -179,10 +179,10 @@
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="course.html">Страница курса</a>
+        <a href="desktop/main.html">Главная страница</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/course.html">course.html</span>
+        <span class="url__file" title="app/templates/desktop/main.html">desktop/main.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -193,8 +193,35 @@
   </div><!-- /.progress-design -->
 
   <div class="progress progress-html">
+    <progress max="100" value="12"></progress>
+    <span class="progress_value">12%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+<li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/seminar.html">Страница семинара</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/seminar.html">desktop/seminar.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
     <progress max="100" value="100"></progress>
     <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="12"></progress>
+    <span class="progress_value">12%</span>
   </div><!-- /.progress-html -->
 
   <div class="progress progress-time">
@@ -203,19 +230,53 @@
 
 </li><!-- /.sitemap__item -->
 
+
 <li>
   <li class="navigation__header">
-    <div class="progress navigation-name">Урок</div>
+    <div class="progress navigation-name">Институт</div>
   </li>
   <ul>
     <li class="navigation__item">
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="lesson.html">Страница урока</a>
+        <a href="desktop/course.html">Страница курса</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/lesson.html">lesson.html</span>
+        <span class="url__file" title="app/templates/desktop/course.html">desktop/course.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+
+    <li>
+      <li class="navigation__header">
+        <div class="progress navigation-name">Урок</div>
+      </li>
+        <ul>
+          <li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/lesson.html">Страница урока</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/lesson.html">desktop/lesson.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -239,10 +300,10 @@
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="lesson-video.html">Страница урока с видео</a>
+        <a href="desktop/lesson-video.html">Страница урока с видео</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/lesson-video.html">lesson-video.html</span>
+        <span class="url__file" title="app/templates/desktop/lesson-video.html">desktop/lesson-video.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -263,151 +324,154 @@
 
 </li><!-- /.sitemap__item -->
 
+        </ul>
+      </li>
+    <li>
+    <li class="navigation__header">
+      <div class="progress navigation-name">Тестирование</div>
+    </li>
+      <ul>
+        <li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/test-alert.html">Предупреждение</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/test-alert.html">desktop/test-alert.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+<li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/test-result.html">Результат теста</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/test-result.html">desktop/test-result.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+<li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/test-fail.html">Не сдал тест</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/test-fail.html">desktop/test-fail.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+<li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/test.html">Тест</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/test.html">desktop/test.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+<li class="navigation__item">
+  <div class="progress progress-link">
+    <div class="url">
+      <div class="url__link">
+        <a href="desktop/lesson-test.html">Заглушка перед тестом</a>
+      </div><!-- /.url__link -->
+      <div class="url__info">
+        <span class="url__file" title="app/templates/desktop/lesson-test.html">desktop/lesson-test.html</span>
+      </div><!-- /.url__info -->
+    </div><!-- /.url -->
+  </div><!-- /.progress-link -->
+
+  <div class="progress progress-design">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-design -->
+
+  <div class="progress progress-html">
+    <progress max="100" value="100"></progress>
+    <span class="progress_value">100%</span>
+  </div><!-- /.progress-html -->
+
+  <div class="progress progress-time">
+     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
+  </div><!-- /.progress-time -->
+
+</li><!-- /.sitemap__item -->
+
+      </ul>
+    </li>
   </ul>
 </li>
-<li>
-  <li class="navigation__header">
-    <div class="progress navigation-name">Тестирование</div>
-  </li>
-  <ul>
-  <li class="navigation__item">
-  <div class="progress progress-link">
-    <div class="url">
-      <div class="url__link">
-        <a href="test-alert.html">Предупреждение</a>
-      </div><!-- /.url__link -->
-      <div class="url__info">
-        <span class="url__file" title="app/templates/test-alert.html">test-alert.html</span>
-      </div><!-- /.url__info -->
-    </div><!-- /.url -->
-  </div><!-- /.progress-link -->
 
-  <div class="progress progress-design">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-design -->
-
-  <div class="progress progress-html">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-html -->
-
-  <div class="progress progress-time">
-     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-  </div><!-- /.progress-time -->
-
-</li><!-- /.sitemap__item -->
-<li class="navigation__item">
-  <div class="progress progress-link">
-    <div class="url">
-      <div class="url__link">
-        <a href="test-result.html">Результат теста</a>
-      </div><!-- /.url__link -->
-      <div class="url__info">
-        <span class="url__file" title="app/templates/test-result.html">test-result.html</span>
-      </div><!-- /.url__info -->
-    </div><!-- /.url -->
-  </div><!-- /.progress-link -->
-
-  <div class="progress progress-design">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-design -->
-
-  <div class="progress progress-html">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-html -->
-
-  <div class="progress progress-time">
-     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-  </div><!-- /.progress-time -->
-
-</li><!-- /.sitemap__item -->
-<li class="navigation__item">
-  <div class="progress progress-link">
-    <div class="url">
-      <div class="url__link">
-        <a href="test-fail.html">Не сдал тест</a>
-      </div><!-- /.url__link -->
-      <div class="url__info">
-        <span class="url__file" title="app/templates/test-fail.html">test-fail.html</span>
-      </div><!-- /.url__info -->
-    </div><!-- /.url -->
-  </div><!-- /.progress-link -->
-
-  <div class="progress progress-design">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-design -->
-
-  <div class="progress progress-html">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-html -->
-
-  <div class="progress progress-time">
-     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-  </div><!-- /.progress-time -->
-
-</li><!-- /.sitemap__item -->
-<li class="navigation__item">
-  <div class="progress progress-link">
-    <div class="url">
-      <div class="url__link">
-        <a href="test.html">Тест</a>
-      </div><!-- /.url__link -->
-      <div class="url__info">
-        <span class="url__file" title="app/templates/test.html">test.html</span>
-      </div><!-- /.url__info -->
-    </div><!-- /.url -->
-  </div><!-- /.progress-link -->
-
-  <div class="progress progress-design">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-design -->
-
-  <div class="progress progress-html">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-html -->
-
-  <div class="progress progress-time">
-     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-  </div><!-- /.progress-time -->
-
-</li><!-- /.sitemap__item -->
-<li class="navigation__item">
-  <div class="progress progress-link">
-    <div class="url">
-      <div class="url__link">
-        <a href="lesson-test.html">Заглушка перед тестом</a>
-      </div><!-- /.url__link -->
-      <div class="url__info">
-        <span class="url__file" title="app/templates/lesson-test.html">lesson-test.html</span>
-      </div><!-- /.url__info -->
-    </div><!-- /.url -->
-  </div><!-- /.progress-link -->
-
-  <div class="progress progress-design">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-design -->
-
-  <div class="progress progress-html">
-    <progress max="100" value="100"></progress>
-    <span class="progress_value">100%</span>
-  </div><!-- /.progress-html -->
-
-  <div class="progress progress-time">
-     &ndash;&ndash;:&ndash;&ndash;:&ndash;&ndash;
-  </div><!-- /.progress-time -->
-
-</li><!-- /.sitemap__item -->
-
-  </ul>
-</li>
 <li>
   <li class="navigation__header">
     <div class="progress navigation-name"><span>Мобильный вид</span></div>
@@ -417,10 +481,10 @@
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="mobile-lesson.html">Страница урока</a>
+        <a href="mobile/lesson.html">Страница урока</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/mobile-lesson.html">mobile-lesson.html</span>
+        <span class="url__file" title="app/templates/mobile/lesson.html">mobile/lesson.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -444,10 +508,10 @@
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="mobile-lesson.html">Меню</a>
+        <a href="mobile/menu.html">Меню</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/mobile-lesson.html">mobile-lesson.html</span>
+        <span class="url__file" title="app/templates/mobile/menu.html">mobile/menu.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -471,10 +535,10 @@
   <div class="progress progress-link">
     <div class="url">
       <div class="url__link">
-        <a href="mobile-lesson.html">Задать вопрос</a>
+        <a href="mobile/question.html">Задать вопрос</a>
       </div><!-- /.url__link -->
       <div class="url__info">
-        <span class="url__file" title="app/templates/mobile-lesson.html">mobile-lesson.html</span>
+        <span class="url__file" title="app/templates/mobile/question.html">mobile/question.html</span>
       </div><!-- /.url__info -->
     </div><!-- /.url -->
   </div><!-- /.progress-link -->
@@ -497,6 +561,7 @@
 
   </ul>
 </li>
+
 <li class="navigation__item">
   <div class="progress progress-link">
     <div class="url">
@@ -524,7 +589,6 @@
   </div><!-- /.progress-time -->
 
 </li><!-- /.sitemap__item -->
-
 
 
       </ul><!-- /ul.navigation -->
@@ -720,8 +784,8 @@
             </div>
             <div class="company-links__apps">
               <div class="apps__download">
-                <a href="" class="apps__download-link appstore" target="_blank"><img src="assets/images/appstore.png" alt=""></a>
-                <a href="" class="apps__download-link google-play" target="_blank"><img src="assets/images/google-play.png" alt=""></a>
+                <a href="" class="apps__download-link appstore" target="_blank"><img src="/assets/images/appstore.png" alt=""></a>
+                <a href="" class="apps__download-link google-play" target="_blank"><img src="/assets/images/google-play.png" alt=""></a>
               </div>
             </div><!-- /.company-links-box -->
           </div>
@@ -734,7 +798,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="assets/scripts/scripts.js?v=7e3b1ae7f54fccbfc7325c3fef458419"></script>
+<script src="/assets/desktop/scripts/scripts.js"></script>
 
     <script>
       $(document).ready(function() {
