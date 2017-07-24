@@ -9,42 +9,34 @@
 
 @@loop("blocks/_progress/list/item.html", [
   { "href": "desktop/main.html", "name": "Главная страница", "design": "100", "html": "12" },
-  { "href": "desktop/seminar.html", "name": "Страница семинара", "design": "100", "html": "12" }
+  { "href": "desktop/seminar.html", "name": "Страница семинара", "design": "100", "html": "12" },
+  { "href": "desktop/course.html", "name": "Страница курса", "design": "100", "html": "100" }
 ])
 
 <li>
   <li class="navigation__header">
-    <div class="progress navigation-name">Институт</div>
+    <div class="progress navigation-name">Урок</div>
   </li>
   <ul>
-    @@loop("blocks/_progress/list/item.html", [
-      { "href": "desktop/course.html", "name": "Страница курса", "design": "100", "html": "100" }
-    ])
-    <li>
-      <li class="navigation__header">
-        <div class="progress navigation-name">Урок</div>
-      </li>
-        <ul>
-          @@loop("blocks/_progress/list/item.html", [
-            { "href": "desktop/lesson.html", "name": "Страница урока", "design": "100", "html": "100" },
-            { "href": "desktop/lesson-video.html", "name": "Страница урока с видео", "design": "100", "html": "100" }
-          ])
-        </ul>
-      </li>
-    <li>
-    <li class="navigation__header">
-      <div class="progress navigation-name">Тестирование</div>
-    </li>
-      <ul>
-        @@loop("blocks/_progress/list/item.html", [
-          { "href": "desktop/test-alert.html", "name": "Предупреждение", "design": "100", "html": "100" },
-          { "href": "desktop/test-result.html", "name": "Результат теста", "design": "100", "html": "100" },
-          { "href": "desktop/test-fail.html", "name": "Не сдал тест", "design": "100", "html": "100" },
-          { "href": "desktop/test.html", "name": "Тест", "design": "100", "html": "100" },
-          { "href": "desktop/lesson-test.html", "name": "Заглушка перед тестом", "design": "100", "html": "100" }
-        ])
-      </ul>
-    </li>
+  @@loop("blocks/_progress/list/item.html", [
+    { "href": "desktop/lesson.html", "name": "Страница урока", "design": "100", "html": "100" },
+    { "href": "desktop/lesson-video.html", "name": "Страница урока с видео", "design": "100", "html": "100" }
+  ])
+  </ul>
+</li>
+
+<li>
+  <li class="navigation__header">
+    <div class="progress navigation-name">Тестирование</div>
+  </li>
+  <ul>
+  @@loop("blocks/_progress/list/item.html", [
+    { "href": "desktop/test-alert.html", "name": "Предупреждение", "design": "100", "html": "100" },
+    { "href": "desktop/test-result.html", "name": "Результат теста", "design": "100", "html": "100" },
+    { "href": "desktop/test-fail.html", "name": "Не сдал тест", "design": "100", "html": "100" },
+    { "href": "desktop/test.html", "name": "Тест", "design": "100", "html": "100" },
+    { "href": "desktop/lesson-test.html", "name": "Заглушка перед тестом", "design": "100", "html": "100" }
+  ])
   </ul>
 </li>
 

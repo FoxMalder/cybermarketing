@@ -38,7 +38,13 @@
 @@include('blocks/_base/icons.html')
 @@include('blocks/_base/social.html')
 
-  <link href="/assets/desktop/styles/style.css" rel="stylesheet" />
+
+@@if ( root == true ) {
+  <link href="assets/desktop/styles/style.css" rel="stylesheet" />
+}
+@@if ( dir == true ) {
+  <link href="../assets/desktop/styles/style.css" rel="stylesheet" />
+}
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
 </head>
