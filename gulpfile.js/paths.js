@@ -46,9 +46,6 @@ module.exports = {
     templates:       [mobile + 'templates/pages/'],
     scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
     styles:          [mobile + 'styles/'],
-    images:          [mobile + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [mobile + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    resources:       [mobile + 'resources/**/*']
   },
 
   // Для вотчеров версии для компа
@@ -56,9 +53,6 @@ module.exports = {
     templates:       [mobile + 'templates/**/*.html'],
     scripts:         [mobile + 'scripts/**/*.js', mobile + 'templates/**/*.js'],
     styles:          [mobile + 'styles/**/*.scss', mobile + 'templates/**/*.scss'],
-    images:          [mobile + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [mobile + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    resources:       [mobile + 'resources/**/*.*']
   },
 
   // Куда всё собирать-то (версия для компа)?
@@ -66,7 +60,5 @@ module.exports = {
     html:            dist + 'mobile/',
     scripts:         dist + 'assets/mobile/scripts',
     styles:          dist + 'assets/mobile/styles',
-    images:          dist + 'assets/images',
-    resources:       dist
   }
 };

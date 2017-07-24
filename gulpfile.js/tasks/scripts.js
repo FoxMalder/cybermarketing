@@ -13,7 +13,7 @@ const paths = require('../paths');
 const errorHandler = require('../errorHandler');
 
 
-// Шаблонизация
+// Скрипты
 gulp.task('scripts', function() {
   return runSequence('scripts:desktop', 'scripts:mobile');
 });

@@ -12,9 +12,9 @@ const errorHandler = require('../errorHandler');
 
 // Копируем и оптимизируем общие изображения
 gulp.task('images', function() {
-  return gulp.src(paths.source.images)
+  return gulp.src(paths.sourceDesktop.images)
 		.pipe(plumber({errorHandler: errorHandler}))
-		.pipe(changed(paths.build.images))
+		.pipe(changed(paths.buildDesktop.images))
 		.pipe(debug({title: 'images:'}))
     .pipe(imagemin({
 			optimizationLevel: 3,
@@ -23,15 +23,15 @@ gulp.task('images', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))
-    .pipe(gulp.dest(paths.build.images));
+    .pipe(gulp.dest(paths.buildDesktop.images));
 });
 
 // Копируем и оптимизируем изображения для блоков
 gulp.task('images:blocks', function() {
-	return gulp.src(paths.source.imagesblocks)
+	return gulp.src(paths.sourceDesktop.imagesblocks)
 		.pipe(plumber({errorHandler: errorHandler}))
 		.pipe(flatten())
-		.pipe(changed(paths.build.images))
+		.pipe(changed(paths.buildDesktop.images))
 		.pipe(debug({title: 'images blocks:'}))
 		.pipe(imagemin({
 			optimizationLevel: 3,
@@ -40,5 +40,5 @@ gulp.task('images:blocks', function() {
 			svgoPlugins: [{removeViewBox: false}],
 			use: [pngquant()]
 		}))
-		.pipe(gulp.dest(paths.build.images));
+		.pipe(gulp.dest(paths.buildDesktop.images));
 });
