@@ -8,7 +8,7 @@
 @@include('blocks/_progress/list/list.html')
 
 @@loop("blocks/_progress/list/item.html", [
-  { "href": "main.html", "name": "Главная страница", "design": "100", "html": "0" }
+  { "href": "desktop/main.html", "name": "Главная страница", "design": "100", "html": "0" }
 ])
 
 <li>
@@ -17,7 +17,7 @@
   </li>
   <ul>
     @@loop("blocks/_progress/list/item.html", [
-      { "href": "course.html", "name": "Страница курса", "design": "100", "html": "100" }
+      { "href": "desktop/course.html", "name": "Страница курса", "design": "100", "html": "100" }
     ])
     <li>
       <li class="navigation__header">
@@ -25,8 +25,8 @@
       </li>
         <ul>
           @@loop("blocks/_progress/list/item.html", [
-            { "href": "lesson.html", "name": "Страница урока", "design": "100", "html": "100" },
-            { "href": "lesson-video.html", "name": "Страница урока с видео", "design": "100", "html": "100" }
+            { "href": "desktop/lesson.html", "name": "Страница урока", "design": "100", "html": "100" },
+            { "href": "desktop/lesson-video.html", "name": "Страница урока с видео", "design": "100", "html": "100" }
           ])
         </ul>
       </li>
@@ -36,11 +36,11 @@
     </li>
       <ul>
         @@loop("blocks/_progress/list/item.html", [
-          { "href": "test-alert.html", "name": "Предупреждение", "design": "100", "html": "100" },
-          { "href": "test-result.html", "name": "Результат теста", "design": "100", "html": "100" },
-          { "href": "test-fail.html", "name": "Не сдал тест", "design": "100", "html": "100" },
-          { "href": "test.html", "name": "Тест", "design": "100", "html": "100" },
-          { "href": "lesson-test.html", "name": "Заглушка перед тестом", "design": "100", "html": "100" }
+          { "href": "desktop/test-alert.html", "name": "Предупреждение", "design": "100", "html": "100" },
+          { "href": "desktop/test-result.html", "name": "Результат теста", "design": "100", "html": "100" },
+          { "href": "desktop/test-fail.html", "name": "Не сдал тест", "design": "100", "html": "100" },
+          { "href": "desktop/test.html", "name": "Тест", "design": "100", "html": "100" },
+          { "href": "desktop/lesson-test.html", "name": "Заглушка перед тестом", "design": "100", "html": "100" }
         ])
       </ul>
     </li>
@@ -53,9 +53,9 @@
   </li>
   <ul>
     @@loop("blocks/_progress/list/item.html", [
-      { "href": "mobile-lesson.html", "name": "Страница урока", "design": "100", "html": "0" },
-      { "href": "mobile-lesson.html", "name": "Меню", "design": "100", "html": "0" },
-      { "href": "mobile-lesson.html", "name": "Задать вопрос", "design": "100", "html": "0" }
+      { "href": "mobile/lesson.html", "name": "Страница урока", "design": "100", "html": "0" },
+      { "href": "mobile/menu.html", "name": "Меню", "design": "100", "html": "0" },
+      { "href": "mobile/question.html", "name": "Задать вопрос", "design": "100", "html": "0" }
     ])
   </ul>
 </li>

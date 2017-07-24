@@ -12,7 +12,7 @@ const paths = require('../paths');
 // Федеральная служба по контролю за оборотом файлов
 gulp.task('watch', function() {
   watch(paths.watch.templates, function() {
-    return runSequence(['html'], browserSync.reload);
+    return runSequence('html');
   });
   watch(paths.watch.styles, function() {
     return runSequence(['styles'], 'cache');

@@ -3,6 +3,8 @@ const plumber = require('gulp-plumber');
 const changed = require('gulp-changed');
 const fileinclude = require("gulp-file-include");
 const runSequence = require('run-sequence');
+const browserSync = require("browser-sync");
+const reload = browserSync.reload;
 
 const paths = require('../paths');
 const errorHandler = require('../errorHandler');
@@ -10,7 +12,7 @@ const errorHandler = require('../errorHandler');
 
 // Шаблонизация
 gulp.task('html', function() {
-  return runSequence('html:desktop', 'html:mobile', 'html:main');
+  return runSequence(['html:desktop', 'html:mobile', 'html:main'], browserSync.reload);
 });
 
 // Шаблонизация для компа
