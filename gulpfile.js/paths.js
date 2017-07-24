@@ -40,7 +40,6 @@ module.exports = {
     resources:       dist
   },
 
-
   // Исходники версии для компа
   sourceMobile: {
     templates:       [mobile + 'templates/pages/'],

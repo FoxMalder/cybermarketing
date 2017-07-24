@@ -10,11 +10,11 @@ const errorHandler = require('../errorHandler');
 
 // Копируем файлы в корень проекта
 gulp.task('resources', function() {
-  return gulp.src(paths.source.resources)
+  return gulp.src(paths.sourceDesktop.resources)
     .pipe(plumber({errorHandler: errorHandler}))
-    .pipe(changed(paths.build.resources))
+    .pipe(changed(paths.buildDesktop.resources))
     .pipe(debug({title: 'resources:'}))
-    .pipe(gulp.dest(paths.build.resources));
+    .pipe(gulp.dest(paths.buildDesktop.resources));
 });
 
 // Копируем статичные файлы
