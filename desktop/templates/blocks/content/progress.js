@@ -38,7 +38,7 @@ class ProgressCircle {
   }
 
   init() {
-    this.updateText();
+    // this.updateText();
 
     setTimeout(() => {
       this.createCSS();
