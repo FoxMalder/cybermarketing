@@ -78,6 +78,10 @@ img {
       .ui-demo-element {
         margin-bottom: 0;
         margin-left: 5px;
+
+        i:first-child {
+          margin-right: 5px;
+        }
       }
     }
 
