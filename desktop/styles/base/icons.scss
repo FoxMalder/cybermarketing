@@ -235,6 +235,21 @@
     @include size(20px, 20px);
     background-image: svg-load('tag.svg', fill=#adb1b9);
   }
+
+  &-portfl {
+    @include size(18px, 20px);
+    background-image: svg-load('portfl.svg', fill=#adb1b9);
+  }
+
+  &-eyes {
+    @include size(20px, 18px);
+    background-image: svg-load('eyes.svg', fill=#adb1b9);
+  }
+
+  &-eyes-cross {
+    @include size(20px, 18px);
+    background-image: svg-load('eyes-cross.svg', fill=#adb1b9);
+  }
 }
 
 
