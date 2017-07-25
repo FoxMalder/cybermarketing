@@ -135,6 +135,11 @@
     @include size(180px, 124px);
     background-image: svg-load('university.svg', fill=#fff);
   }
+
+  &-reload {
+    @include size(18px, 18px);
+    background-image: svg-load('reload.svg', fill=#adb1b9);
+  }
 }
 
 .spinner svg {

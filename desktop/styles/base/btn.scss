@@ -149,7 +149,7 @@ button:disabled,
 
   &:after {
     @include pseudo;
-    @include size(20px);
+    @include size(18px);
     top: -2px;
     left: 0;
     background-image: svg-load('reload.svg', fill=#21aa00);
