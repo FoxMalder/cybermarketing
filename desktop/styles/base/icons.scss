@@ -9,8 +9,8 @@
   }
 
   &-check {
-    @include size(20px, 14px);
-    background-image: svg-load('check.svg', fill=#00b402);
+    @include size(20px, 13px);
+    background-image: svg-load('check.svg', fill=#adb2b9);
   }
 
   &-loupe {
@@ -194,6 +194,46 @@
   &-send {
     @include size(18px, 20px);
     background-image: svg-load('send.svg', fill=#adb1b9);
+  }
+
+  &-pencil {
+    @include size(10px, 20px);
+    background-image: svg-load('pencil.svg', fill=#adb1b9);
+  }
+
+  &-cross {
+    @include size(16px, 16px);
+    background-image: svg-load('cross.svg', fill=#adb1b9);
+  }
+
+  &-question {
+    @include size(12px, 18px);
+    background-image: svg-load('question.svg', fill=#adb1b9);
+  }
+
+  &-rub {
+    @include size(14px, 18px);
+    background-image: svg-load('rub.svg', fill=#adb1b9);
+  }
+
+  &-like {
+    @include size(18px, 20px);
+    background-image: svg-load('like.svg', fill=#adb1b9);
+  }
+
+  &-computer {
+    @include size(18px, 18px);
+    background-image: svg-load('computer.svg', fill=#adb1b9);
+  }
+
+  &-user {
+    @include size(18px, 18px);
+    background-image: svg-load('user.svg', fill=#adb1b9);
+  }
+
+  &-tag {
+    @include size(20px, 20px);
+    background-image: svg-load('tag.svg', fill=#adb1b9);
   }
 }
 
