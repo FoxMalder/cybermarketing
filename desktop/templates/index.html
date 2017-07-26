@@ -11,7 +11,7 @@
       @@include('blocks/menu/menu.html')
       @@include('blocks/_progress/progress.html', {"project": "Шаблон проекта для быстрого старта"})
     </main>
-    @@include('blocks/footer/footer.html')
+    @@include('blocks/footer/footer.html', { "dir": false, "root": true })
     <script>
       $(document).ready(function() {
 
