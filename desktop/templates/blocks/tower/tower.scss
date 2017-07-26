@@ -1,6 +1,5 @@
 .towers {
   display: block;
-  margin-bottom: 20px;
 }
 
 .tower-list {
@@ -28,12 +27,6 @@
   }
 
   &__label {
-    color: #21aa00;
-    font-family: Arial;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
     margin-bottom: 14px;
   }
 
@@ -51,4 +44,13 @@
     left: 0;
     right: 0;
   }
+}
+
+.horizontal-label {
+  color: #21aa00;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
 }

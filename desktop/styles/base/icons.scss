@@ -270,8 +270,47 @@
     @include size(120px, 110px);
     background-image: svg-load('flag.svg', fill=#21aa00);
   }
-}
 
+  &-site-create {
+    @include size(120px, 100px);
+    background-image: svg-load('site-create.svg', fill=#21aa00);
+  }
+
+  &-content {
+    @include size(120px, 100px);
+    background-image: svg-load('content.svg', fill=#21aa00);
+  }
+
+  &-analytics {
+    @include size(120px, 100px);
+    background-image: svg-load('analytics.svg', fill=#21aa00);
+  }
+
+  &-optimization {
+    @include size(120px, 100px);
+    background-image: svg-load('optimization.svg', fill=#21aa00);
+  }
+
+  &-seo {
+    @include size(112px, 120px);
+    background-image: svg-load('seo.svg', fill=#21aa00);
+  }
+
+  &-context-adv {
+    @include size(120px, 120px);
+    background-image: svg-load('context-adv.svg', fill=#21aa00);
+  }
+
+  &-smm {
+    @include size(108px, 108px);
+    background-image: svg-load('smm.svg', fill=#21aa00);
+  }
+
+  &-online-marketing {
+    @include size(120px, 100px);
+    background-image: svg-load('online-marketing.svg', fill=#21aa00);
+  }
+}
 
 .spinner svg {
   stroke: #21aa00;
