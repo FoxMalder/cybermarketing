@@ -28,6 +28,11 @@
 
   &__icon {
     margin-right: 49px;
+    flex-basis: 130px;
+  }
+
+  &__info {
+    flex: 1 100%;
   }
 
   &__label {
