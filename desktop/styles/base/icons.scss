@@ -110,6 +110,10 @@
   &-microphone {
     @include size(16px, 20px);
     background-image: svg-load('microphone.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('microphone.svg', fill=#21aa00);
+    }
   }
 
   &-stop {
@@ -149,6 +153,10 @@
   &-webcam {
     @include size(16px, 20px);
     background-image: svg-load('webcam.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('webcam.svg', fill=#21aa00);
+    }
   }
 
   &-academic-cap {
@@ -199,6 +207,10 @@
   &-pencil {
     @include size(10px, 20px);
     background-image: svg-load('pencil.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('pencil.svg', fill=#21aa00);
+    }
   }
 
   &-cross {
