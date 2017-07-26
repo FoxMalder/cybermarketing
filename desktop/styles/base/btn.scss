@@ -91,6 +91,40 @@ button:disabled,
       background: rgba(255, 255, 255, .85);
     }
   }
+
+  &-outline-light {
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &:hover,
+    &.hover {
+      border-color: rgb(120, 122, 128);
+      color: rgb(0, 0, 0);
+    }
+
+    &:focus,
+    &.focus {
+      background-color: rgb(247, 247, 248);
+      border-color: rgb(120, 122, 128);
+      color: rgb(0, 0, 0);
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(173, 177, 185);
+      background-color: rgb(247, 247, 248);
+      border-color: rgb(214, 218, 221);
+    }
+
+    .mee-ink {
+      animation-timing-function: ease-out;
+      background: rgba(255, 255, 255, .85);
+    }
+  }
 }
 
 .more-link {
