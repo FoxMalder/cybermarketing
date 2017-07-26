@@ -250,6 +250,26 @@
     @include size(20px, 18px);
     background-image: svg-load('eyes-cross.svg', fill=#adb1b9);
   }
+
+  &-brain {
+    @include size(100px, 100px);
+    background-image: svg-load('brain.svg', fill=#21aa00);
+  }
+
+  &-books {
+    @include size(100px, 120px);
+    background-image: svg-load('books.svg', fill=#21aa00);
+  }
+
+  &-institute {
+    @include size(120px, 110px);
+    background-image: svg-load('institute.svg', fill=#21aa00);
+  }
+
+  &-flag {
+    @include size(120px, 110px);
+    background-image: svg-load('flag.svg', fill=#21aa00);
+  }
 }
 
 

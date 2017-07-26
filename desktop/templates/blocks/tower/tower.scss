@@ -1,0 +1,54 @@
+.towers {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tower-list {
+  display: flex;
+}
+
+.tower {
+  flex: 1 100%;
+  height: 550px;
+  border-right: 1px solid #d6d9dc;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  &:last-child {
+    border-right: 0;
+  }
+
+  &__box {
+    padding: 50px 32px 50px 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    color: #21aa00;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  &__icon {
+    flex-basis: 120px;
+
+    span {
+      min-height: 125px;
+    }
+  }
+
+  &__action {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+  }
+}
