@@ -244,6 +244,40 @@
   }
 }
 
+.number-list {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0 26px 0;
+
+  &__item {
+    margin-bottom: 20px;
+    padding-left: 38px;
+    position: relative;
+    color: rgb(120, 122, 128);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    counter-increment: nListCount;
+
+    &:before {
+      content: counter(nListCount) ".";
+      color: #63a824;
+      font-family: Arial;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 15px;
+      position: absolute;
+      left: 10px;
+      top: 2px;
+    }
+
+    & > .list {
+      padding-top: 20px;
+      padding-bottom: 0;
+    }
+  }
+}
+
 .course-module {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(214, 217, 220);
@@ -825,5 +859,12 @@
 
   .info-list {
     border-top: 1px solid rgb(214, 217, 220);
+  }
+}
+
+.testimonial {
+
+  &-horizontal {
+
   }
 }
