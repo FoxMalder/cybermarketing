@@ -621,6 +621,16 @@
     }
   }
 
+  &.seminar-info {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgb(214, 217, 220);
+
+    .list-icon__desc {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
   &__box {
     display: flex;
     align-items: flex-start;
