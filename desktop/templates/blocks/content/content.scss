@@ -21,6 +21,7 @@
 }
 
 .content {
+  position: relative;
 
   &__box {
     padding: 34px 39px 58px 39px;
@@ -258,6 +259,10 @@
     font-size: 15px;
     font-weight: 400;
     counter-increment: nListCount;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:before {
       content: counter(nListCount) ".";
@@ -862,9 +867,45 @@
   }
 }
 
-.testimonial {
+.ribbon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+  text-align: right;
 
-  &-horizontal {
+  &__text {
+    color: #fff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    height: 25px;
+    text-align: center;
+    text-transform: lowercase;
+    transform: rotate(45deg);
+    width: 100px;
+    display: block;
+    background-color: #00acef;
+    position: absolute;
+    top: 12px;
+    right: -24px;
 
+    span {
+      position: relative;
+      top: 4px;
+      vertical-align: middle;
+      display: inline-block;
+    }
   }
 }
+
+.testimonial {
+
+  &-horizontal {}
+}
+
+
