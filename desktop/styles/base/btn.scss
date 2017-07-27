@@ -160,6 +160,12 @@ button:disabled,
       transform: rotate(-180deg);
     }
   }
+
+  &--right {
+    &:after {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 .reload-link {
