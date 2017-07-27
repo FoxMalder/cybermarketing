@@ -42,6 +42,20 @@
 
 <li>
   <li class="navigation__header">
+    <div class="progress navigation-name">Вход/регистрация</div>
+  </li>
+  <ul>
+    @@loop("blocks/_progress/list/item.html", [
+      { "href": "desktop/auth.html", "name": "Вход", "design": "100", "html": "0" },
+      { "href": "desktop/registration.html", "name": "Регистрация", "design": "100", "html": "0" },
+      { "href": "desktop/restore.html", "name": "Восстановление пароля", "design": "100", "html": "0" },
+      { "href": "desktop/restore2.html", "name": "Восстановление пароля, ок", "design": "100", "html": "0" }
+    ])
+  </ul>
+</li>
+
+<li>
+  <li class="navigation__header">
     <div class="progress navigation-name"><span>Мобильный вид</span></div>
   </li>
   <ul>
