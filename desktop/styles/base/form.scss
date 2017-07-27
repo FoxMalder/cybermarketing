@@ -72,6 +72,14 @@ input[type=radio] {
   justify-content: flex-start;
   align-items: center;
 
+  &.full {
+
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
+
   .btn {
     padding-left: 42px;
     padding-right: 42px;
@@ -79,6 +87,19 @@ input[type=radio] {
 
   .form-add-file {
     margin-left: 38px;
+  }
+}
+
+.form-name {
+  margin-bottom: 25px;
+
+  h3 {
+    color: #000;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
 
@@ -113,6 +134,12 @@ input[type=radio] {
   &:focus {
     border-color: rgb(33, 170, 0);
   }
+}
+
+.form-social {
+  margin-top: 38px;
+  border-top: 1px solid #d6dadd;
+  padding-top: 30px;
 }
 
 textarea.form-control {
