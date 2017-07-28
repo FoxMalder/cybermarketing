@@ -102,13 +102,28 @@
   &-vk {
     background-color: #0077a9;
     border-color: #0077a9;
+
+    span {
+      position: relative;
+      top: 1px;
+    }
   }
 
   &-fb {
     background-color: #00579f;
     border-color: #00579f;
+
+    span {
+      position: relative;
+      top: 1px;
+    }
   }
 
   &-gp {
+
+    span {
+      position: relative;
+      top: 2px;
+    }
   }
 }
