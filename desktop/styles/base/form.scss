@@ -64,6 +64,11 @@ input[type=radio] {
       position: absolute;
       top: 11px;
       right: 10px;
+
+      .donut {
+        position: relative;
+        top: -3px;
+      }
     }
 
     .form-control {
