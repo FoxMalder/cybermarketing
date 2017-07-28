@@ -16,6 +16,10 @@
   &-check {
     @include size(20px, 13px);
     background-image: svg-load('check.svg', fill=#adb2b9);
+
+    &.green {
+      background-image: svg-load('check.svg', fill=#21aa00);
+    }
   }
 
   &-loupe {
