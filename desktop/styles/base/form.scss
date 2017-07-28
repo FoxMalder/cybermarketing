@@ -110,6 +110,10 @@ input[type=radio] {
   .form-add-file {
     margin-left: 38px;
   }
+
+  & + .form-group {
+    margin-top: 20px;
+  }
 }
 
 .form-name {

@@ -1,5 +1,4 @@
-$('.form-group .form-control-feedback').click(function () {
-  $("input[type='password']").attr('type', 'text');
-}, function () {
-  $("input[type='password']").attr('type', 'password');
+var pass = $(".psdfdsf");
+$('.show-password').click(function() {
+  pass.attr('type', pass.attr('type') === 'password' ? 'text' : 'password');
 });
