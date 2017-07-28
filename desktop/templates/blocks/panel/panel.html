@@ -4,25 +4,34 @@
   </div><!-- /.panel-logo -->
   <div class="feature-panel panel-bg" style="background-image: url('../assets/images/panel-bg.png');"></div><!-- /.feature-panel -->
   <div class="main-panel">
+    @@if (reg === true) {
     <div class="main-panel__switch">
       <a href="">У вас нет аккаунта?</a>
-      <a href="" class="btn btn-outline">Регистрация</a>
+      <a href="registration.html" class="btn btn-outline">Регистрация</a>
     </div><!-- /.main-panel__switch -->
+    }
+    @@if (login === true) {
+    <div class="main-panel__switch">
+      <a href="">У вас есть аккаунт?</a>
+      <a href="auth.html" class="btn btn-outline">Вход</a>
+    </div><!-- /.main-panel__switch -->
+    }
     <div class="main-panel__box">
+      @@if (auth === true) {
       <form action="" class="form form-user">
         <div class="form-name">
           <h3>Вход в личный кабинет</h3>
         </div>
         <div class="form-group">
-          <label for="" class="hide">Ваш email</label>
-          <input type="text" class="form-control" placeholder="Email">
+          <label for="aemail" class="hide">Ваш email</label>
+          <input type="text" id="aemail" class="form-control" placeholder="Email">
         </div><!-- /.form-group -->
         <div class="form-group">
-          <label for="" class="hide">Ваш email</label>
-          <input type="text" class="form-control" placeholder="Пароль">
+          <label for="apass" class="hide">Ваш пароль</label>
+          <input type="text" id="apass" class="form-control" placeholder="Пароль">
         </div><!-- /.form-group -->
         <div class="form-group">
-          <a href="">Напомнить пароль</a>
+          <a href="restore.html">Напомнить пароль</a>
         </div><!-- /.form-group -->
         <div class="form-actions full">
           <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Войти</button>
@@ -51,6 +60,52 @@
 
         </div><!-- /.form-social -->
       </form><!-- /form.form -->
+      }
+      @@if (registration === true) {
+      <form action="" class="form form-user">
+        <div class="form-name">
+          <h3>Регистрация участника</h3>
+        </div>
+        <div class="form-group">
+          <label for="name" class="hide">Ваше имя</label>
+          <input type="text" id="name" class="form-control" placeholder="Ваше имя">
+        </div><!-- /.form-group -->
+        <div class="form-group">
+          <label for="email" class="hide">Рабочий email</label>
+          <input type="text" id="email" class="form-control" placeholder="Рабочий email">
+        </div><!-- /.form-group -->
+        <div class="form-group">
+          <label for="pass" class="hide">Придумайте пароль</label>
+          <input type="text" id="pass" class="form-control" placeholder="Придумайте пароль">
+        </div><!-- /.form-group -->
+        <div class="form-actions full">
+          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Зарегистрироваться</button>
+        </div><!-- /.form-actions -->
+        <div class="form-social">
+          <p>Войти, используя аккаунт</p>
+
+          <div class="social-auth">
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-vk">
+                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-fb">
+                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-gp">
+                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
+
+          </div><!-- /.social-auth -->
+
+        </div><!-- /.form-social -->
+      </form><!-- /form.form -->
+      }
     </div><!-- /.main-panel__box -->
     <div class="main-panel__footer">
       <p>При входе в систему вы подтверждаете, что принимаете условия <a href="">пользовательского соглашения</a>.</p>
