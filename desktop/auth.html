@@ -5,8 +5,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
 
-  <title>Результат прохождения теста </title>
-  <meta name="description" content="Результат прохождения теста "/>
+  <title>Вход в личный кабинет </title>
+  <meta name="description" content="Вход в личный кабинет "/>
   <meta name="keywords" content="@@keywords"/>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -98,43 +98,70 @@
 
   <body>
     <main>
-      <div class="test-page">
-  <div class="test-page__header">
-    <div class="logo">
-      <!--<a href="index.html" title="Вернуться на главную страницу CyberMarketing">-->
-        <span class="logo-box"><i class="ico ico-logo"></i></span>
-      <!--</a>-->
-    </div><!-- /.logo -->
-  </div><!-- /.test-page__header -->
-  <div class="test-page__body">
-    <div class="test-content">
-
+      <div class="panel-wrapper">
+  <div class="panel-logo">
+    <a href="../"><i class="ico ico-logo-dark"></i></a>
+  </div><!-- /.panel-logo -->
+  <div class="feature-panel panel-bg" style="background-image: url('../assets/images/panel-bg.png');"></div><!-- /.feature-panel -->
+  <div class="main-panel">
     
-
+    <div class="main-panel__switch">
+      <a href="">У вас нет аккаунта?</a>
+      <a href="registration.html" class="btn btn-outline">Регистрация</a>
+    </div><!-- /.main-panel__switch -->
     
-
     
+    <div class="main-panel__box">
+      
+      <form action="" class="form form-user">
+        <div class="form-name">
+          <h3>Вход в личный кабинет</h3>
+        </div>
+        <div class="form-group">
+          <label for="aemail" class="form-control-label hide">Ваш email</label>
+          <input type="text" id="aemail" class="form-control" placeholder="Email">
+        </div><!-- /.form-group -->
+        <div class="form-group status-right">
+          <label for="apass" class="form-control-label hide">Ваш пароль</label>
+          <input type="password" id="apass" class="form-control" placeholder="Пароль">
+          <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
+          <span class="restore-link"><a href="restore.html">Напомнить пароль</a></span>
+        </div><!-- /.form-group -->
+        <div class="form-actions full">
+          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Войти</button>
+        </div><!-- /.form-actions -->
+        <div class="form-social">
+          <p>Войти, используя аккаунт</p>
 
-    
-      <div class="test-content__center">
-        <div class="test-content__center-box">
-          <div class="test-icon">
-            <i class="ico ico-star-big"></i>
-            <div class="test-rating"><span>4.5</span></div>
-          </div>
-          <h2 class="h2">Хорошо!</h2>
-          <p class="text">Ты красавчик и можешь учиться ещё лучше, продолжай в том же духе.</p>
-          <a href="" class="btn btn-green">Следующий урок</a>
-        </div><!-- /.test-content__center-box -->
-      </div><!-- /.test-content__center -->
-    
+          <div class="social-auth">
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-vk">
+                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-fb">
+                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
+            <div class="social-auth__item">
+              <div class="social-auth__box social-auth-gp">
+                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
+              </div>
+            </div><!-- /.social-auth__item -->
 
-    </div><!-- /.test-content -->
-  </div><!-- /.test-page__body -->
-  
-</div><!-- /.test-page -->
-<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-<script src="../assets/desktop/scripts/scripts.js"></script>
+          </div><!-- /.social-auth -->
+
+        </div><!-- /.form-social -->
+      </form><!-- /form.form -->
+      
+      
+    </div><!-- /.main-panel__box -->
+    <div class="main-panel__footer">
+      <p>При входе в систему вы подтверждаете, что принимаете условия <a href="">пользовательского соглашения</a>.</p>
+    </div>
+  </div><!-- /.main-panel -->
+</div><!-- /.panel-wrapper -->
 
     </main>
   </body>
