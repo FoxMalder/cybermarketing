@@ -8,6 +8,11 @@
     background-image: svg-load('logo.svg');
   }
 
+  &-logo-dark {
+    @include size(300px, 30px);
+    background-image: svg-load('logo-dark.svg');
+  }
+
   &-check {
     @include size(20px, 13px);
     background-image: svg-load('check.svg', fill=#adb2b9);
