@@ -34,16 +34,16 @@ input[type=radio] {
 }
 
 .form-group {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &-status {
-    position: relative;
+  &.status-left {
 
-    &-type {
+    .form-control-feedback {
       position: absolute;
       top: 10px;
       left: 10px;
@@ -51,6 +51,19 @@ input[type=radio] {
 
     .form-control {
       padding-left: 40px;
+    }
+  }
+
+  &.status-right {
+
+    .form-control-feedback {
+      position: absolute;
+      top: 11px;
+      right: 10px;
+    }
+
+    .form-control {
+      padding-right: 40px;
     }
   }
 
