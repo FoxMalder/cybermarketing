@@ -41,6 +41,10 @@ input[type=radio] {
     margin-bottom: 0;
   }
 
+  &.last {
+    margin-bottom: 20px;
+  }
+
   &.status-left {
 
     .form-control-feedback {
