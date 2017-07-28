@@ -10,7 +10,7 @@
   display: block;
   position: absolute;
   z-index: 1;
-  top: 40px;
+  top: 38px;
   left: 80px;
 }
 
@@ -25,6 +25,12 @@
   height: 100%;
   overflow: hidden;
   background: #21aa00;
+
+  &.panel-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .main-panel {
