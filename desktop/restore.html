@@ -98,7 +98,47 @@
 
   <body>
     <main>
-      @@ include ('blocks/test/test.html')
+      <div class="panel-wrapper">
+  <div class="panel-logo">
+    <a href="../"><i class="ico ico-logo-dark"></i></a>
+  </div><!-- /.panel-logo -->
+  <div class="feature-panel panel-bg" style="background-image: url('../assets/images/panel-bg.png');"></div><!-- /.feature-panel -->
+  <div class="main-panel">
+    
+    <div class="main-panel__switch">
+      <a href="">У вас нет аккаунта?</a>
+      <a href="registration.html" class="btn btn-outline">Регистрация</a>
+    </div><!-- /.main-panel__switch -->
+    
+    
+    <div class="main-panel__box">
+      
+      
+      
+      <form action="" class="form form-user">
+        <div class="form-name">
+          <h3>Восстановление пароля</h3>
+        </div>
+        <div class="form-group">
+          <label for="email" class="form-control-label hide">Рабочий email</label>
+          <input type="text" id="email" class="form-control" placeholder="Рабочий email">
+        </div><!-- /.form-group -->
+        <div class="form-actions full">
+          <button class="btn btn-green" id="submit">Выслать</button>
+        </div><!-- /.form-actions -->
+        <div class="form-group">
+          <a href="">Вернуться к авторизации</a>
+        </div>
+      </form><!-- /form.form -->
+      
+      
+    </div><!-- /.main-panel__box -->
+    <div class="main-panel__footer">
+      <p>При входе в систему вы подтверждаете, что принимаете условия <a href="">пользовательского соглашения</a>.</p>
+    </div>
+  </div><!-- /.main-panel -->
+</div><!-- /.panel-wrapper -->
+
     </main>
   </body>
 </html>
