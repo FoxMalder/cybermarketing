@@ -346,6 +346,16 @@
     @include size(20px, 20px);
     background-image: svg-load('social/google-plus.svg');
   }
+
+  &-nav-left {
+    @include size(40px, 40px);
+    background-image: svg-load('nav-left.svg', fill=#d6d9dc);
+  }
+
+  &-nav-right {
+    @include size(40px, 40px);
+    background-image: svg-load('nav-right.svg', fill=#d6d9dc);
+  }
 }
 
 .spinner svg {
