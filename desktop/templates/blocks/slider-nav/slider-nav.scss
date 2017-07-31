@@ -1,0 +1,45 @@
+.slider-nav {
+  border-left: 1px solid rgb(214, 217, 220);
+  border-right: 1px solid rgb(214, 217, 220);
+
+  &__box {
+    padding: 30px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.dot-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.dot {
+  border-radius: 50%;
+  display: block;
+  vertical-align: middle;
+  text-indent: -9999px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 10px;
+  cursor: pointer;
+
+  span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background-color: #d6d9dc;
+    border-radius: 50%;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &-active span {
+    background-color: #21aa00;
+  }
+}
