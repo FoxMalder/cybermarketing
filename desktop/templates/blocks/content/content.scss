@@ -1025,18 +1025,29 @@
     &-rating {
       margin-left: 20px;
     }
-
-    .rating-box {
-      display: flex;
-      align-items: center;
-      align-content: center;
-
-      span {
-        margin-left: 10px;
-        font-weight: 700;
-      }
-    }
   }
 }
 
+.rating-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  span {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  span {
+    margin-left: 10px;
+    color: #787b81;
+    text-transform: lowercase;
+  }
+}
 
