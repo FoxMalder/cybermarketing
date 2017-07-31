@@ -235,6 +235,10 @@
   &-rub {
     @include size(14px, 18px);
     background-image: svg-load('rub.svg', fill=#adb1b9);
+
+    &.white {
+      background-image: svg-load('rub.svg', fill=#ffffff);
+    }
   }
 
   &-like {
