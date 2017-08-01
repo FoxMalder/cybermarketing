@@ -68,5 +68,65 @@
     margin-top: auto;
     border-top: 1px solid #d6d9dc;
     padding: 20px 20px 25px 20px;
+
+    .list-icon {
+      margin-top: 0;
+    }
+  }
+}
+
+.lecturer-card {
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+  &__photo {
+    width: 120px;
+    margin-right: 20px;
+
+    &-box {
+      display: block;
+      width: 120px;
+      height: 120px;
+      background-color: #ccc;
+      border-radius: 50%;
+    }
+  }
+
+  &__name {
+
+    h3 {
+      color: #000;
+      font-family: Arial;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1;
+      text-transform: none;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__position {
+    color: #787a80;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    color: #787a80;
+    font-family: Arial;
+    font-size: 15px;
+    line-height: 25px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    span {
+      margin-left: 10px;
+    }
   }
 }
