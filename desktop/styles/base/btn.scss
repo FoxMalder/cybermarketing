@@ -128,6 +128,49 @@ button:disabled,
   }
 }
 
+/* Группы кнопок */
+.btn-group {
+  margin-top: 11px;
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+
+  + .btn-group {
+    margin-left: 20px;
+  }
+
+  .btn-active {
+    background-color: #f7f7f8;
+    color: #adb1b9;
+  }
+
+  & > .btn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  & > .btn:first-child {
+    margin-left: 0;
+  }
+
+  & > .btn {
+    position: relative;
+    flex: 0 1 auto;
+  }
+
+  & > .btn:last-child:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .btn + .btn {
+    margin-left: -1px;
+  }
+}
+
 .more-link {
   position: relative;
   transition: .3s ease;
