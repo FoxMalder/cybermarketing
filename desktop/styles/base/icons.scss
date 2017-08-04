@@ -360,6 +360,11 @@
     @include size(40px, 40px);
     background-image: svg-load('nav-right.svg', fill=#d6d9dc);
   }
+
+  &-door {
+    @include size(18px, 20px);
+    background-image: svg-load('door.svg', fill=#adb1b9);
+  }
 }
 
 .spinner svg {

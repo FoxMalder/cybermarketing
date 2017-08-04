@@ -16,9 +16,6 @@
       <a href="auth.html" class="btn btn-outline">Вход</a>
     </div><!-- /.main-panel__switch -->
     }
-    @@if (progress == true) {
-      123
-    }
     <div class="main-panel__box">
       @@if (auth === true) {
       <form action="" class="form form-user">
@@ -136,92 +133,6 @@
         <h3>Проверте почту</h3>
         <p>Там вы найдёте инструкцию по восстановлению пароля</p>
       </div><!-- /.restore-send -->
-      }
-      @@if (ujezaregan == true) {
-      <form action="" class="form form-user">
-        <div class="form-name">
-          <h3>Вход в личный кабинет</h3>
-        </div>
-        <div class="form-group">
-          <label for="aemail" class="form-control-label hide">Ваш email</label>
-          <input type="text" id="aemail" class="form-control" placeholder="Email" autofocus>
-        </div><!-- /.form-group -->
-        <div class="form-group status-right">
-          <label for="apass" class="form-control-label hide">Ваш пароль</label>
-          <input type="password" id="apass" class="form-control" placeholder="Пароль">
-          <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
-          <span class="restore-link"><a href="restore.html">Напомнить пароль</a></span>
-        </div><!-- /.form-group -->
-        <div class="form-actions full">
-          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Войти</button>
-        </div><!-- /.form-actions -->
-        <div class="form-social">
-          <p>Войти, используя аккаунт</p>
-
-          <div class="social-auth">
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-vk">
-                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-fb">
-                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-gp">
-                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-
-          </div><!-- /.social-auth -->
-
-        </div><!-- /.form-social -->
-      </form><!-- /form.form -->
-      }
-      @@if (student == true) {
-      <form action="" class="form form-user">
-        <div class="form-name">
-          <h3>Вход в личный кабинет</h3>
-        </div>
-        <div class="form-group">
-          <label for="aemail" class="form-control-label hide">Ваш email</label>
-          <input type="text" id="aemail" class="form-control" placeholder="Email" autofocus>
-        </div><!-- /.form-group -->
-        <div class="form-group status-right">
-          <label for="apass" class="form-control-label hide">Ваш пароль</label>
-          <input type="password" id="apass" class="form-control" placeholder="Пароль">
-          <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
-          <span class="restore-link"><a href="restore.html">Напомнить пароль</a></span>
-        </div><!-- /.form-group -->
-        <div class="form-actions full">
-          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Войти</button>
-        </div><!-- /.form-actions -->
-        <div class="form-social">
-          <p>Войти, используя аккаунт</p>
-
-          <div class="social-auth">
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-vk">
-                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-fb">
-                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-gp">
-                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-
-          </div><!-- /.social-auth -->
-
-        </div><!-- /.form-social -->
-      </form><!-- /form.form -->
       }
     </div><!-- /.main-panel__box -->
     <div class="main-panel__footer">
