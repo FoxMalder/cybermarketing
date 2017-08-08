@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../../styles/style.scss">
 <div class="container">
   <div class="page outline">
 
@@ -50,12 +51,24 @@
       { "href": "desktop/auth.html", "name": "Вход", "design": "100", "html": "100" },
       { "href": "desktop/registration.html", "name": "Регистрация", "design": "100", "html": "100" },
       { "href": "desktop/restore.html", "name": "Восстановление пароля", "design": "100", "html": "100" },
-      { "href": "desktop/restore2.html", "name": "Восстановление пароля, ок", "design": "100", "html": "100" },
+      { "href": "desktop/restore2.html", "name": "Восстановление пароля, ok", "design": "100", "html": "100" },
       { "href": "desktop/registration2.html", "name": "Регистрация студента", "design": "100", "html": "0" },
       { "href": "desktop/payment-method.html", "name": "Выберите способ оплаты", "design": "100", "html": "0" },
       { "href": "desktop/registration3.html", "name": "Регистрация участника", "design": "100", "html": "0" }
     ])
   </ul>
+</li>
+
+<li>
+  <li class="navigation__header">
+    <div class="progress navigation-name">Пользователь</div>
+  </li>
+  <ul>
+    @@loop("blocks/_progress/list/item.html", [
+      { "href": "desktop/profile-demo.html", "name": "Демо-урок в профиле", "design": "100", "html": "0" },
+      { "href": "mobile/profile-lesson.html", "name": "Урок в профиле", "design": "100", "html": "0" }
+    ])
+  </ul>g
 </li>
 
 <li>
@@ -70,6 +83,10 @@
     ])
   </ul>
 </li>
+
+@@loop("blocks/_progress/list/item.html", [
+  { "href": "desktop/video-list.html", "name": "Список видео", "design": "100", "html": "0" }
+])
 
 @@loop("blocks/_progress/list/item.html", [
   { "href": "ui.html", "name": "UI: Контролы и компоненты", "design": "100", "html": "100" }
