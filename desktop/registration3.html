@@ -111,7 +111,13 @@
       <a href="auth.html" class="btn btn-outline">Вход</a>
     </div><!-- /.main-panel__switch -->
     
+    
     <div class="main-panel__box">
+      
+      
+      
+      
+      
       
       
       <form action="" class="form form-user">
@@ -120,19 +126,27 @@
         </div>
         <div class="form-group">
           <label for="name" class="form-control-label hide">Ваше имя</label>
-          <input type="text" id="name" class="form-control" placeholder="Ваше имя" autofocus>
+          <input type="text" id="name" class="form-control" placeholder="Ваше имя" value="Дмитрий">
         </div><!-- /.form-group -->
-        <div class="form-group">
+        <div class="form-group form-group--error">
           <label for="email" class="form-control-label hide">Рабочий email</label>
-          <input type="text" id="email" class="form-control" placeholder="Рабочий email">
+          <input type="text" id="email" class="form-control" placeholder="Рабочий email" value="moof37@yandex.ru" autofocus>
+          <div class="bubble bubble-right big">
+            <div class="bubble__text">
+              <span>Данный email уже зарегистрирован в системе</span>
+              <div class="bubble__actions">
+                <a href="" class="btn btn-green">Восстановить пароль</a>
+              </div><!-- /.bubble__actions -->
+            </div><!-- /.bubble__text -->
+          </div><!-- /.bubble -->
         </div><!-- /.form-group -->
         <div class="form-group status-right">
           <label for="pass" class="form-control-label hide">Придумайте пароль</label>
-          <input type="password" id="pass" class="form-control" placeholder="Придумайте пароль">
+          <input type="password" id="pass" class="form-control" placeholder="Придумайте пароль" value="●●●●●●●●">
           <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
         </div><!-- /.form-group -->
         <div class="form-actions full">
-          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Зарегистрироваться</button>
+          <button class="btn btn-green" id="submit" disabled><span class="mee-ink"></span>Зарегистрироваться</button>
         </div><!-- /.form-actions -->
         <div class="form-social">
           <p>Войти, используя аккаунт</p>
@@ -158,8 +172,6 @@
 
         </div><!-- /.form-social -->
       </form><!-- /form.form -->
-      
-      
       
     </div><!-- /.main-panel__box -->
     <div class="main-panel__footer">

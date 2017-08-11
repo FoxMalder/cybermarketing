@@ -5,8 +5,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
 
-  <title>Регистрация участника </title>
-  <meta name="description" content="Регистрация участника "/>
+  <title>Выберите способ оплаты </title>
+  <meta name="description" content="Выберите способ оплаты "/>
   <meta name="keywords" content="@@keywords"/>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -106,59 +106,102 @@
   <div class="main-panel">
     
     
-    <div class="main-panel__switch">
-      <a href="">У вас есть аккаунт?</a>
-      <a href="auth.html" class="btn btn-outline">Вход</a>
-    </div><!-- /.main-panel__switch -->
     
     <div class="main-panel__box">
       
       
-      <form action="" class="form form-user">
-        <div class="form-name">
-          <h3>Регистрация участника</h3>
-        </div>
-        <div class="form-group">
-          <label for="name" class="form-control-label hide">Ваше имя</label>
-          <input type="text" id="name" class="form-control" placeholder="Ваше имя" autofocus>
-        </div><!-- /.form-group -->
-        <div class="form-group">
-          <label for="email" class="form-control-label hide">Рабочий email</label>
-          <input type="text" id="email" class="form-control" placeholder="Рабочий email">
-        </div><!-- /.form-group -->
-        <div class="form-group status-right">
-          <label for="pass" class="form-control-label hide">Придумайте пароль</label>
-          <input type="password" id="pass" class="form-control" placeholder="Придумайте пароль">
-          <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
-        </div><!-- /.form-group -->
-        <div class="form-actions full">
-          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Зарегистрироваться</button>
-        </div><!-- /.form-actions -->
-        <div class="form-social">
-          <p>Войти, используя аккаунт</p>
-
-          <div class="social-auth">
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-vk">
-                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-fb">
-                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-gp">
-                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-
-          </div><!-- /.social-auth -->
-
-        </div><!-- /.form-social -->
-      </form><!-- /form.form -->
       
+      
+      
+      
+      <form action="" class="form form-user form-payment">
+        <div class="form-name">
+          <h3>Выберите способ оплаты</h3>
+        </div>
+
+        <div class="payment-list">
+
+          <div class="payment-method">
+            <div class="payment-method__box">
+              <div class="payment-method__icon">
+                <div class="payment-ico"><span><i class="ico ico-yandex-money"></i></span></div><!-- /.payment-ico -->
+              </div><!-- /.payment-method__icon -->
+              <div class="payment-method__name">ЯндексДеньги</div><!-- /.payment-method__name -->
+              <div class="payment-method__check">
+                <div class="form-check form-check--bg">
+                  <input type="checkbox" name="payment-method1" id="yad" checked>
+                  <label for="yad"><span class="form-check-control"></span></label>
+                </div><!-- /.form-check -->
+              </div><!-- /.payment-method__check -->
+            </div><!-- /.payment-method__box -->
+          </div><!-- /.payment-method -->
+          <div class="payment-method selected">
+            <div class="payment-method__box">
+              <div class="payment-method__icon">
+                <div class="payment-ico"><span><i class="ico ico-webmoney"></i></span></div><!-- /.payment-ico -->
+              </div><!-- /.payment-method__icon -->
+              <div class="payment-method__name">WebMoney</div><!-- /.payment-method__name -->
+              <div class="payment-method__check">
+                <div class="form-check form-check--bg">
+                  <input type="checkbox" name="payment-method2" id="wm" checked>
+                  <label for="wm"><span class="form-check-control"></span></label>
+                </div><!-- /.form-check -->
+              </div><!-- /.payment-method__check -->
+            </div><!-- /.payment-method__box -->
+          </div><!-- /.payment-method -->
+          <div class="payment-method">
+            <div class="payment-method__box">
+              <div class="payment-method__icon">
+                <div class="payment-ico"><span><i class="ico ico-qiwi"></i></span></div><!-- /.payment-ico -->
+              </div><!-- /.payment-method__icon -->
+              <div class="payment-method__name">Qiwi</div><!-- /.payment-method__name -->
+              <div class="payment-method__check">
+                <div class="form-check form-check--bg">
+                  <input type="checkbox" name="payment-method3" id="qiwi" checked>
+                  <label for="qiwi"><span class="form-check-control"></span></label>
+                </div><!-- /.form-check -->
+              </div><!-- /.payment-method__check -->
+            </div><!-- /.payment-method__box -->
+          </div><!-- /.payment-method -->
+          <div class="payment-method">
+            <div class="payment-method__box">
+              <div class="payment-method__icon">
+                <div class="payment-ico"><span><i class="ico ico-bank-card"></i></span></div><!-- /.payment-ico -->
+              </div><!-- /.payment-method__icon -->
+              <div class="payment-method__name">Банковская карта</div><!-- /.payment-method__name -->
+              <div class="payment-method__check">
+                <div class="form-check form-check--bg">
+                  <input type="checkbox" name="payment-method4" id="card" checked>
+                  <label for="card"><span class="form-check-control"></span></label>
+                </div><!-- /.form-check -->
+              </div><!-- /.payment-method__check -->
+            </div><!-- /.payment-method__box -->
+          </div><!-- /.payment-method -->
+          <div class="payment-method">
+            <div class="payment-method__box">
+              <div class="payment-method__icon">
+                <div class="payment-ico"><span><i class="ico ico-terminal"></i></span></div><!-- /.payment-ico -->
+              </div><!-- /.payment-method__icon -->
+              <div class="payment-method__name">Через терминал</div><!-- /.payment-method__name -->
+              <div class="payment-method__check">
+                <div class="form-check form-check--bg">
+                  <input type="checkbox" name="payment-method5" id="terminal" checked>
+                  <label for="terminal"><span class="form-check-control"></span></label>
+                </div><!-- /.form-check -->
+              </div><!-- /.payment-method__check -->
+            </div><!-- /.payment-method__box -->
+          </div><!-- /.payment-method -->
+
+        </div><!-- /.payment-list -->
+
+        <div class="payment-period">
+          <div class="payment-period__name">Вы выбрали:</div><!-- /.payment-period__name -->
+          <div class="payment-period__select">Разовый платёж</div><!-- /.payment-period__select -->
+        </div><!-- /.payment-period -->
+        <div class="form-actions full">
+          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Оплатить 25 000 рулей</button>
+        </div><!-- /.form-actions -->
+      </form><!-- /form.form -->
       
       
     </div><!-- /.main-panel__box -->

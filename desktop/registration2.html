@@ -5,8 +5,8 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui"/>
 
-  <title>Регистрация участника </title>
-  <meta name="description" content="Регистрация участника "/>
+  <title>Регистрация студента </title>
+  <meta name="description" content="Регистрация студента "/>
   <meta name="keywords" content="@@keywords"/>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -111,20 +111,49 @@
       <a href="auth.html" class="btn btn-outline">Вход</a>
     </div><!-- /.main-panel__switch -->
     
+    
+    <div class="main-panel__steps">
+      <div class="panel-step">
+        <div class="panel-step__item">
+          <div class="circle quarter">
+            <span class="circle__type">1</span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Регистрация</div>
+        </div><!-- /.panel-step__item -->
+
+        <div class="panel-step__divider"></div>
+
+        <div class="panel-step__item">
+          <div class="circle">
+            <span class="circle__type">2</span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Оплата</div>
+        </div><!-- /.panel-step__item -->
+
+      </div>
+    </div><!-- /.main-panel__steps -->
+    
     <div class="main-panel__box">
+      
+      
+      
       
       
       <form action="" class="form form-user">
         <div class="form-name">
-          <h3>Регистрация участника</h3>
+          <h3>Регистрация студента</h3>
         </div>
         <div class="form-group">
           <label for="name" class="form-control-label hide">Ваше имя</label>
-          <input type="text" id="name" class="form-control" placeholder="Ваше имя" autofocus>
+          <input type="text" id="name" class="form-control" placeholder="Ваше имя" autofocus value="Дмитрий">
         </div><!-- /.form-group -->
         <div class="form-group">
-          <label for="email" class="form-control-label hide">Рабочий email</label>
-          <input type="text" id="email" class="form-control" placeholder="Рабочий email">
+          <label for="fname" class="form-control-label hide">Ваша фамилия</label>
+          <input type="text" id="fname" class="form-control" placeholder="Фамилия">
+        </div><!-- /.form-group -->
+        <div class="form-group">
+          <label for="email" class="form-control-label hide">Личный email</label>
+          <input type="text" id="email" class="form-control" placeholder="Личный email">
         </div><!-- /.form-group -->
         <div class="form-group status-right">
           <label for="pass" class="form-control-label hide">Придумайте пароль</label>
@@ -132,31 +161,8 @@
           <span class="form-control-feedback"><i class="ico ico-eyes"></i></span>
         </div><!-- /.form-group -->
         <div class="form-actions full">
-          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Зарегистрироваться</button>
+          <button class="btn btn-green" id="submit"><span class="mee-ink"></span>Далее</button>
         </div><!-- /.form-actions -->
-        <div class="form-social">
-          <p>Войти, используя аккаунт</p>
-
-          <div class="social-auth">
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-vk">
-                <div class="social-auth-ico"><span><i class="ico ico-vk"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-fb">
-                <div class="social-auth-ico"><span><i class="ico ico-fb"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-            <div class="social-auth__item">
-              <div class="social-auth__box social-auth-gp">
-                <div class="social-auth-ico"><span><i class="ico ico-google-plus"></i></span></div>
-              </div>
-            </div><!-- /.social-auth__item -->
-
-          </div><!-- /.social-auth -->
-
-        </div><!-- /.form-social -->
       </form><!-- /form.form -->
       
       
@@ -169,5 +175,7 @@
 </div><!-- /.panel-wrapper -->
 
     </main>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="../assets/desktop/scripts/scripts.js"></script>
   </body>
 </html>
