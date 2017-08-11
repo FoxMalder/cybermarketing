@@ -399,6 +399,11 @@ textarea.form-control {
   left: calc(100% + 15px);
   top: 0;
 
+  &.big {
+    min-width: 290px;
+    min-height: 130px;
+  }
+
   &__text {
     color: #83868b;
     font-family: Arial;
@@ -406,6 +411,10 @@ textarea.form-control {
     font-weight: 400;
     line-height: 20px;
     padding: 14px 19px 15px 20px;
+  }
+
+  &__actions {
+    margin-top: 13px;
   }
 
   &-right {
