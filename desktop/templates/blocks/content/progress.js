@@ -558,3 +558,13 @@ $('.circle').circleProgress({
   fill: "#24ab03",
   emptyFill: "#eceeef"
 });
+
+$('.panel-step .circle').circleProgress({
+  value: .0,
+  size: 40
+});
+
+
+$('.panel-step .circle.quarter').circleProgress({
+  value: .25
+});

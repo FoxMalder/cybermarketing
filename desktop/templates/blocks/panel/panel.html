@@ -17,6 +17,26 @@
     </div><!-- /.main-panel__switch -->
     }
     @@if (steps === true) {
+    <div class="main-panel__steps">
+      <div class="panel-step">
+        <div class="panel-step__item">
+          <div class="circle quarter">
+            <span class="circle__type">1</span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Регистрация</div>
+        </div><!-- /.panel-step__item -->
+
+        <div class="panel-step__divider"></div>
+
+        <div class="panel-step__item">
+          <div class="circle">
+            <span class="circle__type">2</span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Оплата</div>
+        </div><!-- /.panel-step__item -->
+
+      </div>
+    </div><!-- /.main-panel__steps -->
     }
     <div class="main-panel__box">
       @@if (auth === true) {
