@@ -370,6 +370,26 @@
     @include size(23px, 30px);
     background-image: svg-load('yandex-money.svg');
   }
+
+  &-webmoney {
+    @include size(25px, 25px);
+    background-image: svg-load('webmoney.svg');
+  }
+
+  &-qiwi {
+    @include size(29px, 30px);
+    background-image: svg-load('qiwi.svg');
+  }
+
+  &-bank-card {
+    @include size(30px, 23px);
+    background-image: svg-load('bank-card.svg');
+  }
+
+  &-terminal {
+    @include size(30px, 28px);
+    background-image: svg-load('terminal.svg');
+  }
 }
 
 .spinner svg {
