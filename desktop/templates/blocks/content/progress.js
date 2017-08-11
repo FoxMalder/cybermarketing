@@ -564,7 +564,16 @@ $('.panel-step .circle').circleProgress({
   size: 40
 });
 
+$('.panel-step .circle.full').circleProgress({
+  value: 1,
+  startAngle: -Math.PI / 4 * 4.1
+});
 
 $('.panel-step .circle.quarter').circleProgress({
   value: .25
+});
+
+$('.panel-step .circle.half').circleProgress({
+  value: .50,
+  startAngle: -Math.PI / 4 * 4.1
 });

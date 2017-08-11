@@ -21,7 +21,7 @@
       <div class="panel-step">
         <div class="panel-step__item">
           <div class="circle quarter">
-            <span class="circle__type">1</span>
+            <span class="circle__type"><span>1</span></span>
           </div><!-- /.circle -->
           <div class="circle__name">Регистрация</div>
         </div><!-- /.panel-step__item -->
@@ -30,7 +30,27 @@
 
         <div class="panel-step__item">
           <div class="circle">
-            <span class="circle__type">2</span>
+            <span class="circle__type"><span>2</span></span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Оплата</div>
+        </div><!-- /.panel-step__item -->
+
+      </div>
+    </div><!-- /.main-panel__steps -->
+    }
+    @@if (stepspayment === true) {
+    <div class="main-panel__steps">
+      <div class="panel-step panel-step--end">
+        <div class="panel-step__item">
+          <div class="circle full">
+            <span class="circle__type"><span>1</span></span>
+          </div><!-- /.circle -->
+          <div class="circle__name">Регистрация</div>
+        </div><!-- /.panel-step__item -->
+
+        <div class="panel-step__item">
+          <div class="circle half">
+            <span class="circle__type"><span>2</span></span>
           </div><!-- /.circle -->
           <div class="circle__name">Оплата</div>
         </div><!-- /.panel-step__item -->

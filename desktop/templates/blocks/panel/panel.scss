@@ -4,6 +4,7 @@
   position: relative;
   height: 100vh;
   min-width: 1000px;
+  min-height: 780px;
 }
 
 .panel-logo {
@@ -185,6 +186,28 @@
   align-content: center;
   position: relative;
   overflow: hidden;
+
+  &.panel-step--end {
+
+    &:after {
+      background-color: #24ab03;
+    }
+
+    .panel-step__item:first-child {
+
+      .circle .circle__type span {
+        @include size(10px, 7px);
+        background-image: svg-load('check-small.svg', fill=#21aa00);
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        left: 14px;
+        top: 7px;
+        position: relative;
+      }
+    }
+  }
 
   &:after {
     content: '';
