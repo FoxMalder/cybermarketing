@@ -16,6 +16,8 @@
       <a href="auth.html" class="btn btn-outline">Вход</a>
     </div><!-- /.main-panel__switch -->
     }
+    @@if (steps === true) {
+    }
     <div class="main-panel__box">
       @@if (auth === true) {
       <form action="" class="form form-user">
@@ -133,6 +135,12 @@
         <h3>Проверте почту</h3>
         <p>Там вы найдёте инструкцию по восстановлению пароля</p>
       </div><!-- /.restore-send -->
+      }
+      @@if (registration2 === true) {
+      }
+      @@if (payment === true) {
+      }
+      @@if (registration3 === true) {
       }
     </div><!-- /.main-panel__box -->
     <div class="main-panel__footer">

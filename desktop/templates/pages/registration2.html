@@ -7,7 +7,19 @@
   })
   <body>
     <main>
-      @@include('blocks/panel/panel.html', { "reg": false, "login": true, "auth": false, "registration": true, "restore": false, "restoreok": false, "student": true })
+      @@include('blocks/panel/panel.html', {
+      "reg": false,
+      "login": true,
+      "auth": false,
+      "registration": false,
+      "restore": false,
+      "restoreok": false,
+      "student": false,
+      "steps": false,
+      "registration2": false,
+      "payment": false,
+      "registration3": false
+      })
     </main>
   </body>
 </html>
