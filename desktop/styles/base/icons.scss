@@ -365,6 +365,11 @@
     @include size(18px, 20px);
     background-image: svg-load('door.svg', fill=#adb1b9);
   }
+
+  &-yandex-money {
+    @include size(23px, 30px);
+    background-image: svg-load('yandex-money.svg');
+  }
 }
 
 .spinner svg {

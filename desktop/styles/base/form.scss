@@ -275,6 +275,23 @@ textarea.form-control {
   padding-left: 30px;
   cursor: pointer;
 
+  &.form-check--bg {
+
+    input[type="checkbox"]:checked + label .form-check-control:after {
+      color: #62afff;
+      background-image: svg-load('check-small.svg', fill=#ffffff);
+    }
+
+    input[type="checkbox"]:checked + label .form-check-control:before {
+      border: 1px solid #21aa00;
+      background-color: #21aa00;
+    }
+
+    input[type="checkbox"]:checked + label .form-check-control:hover:before {
+      background-color: #f7f7f8;
+    }
+  }
+
   label {
     min-height: 20px;
     padding-left: 0;

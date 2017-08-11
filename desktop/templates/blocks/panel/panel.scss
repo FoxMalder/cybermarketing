@@ -232,3 +232,93 @@
     }
   }
 }
+
+.payment-period {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+
+  &__name {
+    color: #787a80;
+  }
+
+  &__select {
+    margin-left: 5px;
+  }
+}
+
+.payment-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-method {
+  background-color: #fff;
+  border: 1px solid #d6dadd;
+  border-radius: 2px;
+  height: 60px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: #adb1b9;
+
+    .payment-method__check {
+
+      .form-check {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.selected {
+    border-color: #adb1b9;
+
+    .payment-method__check {
+
+      .form-check {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__box {
+    padding: 15px 20px 15px 26px;
+    display: flex;
+    height: 60px;
+    align-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 20px;
+
+    .payment-ico {
+      min-width: 25px;
+      min-height: 25px;
+    }
+  }
+
+  &__name {
+    flex: 1 100%;
+  }
+
+  &__check {
+
+    .form-check {
+      margin-top: 0;
+      margin-bottom: 0;
+      left: 10px;
+      opacity:0;
+      transition: opacity .15s linear;
+
+      label {
+        padding-left: 0;
+        display: block;
+      }
+    }
+  }
+}
