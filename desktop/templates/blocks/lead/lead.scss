@@ -3,7 +3,7 @@
   height: 440px;
   margin: 0;
   background-attachment: fixed;
-  background-position: 50% -50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -22,6 +22,10 @@
 
   &__icon {
     margin-bottom: 35px;
+  }
+
+  &__actions {
+    margin-top: 20px;
   }
 
   h1 {
@@ -167,5 +171,36 @@
       top: 1px;
       margin-left: 4px;
     }
+  }
+}
+
+.bage {
+  position: absolute;
+  width: 212px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #d6d9dc;
+  border-radius: 2px 2px 0 0;
+  transform: rotate(-90deg);
+  left: -126px;
+  top: 259px;
+
+  a:hover {
+
+    .ico-calendar {
+      background-image: svg-load('calendar.svg', fill=#21aa00);
+    }
+  }
+
+  &__box {
+    padding: 10px 20px 10px 15px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &-text {
+    margin-left: 10px;
+    padding-bottom: 4px;
   }
 }

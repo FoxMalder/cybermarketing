@@ -8,6 +8,10 @@
   <body>
     <main>
       @@include('blocks/header/header.html', { "nologin": true, "login": false })
+      @@include('blocks/menu/menu.html', {
+      "link1": "menu__item--active"
+      })
+      @@include('blocks/lead/lead-institute.html')
     </main>
     @@include('blocks/footer/footer.html', { "dir": true, "root": false })
   </body>

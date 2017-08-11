@@ -289,6 +289,10 @@
   &-institute {
     @include size(120px, 110px);
     background-image: svg-load('institute.svg', fill=#21aa00);
+
+    &.white {
+      background-image: svg-load('institute.svg', fill=#fff);
+    }
   }
 
   &-flag {
