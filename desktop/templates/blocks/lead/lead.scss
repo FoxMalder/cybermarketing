@@ -8,6 +8,12 @@
   background-size: cover;
   position: relative;
 
+  &.photo {
+    background-size: auto;
+    background-position: 0 0;
+    background-attachment: scroll;
+  }
+
   &__box {
     display: flex;
     height: 440px;
