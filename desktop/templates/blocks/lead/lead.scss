@@ -30,8 +30,24 @@
     margin-bottom: 35px;
   }
 
-  &__actions {
+  &-actions {
     margin-top: 20px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    &__item {
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        display: block;
+        min-width: 200px;
+      }
+    }
   }
 
   h1 {

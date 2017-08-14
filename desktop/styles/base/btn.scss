@@ -92,6 +92,10 @@ button:disabled,
     }
   }
 
+  &-outline-white {
+    border-color: rgb(255, 255, 255);
+  }
+
   &-white {
     border-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
