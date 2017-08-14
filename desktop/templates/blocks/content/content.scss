@@ -49,6 +49,13 @@
 
 .aside {
 
+  &-left {
+    border-left: 0;
+    min-width: 280px;
+    flex-basis: 280px;
+    border-right: 1px solid rgb(214, 217, 220);
+  }
+
   &__box {
     padding: 10px 35px 41px 39px;
   }
@@ -1048,3 +1055,24 @@
   }
 }
 
+.content-menu {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 10px 0;
+
+  &__item {
+    margin-bottom: 0;
+
+    &.active {
+
+      .content-menu__link {
+        background-color: #f7f7f8;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 24px 39px;
+  }
+}
