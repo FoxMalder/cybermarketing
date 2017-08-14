@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+  @@include('blocks/_base/head.html', {
+    "title": "Список видео",
+    "description": "Список видео",
+    "dir": true, "root": false
+  })
+  <body>
+    <main>
+      @@include('blocks/header/header.html', { "nologin": true, "login": false })
+      @@include('blocks/menu/menu.html')
+    </main>
+    @@include('blocks/footer/footer.html', { "dir": true, "root": false })
+  </body>
+</html>
