@@ -788,6 +788,33 @@ $('.panel-step .circle.half').circleProgress({
 })();
 'use strict';
 
+(function () {
+
+  $('#search').keyup(function () {
+
+    if ($(this).val().length < 1) {
+      $('.search-bubble').removeClass('show');
+    } else {
+      $('.search-bubble').addClass('show');
+      $('.search-bubble__results').hide();
+      $('.search-bubble__text').addClass('show');
+    }
+
+    if ($(this).val().length > 1) {
+      if ($(this).val() === 'кон') {
+        $('.search-bubble__results').show();
+        $('.search-bubble__text').removeClass('show');
+      } else {
+        $('.search-bubble__results').hide();
+        $('.search-bubble__text').addClass('show');
+        $('.search-bubble__text h3').text('Ничего не найдено');
+        $('.search-bubble__text p').text('Проверте написание или попробуйте другой запрос ');
+      }
+    }
+  });
+})();
+'use strict';
+
 var pass = $(".psdfdsf");
 $('.show-password').click(function () {
   pass.attr('type', pass.attr('type') === 'password' ? 'text' : 'password');
