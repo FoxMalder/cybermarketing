@@ -3,22 +3,31 @@
   $('#search').keyup(function() {
 
     if($(this).val().length < 1 ) {
-      $('.search-bubble').removeClass('show');
+      $('._search-bubble').removeClass('show');
+      $(this).removeClass('focus');
+      $('.search__box .loading').hide();
+      $('.search__box span .ico-cross').hide();
     } else {
-      $('.search-bubble').addClass('show');
-      $('.search-bubble__results').hide();
-      $('.search-bubble__text').addClass('show');
+      $(this).addClass('focus');
+      $('.search__box .loading').show();
+      $('._search-bubble').addClass('show');
+      $('._search-results').removeClass('show');
+      $('._search-bubble__text').addClass('show');
+      $('._search-bubble__text h3').text('Одной буквы недостаточно для поиска');
+      $('._search-bubble__text p').text('Попробуйте ввести слово целиком?');
     }
 
     if($(this).val().length > 1 ) {
       if ($(this).val() === 'кон') {
-        $('.search-bubble__results').show();
-        $('.search-bubble__text').removeClass('show');
+        $('._search-results').addClass('show');
+        $('._search-bubble__text').removeClass('show');
+        $('.search__box .loading').hide();
+        $('.search__box span .ico-cross').show();
       } else {
-        $('.search-bubble__results').hide();
-        $('.search-bubble__text').addClass('show');
-        $('.search-bubble__text h3').text('Ничего не найдено');
-        $('.search-bubble__text p').text('Проверте написание или попробуйте другой запрос ');
+        $('._search-results').removeClass('show');
+        $('._search-bubble__text').addClass('show');
+        $('._search-bubble__text h3').text('Ничего не найдено');
+        $('._search-bubble__text p').text('Проверте написание или попробуйте другой запрос');
       }
     }
 

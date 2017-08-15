@@ -112,22 +112,24 @@
   border-radius: 2px;
   box-shadow: 0 0 15px rgba(0, 0, 0, .2);
   position: absolute;
-  z-index: 2;
   margin-top: 10px;
   opacity: 0;
-  transition: opacity .3s ease-in-out;
+  z-index: -1;
 
   &.show {
     opacity: 1;
+    z-index: 2;
+    transition: all .31s ease-in-out;
   }
 
   &__text {
     opacity: 0;
-    transition: opacity .3s ease-in-out;
-    height: 270px;
+    height: 0;
 
     &.show {
-      opacity: 1;п
+      opacity: 1;
+      height: 270px;
+      transition: all .3s ease-in-out;
     }
 
     &.center {
@@ -140,11 +142,13 @@
   }
 
   &__results {
+    height: 0;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
 
     &.show {
+      height: auto;
       opacity: 1;
+      transition: all .29s ease-in-out;
     }
   }
 
@@ -160,5 +164,27 @@
   .mark {
     color: #21aa00;
     font-weight: 700;
+  }
+}
+
+.search__box {
+
+  .form-control-right {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+
+    .loading {
+      display: none;
+      position: relative;
+      top: -8px;
+    }
+
+    span .ico-cross {
+      display: none;
+      position: relative;
+      top: 2px;
+      right: 2px;
+    }
   }
 }
