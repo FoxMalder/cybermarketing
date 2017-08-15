@@ -102,3 +102,28 @@
     padding-top: 5px;
   }
 }
+
+.search-bubble {
+  width: 520px;
+  min-height: 270px;
+  max-height: 600px;
+  background-color: #fff;
+  border: 1px solid #d6dadd;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 2;
+  margin-top: 10px;
+
+  &__text {
+    height: 270px;
+
+    &.center {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
