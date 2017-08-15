@@ -394,6 +394,11 @@
     @include size(30px, 28px);
     background-image: svg-load('terminal.svg');
   }
+
+  &-hashtag {
+    @include size(19px, 18px);
+    background-image: svg-load('hashtag.svg', fill=#adb3bb);
+  }
 }
 
 .spinner svg {

@@ -158,7 +158,8 @@ input[type=radio] {
     border-color: rgb(173, 177, 185);
   }
 
-  &:focus {
+  &:focus,
+  &.focus {
     border-color: rgb(33, 170, 0);
   }
 }

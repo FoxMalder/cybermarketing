@@ -628,6 +628,23 @@
     }
   }
 
+  &--search {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .list-icon__item {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .list-icon__desc {
+      margin-left: 10px;
+    }
+  }
+
   &.seminar-info {
     padding-bottom: 32px;
     border-bottom: 1px solid rgb(214, 217, 220);
