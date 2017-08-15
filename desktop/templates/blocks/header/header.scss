@@ -117,13 +117,27 @@
 
   &__text {
     height: 270px;
+    display: flex;
 
     &.center {
-      display: flex;
+      display: none;
       align-content: center;
       justify-content: center;
       align-items: center;
       flex-direction: column;
     }
+  }
+
+  &__row {
+    border-bottom: 1px solid #d6dadd;
+
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .mark {
+    color: #21aa00;
+    font-weight: 700;
   }
 }
