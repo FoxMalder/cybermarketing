@@ -139,6 +139,15 @@
     }
   }
 
+  &__results {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
   &__row {
     border-bottom: 1px solid #d6dadd;
     padding: 16px 11px 16px 11px;
