@@ -1,0 +1,42 @@
+.numbers-wrap {
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.numbers {
+
+  &-list {
+    padding: 0 80px;
+    display: flex;
+  }
+
+  &__box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__icon {
+    display: block;
+
+    &-box {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #21aa00;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      span {
+        width: 20px;
+        height: 20px;
+        display: block;
+      }
+    }
+  }
+}
