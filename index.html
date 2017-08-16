@@ -118,9 +118,20 @@
               <div class="form-control-feedback">
                 <span><i class="ico ico-loupe" aria-hidden=”true”></i></span>
               </div><!-- /.form-group-status-type -->
+              <div class="form-control-right">
+                <div class="loading">
+                  <div class="loading__icon">
+                    <div class="spinner">
+                      <svg viewBox="0 0 64 64"><g><defs><linearGradient id="sGD" gradientUnits="userSpaceOnUse" x1="55" y1="46" x2="2" y2="46"><stop offset="0.1" class="stop1"></stop><stop offset="1" class="stop2" fill="red"></stop></linearGradient></defs><g stroke-width="4" stroke-linecap="round" fill="none" transform="rotate(134.304 32 32)"><path stroke="url(#sGD)" d="M4,32 c0,15,12,28,28,28c8,0,16-4,21-9"></path><path d="M60,32 C60,16,47.464,4,32,4S4,16,4,32"></path><animateTransform values="0,32,32;360,32,32" attributeName="transform" type="rotate" repeatCount="indefinite" dur="750ms"></animateTransform></g></g></svg>
+                    </div><!-- /.spinner -->
+                  </div><!-- /.loading__icon -->
+                  <div class="loading__text"></div><!-- /.loading__text -->
+                </div><!-- /.loading -->
+                <span><i class="ico ico-cross" aria-hidden=”true”></i></span>
+              </div>
               <input id="search" type="text" class="form-control" placeholder="Что хотите найти?">
-              <div class="search-bubble">
-                <div class="search-bubble__results">
+              <div class="search-bubble _search-bubble">
+                <div class="search-bubble__results _search-results">
                   <div class="search-bubble__row">
 
                     <div class="list-icon list-icon--search">
@@ -294,9 +305,9 @@
 
                   </div><!-- /.search-bubble__row -->
                 </div><!-- /.search-bubble__results -->
-                <div class="search-bubble__text center">
-                  <h3>одной буквы недостаточно для поиска</h3>
-                  <p>Проверте написание или попробуйте другой запрос </p>
+                <div class="search-bubble__text center _search-bubble__text">
+                  <h3>Одной буквы недостаточно для поиска</h3>
+                  <p>Попробуйте ввести слово целиком?</p>
                 </div><!-- /.search-bubble__text -->
               </div><!-- /.search-bubble -->
             </div><!-- /.form-group-status -->
@@ -342,8 +353,7 @@
   </div><!-- /.menu -->
 </div><!-- /.container -->
 
-      <link rel="stylesheet" href="../../../styles/style.scss">
-<div class="container">
+      <div class="container">
   <div class="page outline">
 
     <div class="page__content content">
