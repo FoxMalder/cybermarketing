@@ -7,19 +7,19 @@
 .numbers {
 
   &-list {
-    padding: 0 80px;
+    padding: 0 60px;
     display: flex;
+    justify-content: space-around;
   }
 
   &__box {
     display: flex;
-    text-align: center;
     align-items: center;
     align-content: center;
   }
 
   &__icon {
-    display: block;
+    margin-right: 40px;
 
     &-box {
       width: 60px;
@@ -38,5 +38,20 @@
         display: block;
       }
     }
+  }
+
+  &__quantity {
+    color: #000;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  &__info {
+    color: #787a80;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
   }
 }
