@@ -301,5 +301,24 @@
       opacity: .89;
     }
   }
+
+  &.white {
+
+    .social__link--vk {
+      background-color: #ffffff;
+
+      span {
+        background-image: svg-load('social/vk.svg', fill=#21aa00);
+      }
+    }
+
+    .social__link--instagram {
+      background-color: #ffffff;
+
+      span {
+        background-image: svg-load('social/instagram.svg', fill=#21aa00);
+      }
+    }
+  }
 }
 

@@ -253,16 +253,13 @@
     height: 480px;
     display: flex;
     flex-wrap: wrap;
+    user-select: none;
 
     img {
       width: 159px;
       height: 160px;
       display: block;
       vertical-align: bottom;
-
-      &:nth-child(3) {
-        width: 159px;
-      }
     }
   }
 
@@ -282,5 +279,43 @@
     height: 320px;
     background-color: rgba(33, 170, 0, .85);
     margin-left: -5px;
+  }
+
+  .share-content {
+    margin-top: 58px;
+    color: rgb(255, 255, 255);
+
+    h2 {
+      color: rgb(255, 255, 255);
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    h3 {
+      color: rgb(255, 255, 255);
+      text-transform: none;
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+
+    p {
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 40px;
+    }
+  }
+
+  .social-box {
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
   }
 }
