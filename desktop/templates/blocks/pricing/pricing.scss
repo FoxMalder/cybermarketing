@@ -38,6 +38,7 @@
     font-size: 26px;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 20px;
   }
 
   &-info {
@@ -46,16 +47,34 @@
     color: rgb(0, 0, 0);
     font-size: 18px;
     line-height: 25px;
+    margin-bottom: 30px;
   }
 
   &__value {
     color: rgb(0, 0, 0);
-    font-size: 26px;
     font-weight: 400;
     line-height: 30px;
+    font-size: 36px;
+
+    span {
+      font-size: 26px;
+    }
+  }
+
+  .horizontal-label {
+    margin-bottom: 25px;
   }
 
   &__actions {
+    margin-top: 30px;
+
+    .btn-green {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__footer {
     margin-top: auto;
   }
 }
