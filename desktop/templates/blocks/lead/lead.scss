@@ -162,45 +162,6 @@
   align-content: center;
   color: #fff;
 
-  &--big {
-
-    .lead-info__price .price-cross {
-      font-size: 26px;
-      text-decoration: none;
-      position: relative;
-      margin-right: 35px;
-
-      &:after,
-      &:before {
-        position: absolute;
-        content: '';
-        width: 120%;
-        height: 2px;
-        background-color: #fff;
-      }
-
-      &:after {
-        top: 12px;
-        left: -10%;
-        transform: rotate(17deg);
-      }
-
-      &:before {
-        bottom: 12px;
-        left: -10%;
-        transform: rotate(-17deg);
-      }
-    }
-
-    .price-ok {
-      font-size: 36px;
-
-      span {
-        font-size: 26px;
-      }
-    }
-  }
-
   &__item {
     padding-left: 30px;
     padding-right: 30px;
@@ -235,6 +196,27 @@
     text-decoration: line-through;
     margin-right: 22px;
     line-height: 1;
+
+    //&:after,
+    //&:before {
+    //  position: absolute;
+    //  content: '';
+    //  width: 120%;
+    //  height: 2px;
+    //  background-color: #fff;
+    //}
+    //
+    //&:after {
+    //  top: 12px;
+    //  left: -10%;
+    //  transform: rotate(17deg);
+    //}
+    //
+    //&:before {
+    //  bottom: 12px;
+    //  left: -10%;
+    //  transform: rotate(-17deg);
+    //}
   }
 
   .price-ok {
