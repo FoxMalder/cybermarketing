@@ -171,6 +171,10 @@
   &-academic-cap {
     @include size(20px, 18px);
     background-image: svg-load('academic-cap.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('academic-cap.svg', fill=#21aa00);
+    }
   }
 
   &-edu-sign {
@@ -254,6 +258,10 @@
   &-user {
     @include size(18px, 18px);
     background-image: svg-load('user.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('user.svg', fill=#21aa00);
+    }
   }
 
   &-tag {
