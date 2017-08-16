@@ -1,0 +1,30 @@
+.pricing-wrap {
+  background-color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 0;
+}
+
+.pricing-list {
+  display: flex;
+  padding: 0 39px;
+  margin-top: 50px;
+}
+
+.pricing {
+  width: 387px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(214, 217, 220);
+  border-radius: 2px;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 45px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+}
