@@ -14,6 +14,14 @@
     background-attachment: scroll;
   }
 
+  &.lead-mini {
+    height: 290px;
+
+    .lead__center {
+      margin-top: 70px;
+    }
+  }
+
   &__box {
     display: flex;
     height: 440px;
@@ -35,6 +43,7 @@
     display: flex;
     align-content: center;
     align-items: center;
+    justify-content: center;
 
     &__item {
       margin-right: 40px;
