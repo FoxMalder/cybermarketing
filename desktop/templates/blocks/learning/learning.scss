@@ -1,0 +1,49 @@
+.learning {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.learning-map {
+  position: relative;
+  padding-top: 20px;
+
+  &__bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 737px;
+    height: 828px;
+    background-color: #ff0000;
+    margin: 0 90px;
+    background: url('../../images/learning.png') no-repeat 0 0;
+  }
+}
+
+.learning-steps {
+  display: flex;
+  padding: 0 30px;
+}
+
+.learning-step {
+  flex: 1 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+
+  &__box {
+    padding: 50px 32px 50px 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon {
+    flex-basis: 120px;
+
+    span {
+      min-height: 125px;
+    }
+  }
+}
