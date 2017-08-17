@@ -28,9 +28,19 @@
 .learning-step {
   flex: 1 100%;
   display: block;
-  overflow: hidden;
   text-align: center;
   position: relative;
+
+  &:not(:last-child):after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    transition: all .3s ease;
+    @include size(40px, 40px);
+    background-image: svg-load('nav-right.svg', fill=#d6d9dc);
+    right: -20px;
+    top: 100px;
+  }
 
   &__box {
     padding: 50px 32px 50px 32px;
