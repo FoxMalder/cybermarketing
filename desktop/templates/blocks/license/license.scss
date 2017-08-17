@@ -18,6 +18,7 @@
 
     img {
       margin-right: 20px;
+      vertical-align: bottom;
 
       &:last-child {
         margin-right: 0;
@@ -41,8 +42,7 @@
     display: flex;
     align-items: stretch;
     align-content: stretch;
-    padding: 0 60px;
-    margin-bottom: 50px;
+    padding: 30px 60px 50px 60px;
   }
 
   &__item {
