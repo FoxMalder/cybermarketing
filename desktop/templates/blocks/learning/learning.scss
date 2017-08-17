@@ -56,4 +56,17 @@
       min-height: 125px;
     }
   }
+
+  &__name {
+    color: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  &__actions {
+    margin-top: 20px;
+  }
 }
