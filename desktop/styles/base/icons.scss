@@ -416,6 +416,21 @@
     @include size(19px, 18px);
     background-image: svg-load('hashtag.svg', fill=#adb3bb);
   }
+
+  &-cyber-play {
+    @include size(120px, 80px);
+    background-image: svg-load('cyber-play.svg', fill=#21aa00);
+  }
+
+  &-diplom {
+    @include size(100px, 100px);
+    background-image: svg-load('diplom.svg', fill=#21aa00);
+  }
+
+  &-cv {
+    @include size(80px, 100px);
+    background-image: svg-load('cv.svg', fill=#21aa00);
+  }
 }
 
 .spinner svg {
