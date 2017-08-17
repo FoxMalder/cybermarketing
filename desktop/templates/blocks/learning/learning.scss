@@ -15,7 +15,11 @@
     width: 737px;
     height: 828px;
     margin: 0 90px;
-    background: url('../../images/learning.png') no-repeat 0 0;
+    background-color: #fff;
+    background-image: url('../../images/learning.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: scroll;
   }
 
   &__name {
@@ -37,6 +41,36 @@
     &.map__item1 {
       right: 40px;
       top: 85px;
+
+      p > a {
+        color: #000;
+        border-bottom: 1px solid;
+      }
+    }
+
+    &.map__item2 {
+      right: 40px;
+      top: 246px;
+    }
+
+    &.map__item3 {
+      right: 40px;
+      top: 406px;
+    }
+
+    &.map__item4 {
+      right: 40px;
+      top: 566px;
+    }
+
+    &.map__item5 {
+      right: 40px;
+      top: 725px;
+    }
+
+    &.map__item6 {
+      left: 95px;
+      bottom: 162px;
     }
   }
 }
