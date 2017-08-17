@@ -1,0 +1,64 @@
+.skills {
+  background-color: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__actions {
+    padding: 20px 60px 0 60px;
+    text-align: center;
+  }
+}
+
+.check-lists {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 40px 30px 20px 30px;
+
+  &__item {
+    flex: 1 50%;
+  }
+}
+
+.check-list {
+  padding-left: 50px;
+
+  &__item {
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__icon {
+    margin-right: 40px;
+
+    &-box {
+      width: 40px;
+      height: 40px;
+      border: 2px solid #21aa00;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+
+      span {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
