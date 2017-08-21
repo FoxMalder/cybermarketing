@@ -42,7 +42,11 @@
 .profile-nav {
   position: relative;
   top: 0;
-  padding-top: 25px;
+  padding-top: 35px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
 }
 
 .profile-menu {
@@ -97,7 +101,7 @@
 
     .label-mini {
       right: -73px;
-      top: -1px;
+      top: -2px;
       position: absolute;
       color: rgb(255, 255, 255);
       font-family: Arial;
