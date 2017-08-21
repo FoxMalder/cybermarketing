@@ -1,6 +1,22 @@
 .headline {
   background-color: rgb(247, 247, 248);
 
+  &-green {
+    background-color: rgb(33, 170, 0);
+
+    .headline__status .you-status {
+      border-color: #fff;
+    }
+
+    .headline__text {
+      color: #fff;
+    }
+
+    .headline__name .course-name h2 {
+      color: #fff;
+    }
+  }
+
   &__box {
     display: flex;
     align-content: space-between;
