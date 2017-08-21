@@ -6,6 +6,21 @@
   }
 }
 
+@keyframes pulse {
+
+  0% {
+    box-shadow: 0 0 0 0 rgba(33, 170, 0, .2);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(33, 170, 0, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 1px rgba(33, 170, 0, 0);
+  }
+}
+
 .mee-ink-el {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* sass-lint:disable-line no-vendor-prefixes */
 }
@@ -35,3 +50,4 @@
   position: absolute;
   transform: scale(0);
 }
+

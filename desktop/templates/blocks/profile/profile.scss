@@ -87,6 +87,13 @@
     display: block;
     position: relative;
 
+    &:hover {
+
+      .label-circle {
+        animation: pulse 1.8s infinite;
+      }
+    }
+
     .label-circle {
       background-color: #21aa00;
       display: block;
