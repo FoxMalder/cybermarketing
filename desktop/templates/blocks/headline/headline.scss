@@ -1,6 +1,10 @@
 .headline {
   background-color: rgb(247, 247, 248);
 
+  &-white {
+    background-color: #fff;
+  }
+
   &-green {
     background-color: rgb(33, 170, 0);
 
@@ -101,6 +105,7 @@
 
     .btn {
       margin-right: 20px;
+      min-width: 140px;
 
       &:last-child {
         margin-right: 0;
