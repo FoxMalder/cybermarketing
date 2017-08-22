@@ -64,6 +64,10 @@
 .curriculum {
   padding: 21px 0 25px 0;
 
+  &--current {
+    background-color: rgb(247, 247, 248);
+  }
+
   &--active {
     background-color: rgb(247, 247, 248);
 
@@ -118,7 +122,7 @@
   }
 
   &__item {
-    padding: 20px 29px 20px 38px;
+    padding: 10px 29px 10px 38px;
     transition: all .3s ease;
 
     &:hover {
@@ -835,6 +839,94 @@
   .info-list {
     border-top: 1px solid rgb(214, 217, 220);
     padding: 26px 0 38px 0;
+  }
+
+  &.mini {
+
+    .info-list {
+      border-top: 0;
+      padding: 26px 0 38px 0;
+    }
+  }
+}
+
+.course-info-mini {
+  display: block;
+  position: relative;
+}
+
+.info-mini {
+  padding: 10px 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__item {
+    flex-basis: 240px;
+    margin-right: 23px;
+  }
+
+  &__box {
+    display: flex;
+    align-content: stretch;
+    align-items: flex-start;
+    flex: 1 100%;
+    min-height: 60px;
+  }
+
+  &__icon {
+    margin-right: 20px;
+
+    .circle {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+
+      &__type {
+        position: absolute;
+        top: 18px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        text-transform: uppercase;
+      }
+
+      &__name {
+        color: #787a80;
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: center;
+      }
+    }
+  }
+
+  &__desc {
+    padding-top: 2px;
+  }
+
+  &__name {
+    color: rgb(120, 122, 128);
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  &__info {
+
+    .info span {
+      font-weight: bold;
+      text-transform: none;
+    }
   }
 }
 

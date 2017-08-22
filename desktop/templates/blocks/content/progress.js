@@ -577,3 +577,9 @@ $('.panel-step .circle.half').circleProgress({
   value: .50,
   startAngle: -Math.PI / 4 * 4.1
 });
+
+$('.info-mini .circle').circleProgress({
+  value: .0,
+  size: 60,
+  thickness: 2
+});
