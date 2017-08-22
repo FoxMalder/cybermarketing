@@ -927,6 +927,37 @@
       font-weight: bold;
       text-transform: none;
     }
+
+    .info-people-list {
+
+      .info-people {
+        margin-left: -8px;
+        width: 38px;
+        height: 38px;
+
+        &:first-child {
+          margin-left: -2px;
+        }
+
+        &__img {
+
+          img {
+            width: 38px;
+            height: 38px;
+          }
+        }
+      }
+    }
+
+    .info-bubble__box {
+      height: 30px;
+      color: rgb(255, 255, 255);
+      font-family: Arial;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
   }
 }
 
