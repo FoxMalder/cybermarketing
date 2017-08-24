@@ -160,6 +160,10 @@ button:disabled,
   & > .btn {
     position: relative;
     flex: 0 1 auto;
+
+    &:hover {
+      z-index: 10;
+    }
   }
 
   & > .btn:last-child:not(:first-child) {
