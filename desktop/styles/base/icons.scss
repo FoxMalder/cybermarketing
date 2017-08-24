@@ -243,6 +243,10 @@
   &-question {
     @include size(12px, 18px);
     background-image: svg-load('question.svg', fill=#adb1b9);
+
+    &.green {
+      background-image: svg-load('question.svg', fill=#21aa00);
+    }
   }
 
   &-rub {
