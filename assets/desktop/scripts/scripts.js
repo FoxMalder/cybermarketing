@@ -725,6 +725,16 @@ $('.info-mini .circle').circleProgress({
   size: 60,
   thickness: 2
 });
+
+$('.page-lesson .circle-15').circleProgress({
+  value: .16,
+  startAngle: -Math.PI / 4 * 2
+});
+
+$('.page-lesson .circle-48').circleProgress({
+  value: .90,
+  startAngle: -Math.PI / 4 * 2
+});
 'use strict';
 
 // Сворачиваем и разворачиваем список уроков
