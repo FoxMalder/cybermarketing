@@ -90,6 +90,11 @@
     background-image: svg-load('play-in-circle.svg', fill=#adb1b9);
   }
 
+  &-play-in-circle-big {
+    @include size(60px);
+    background-image: svg-load('play-in-circle-big.svg', fill=#ffffff);
+  }
+
   &-article {
     @include size(16px, 20px);
     background-image: svg-load('article.svg', fill=#adb1b9);
