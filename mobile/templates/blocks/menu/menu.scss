@@ -9,6 +9,7 @@
   flex-direction: column;
 
   &_item {
+    border-bottom: 1px solid #d6d9dc;
 
     &.active {
 
@@ -25,6 +26,10 @@
   &_link-box {
     padding: 24px 20px 23px 17px;
     border-left: 3px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
   }
 
   &-base {
@@ -53,5 +58,17 @@
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+
+  &-red {
+    background-color: #ef0d0d;
   }
 }
