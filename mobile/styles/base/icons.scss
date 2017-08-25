@@ -62,4 +62,19 @@
     @include size(20px);
     background-image: svg-load('star.svg', fill=#adb1b9);
   }
+
+  &-geotag {
+    @include size(18px, 20px);
+    background-image: svg-load('geotag.svg', fill=#adb1b9);
+  }
+
+  &-mail {
+    @include size(20px, 16px);
+    background-image: svg-load('mail.svg', fill=#adb1b9);
+  }
+
+  &-phone {
+    @include size(14px, 20px);
+    background-image: svg-load('phone.svg', fill=#adb1b9);
+  }
 }
