@@ -77,4 +77,9 @@
     @include size(14px, 20px);
     background-image: svg-load('phone.svg', fill=#adb1b9);
   }
+
+  &-computer {
+    @include size(18px, 18px);
+    background-image: svg-load('computer.svg', fill=#adb1b9);
+  }
 }

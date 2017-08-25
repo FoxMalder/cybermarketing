@@ -2,21 +2,30 @@
   border-bottom: 1px solid #d6d9dc;
   padding: 20px 20px;
 
-  .social {
-    margin-bottom: 20px;
-  }
-
   .apps-list {
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+  }
+
+  .social-box {
+    margin-top: 40px;
   }
 }
 
-.footer-copy {
+.company-links {
   padding: 20px 20px;
+
+  &_gray {
+    color: #787b81;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
 }
 
-.address {
-  margin-bottom: 34px;
+.footer-info {
 
   &-box {
     display: flex;
