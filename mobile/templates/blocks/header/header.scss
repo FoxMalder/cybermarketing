@@ -4,5 +4,19 @@
 }
 
 .header {
-  padding: 20px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+  &_info {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &_menu-icon {
+    margin-right: 22px;
+  }
 }
