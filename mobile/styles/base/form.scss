@@ -34,16 +34,20 @@ input[type=radio] {
 }
 
 .form-group {
-  margin-bottom: 21px;
+  margin-bottom: 30px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  &-status {
-    position: relative;
+  &.last {
+    margin-bottom: 20px;
+  }
 
-    &-type {
+  &.status-left {
+
+    .form-control-feedback {
       position: absolute;
       top: 10px;
       left: 10px;
@@ -54,7 +58,26 @@ input[type=radio] {
     }
   }
 
+  &.status-right {
+
+    .form-control-feedback {
+      position: absolute;
+      top: 11px;
+      right: 10px;
+
+      .circle {
+        position: relative;
+        top: -3px;
+      }
+    }
+
+    .form-control {
+      padding-right: 40px;
+    }
+  }
+
   &--error {
+    position: relative;
 
     .form-control {
       border-color: rgb(252, 47, 47);
@@ -72,6 +95,14 @@ input[type=radio] {
   justify-content: flex-start;
   align-items: center;
 
+  &.full {
+
+    .btn {
+      width: 100%;
+      display: block;
+    }
+  }
+
   .btn {
     padding-left: 42px;
     padding-right: 42px;
@@ -79,6 +110,23 @@ input[type=radio] {
 
   .form-add-file {
     margin-left: 38px;
+  }
+
+  & + .form-group {
+    margin-top: 20px;
+  }
+}
+
+.form-name {
+  margin-bottom: 25px;
+
+  h3 {
+    color: #000;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
   }
 }
 
@@ -110,9 +158,16 @@ input[type=radio] {
     border-color: rgb(173, 177, 185);
   }
 
-  &:focus {
+  &:focus,
+  &.focus {
     border-color: rgb(33, 170, 0);
   }
+}
+
+.form-social {
+  margin-top: 38px;
+  border-top: 1px solid #d6dadd;
+  padding-top: 30px;
 }
 
 textarea.form-control {
@@ -220,6 +275,23 @@ textarea.form-control {
   margin-bottom: 10px;
   padding-left: 30px;
   cursor: pointer;
+
+  &.form-check--bg {
+
+    input[type="checkbox"]:checked + label .form-check-control:after {
+      color: #62afff;
+      background-image: svg-load('check-small.svg', fill=#ffffff);
+    }
+
+    input[type="checkbox"]:checked + label .form-check-control:before {
+      border: 1px solid #21aa00;
+      background-color: #21aa00;
+    }
+
+    input[type="checkbox"]:checked + label .form-check-control:hover:before {
+      background-color: #f7f7f8;
+    }
+  }
 
   label {
     min-height: 20px;
@@ -330,6 +402,62 @@ textarea.form-control {
       & + label .form-check-control:after {
         background-image: svg-load('check-small.svg', fill=#adb1b9);
       }
+    }
+  }
+}
+
+.bubble {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #d6dadd;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  min-width: 140px;
+  min-height: 80px;
+  left: calc(100% + 15px);
+  top: 0;
+
+  &.big {
+    min-width: 290px;
+    min-height: 130px;
+  }
+
+  &__text {
+    color: #83868b;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 14px 19px 15px 20px;
+  }
+
+  &__actions {
+    margin-top: 13px;
+  }
+
+  &-right {
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 7px 5px 7px 0;
+      top: 17px;
+      margin-top: -4px;
+    }
+
+    &:before {
+      border-color: transparent #d6dadd transparent transparent;
+      left: -6px;
+    }
+
+    &:after {
+
+      border-color: transparent #fff transparent transparent;
+      left: -5px;
     }
   }
 }

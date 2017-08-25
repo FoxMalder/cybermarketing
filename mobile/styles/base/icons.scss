@@ -7,4 +7,9 @@
     @include size(16px, 16px);
     background-image: svg-load('cross.svg', fill=#adb1b9);
   }
+
+  &-loupe {
+    @include size(20px);
+    background-image: svg-load('loupe.svg', fill=#adb1b9);
+  }
 }
