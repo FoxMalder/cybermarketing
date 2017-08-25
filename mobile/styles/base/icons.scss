@@ -17,4 +17,49 @@
     @include size(18px, 20px);
     background-image: svg-load('calendar.svg', fill=#adb1b9);
   }
+
+  &-portfl {
+    @include size(18px, 20px);
+    background-image: svg-load('portfl.svg', fill=#adb1b9);
+  }
+
+  &-microphone {
+    @include size(16px, 20px);
+    background-image: svg-load('microphone.svg', fill=#adb1b9);
+  }
+
+  &-webcam {
+    @include size(16px, 20px);
+    background-image: svg-load('webcam.svg', fill=#adb1b9);
+  }
+
+  &-pencil {
+    @include size(10px, 20px);
+    background-image: svg-load('pencil.svg', fill=#adb1b9);
+  }
+
+  &-academic-cap {
+    @include size(20px, 18px);
+    background-image: svg-load('academic-cap.svg', fill=#adb1b9);
+  }
+
+  &-play-in-circle {
+    @include size(20px);
+    background-image: svg-load('play-in-circle.svg', fill=#adb1b9);
+  }
+
+  &-like {
+    @include size(18px, 20px);
+    background-image: svg-load('like.svg', fill=#adb1b9);
+  }
+
+  &-user {
+    @include size(18px, 18px);
+    background-image: svg-load('user.svg', fill=#adb1b9);
+  }
+
+  &-star {
+    @include size(20px);
+    background-image: svg-load('star.svg', fill=#adb1b9);
+  }
 }
