@@ -12,4 +12,9 @@
     @include size(20px);
     background-image: svg-load('loupe.svg', fill=#adb1b9);
   }
+
+  &-calendar {
+    @include size(18px, 20px);
+    background-image: svg-load('calendar.svg', fill=#adb1b9);
+  }
 }
