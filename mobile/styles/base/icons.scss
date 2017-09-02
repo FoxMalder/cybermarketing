@@ -109,4 +109,18 @@
       transform: rotate(-90deg);
     }
   }
+
+  &-play-in-circle-big {
+    @include size(60px);
+    background-image: svg-load('play-in-circle-big.svg', fill=#ffffff);
+  }
+
+  &-watch {
+    @include size(20px);
+    background-image: svg-load('watch.svg', fill=#adb1b9);
+
+    &.white {
+      background-image: svg-load('watch.svg', fill=#ffffff);
+    }
+  }
 }
