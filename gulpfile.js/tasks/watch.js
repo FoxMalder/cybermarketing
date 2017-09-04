@@ -15,10 +15,10 @@ gulp.task('watch', function() {
     return runSequence('html');
   });
   watch(paths.watch.styles, function() {
-    return runSequence('styles', 'cache');
+    return runSequence(['styles', 'cleancache']);
   });
   watch(paths.watch.scripts, function() {
-    return runSequence('scripts', 'cache');
+    return runSequence(['scripts', 'cleancache']);
   });
   watch(paths.watch.images, function() {
     return runSequence('images', browserSync.reload);

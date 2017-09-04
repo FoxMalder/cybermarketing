@@ -14,8 +14,6 @@ const assets = require('postcss-assets');
 const inlinesvg = require('postcss-inline-svg');
 const mqpacker = require('css-mqpacker');
 const runSequence = require('run-sequence');
-const browserSync = require("browser-sync");
-const reload = browserSync.reload;
 
 const paths = require('../paths');
 const errorHandler = require('../errorHandler');
@@ -23,7 +21,7 @@ const errorHandler = require('../errorHandler');
 
 // Стили
 gulp.task('styles', function() {
-  return runSequence(['styles:desktop', 'styles:mobile', 'styles:lint'], browserSync.reload);
+  return runSequence(['styles:desktop', 'styles:mobile', 'styles:lint']);
 });
 
 // Список PostCSS-плагинов

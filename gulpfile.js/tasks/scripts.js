@@ -7,8 +7,6 @@ const concat = require('gulp-concat');
 const eslint = require('gulp-eslint');
 const uglify = require('gulp-uglify');
 const runSequence = require('run-sequence');
-const browserSync = require("browser-sync");
-const reload = browserSync.reload;
 
 
 const paths = require('../paths');
@@ -17,7 +15,7 @@ const errorHandler = require('../errorHandler');
 
 // Скрипты
 gulp.task('scripts', function() {
-  return runSequence(['scripts:desktop', 'scripts:mobile'], browserSync.reload);
+  return runSequence(['scripts:desktop', 'scripts:mobile']);
 });
 
 // Сборка и минификация скриптов
