@@ -2,8 +2,7 @@
 <html lang="ru" class="no-js">
   @@include('blocks/_base/head.html', {
     "title": "Вы закончили урок",
-    "description": "Вы закончили урок",
-    "dir": true, "root": false
+    "description": "Вы закончили урок"
   })
   <body>
     <main>
@@ -14,6 +13,6 @@
       @@include('blocks/headline/headline-lesson.html', { "endvideo": true })
       @@include('blocks/content/lesson.html', { "video": false, "img": false, "endvideo": true })
     </main>
-    @@include('blocks/footer/footer.html', { "dir": true, "root": false })
+    @@include('blocks/footer/footer.html')
   </body>
 </html>

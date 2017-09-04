@@ -2,12 +2,17 @@
 <html lang="ru" class="no-js">
   @@include('blocks/_base/head.html', {
     "title": "Тест",
-    "description": "Тест",
-    "dir": true, "root": false
+    "description": "Тест"
   })
   <body>
     <main>
-      @@include('blocks/test/test.html', { "test": true, "alert": false, "notify": true, "result": false, "fail": false })
+      @@include('blocks/test/test.html', {
+      "test": true,
+      "alert": false,
+      "notify": true,
+      "result": false,
+      "fail": false
+      })
     </main>
   </body>
 </html>
