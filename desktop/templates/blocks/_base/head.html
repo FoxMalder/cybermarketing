@@ -43,4 +43,11 @@
   <script src="/assets/scripts/likely/likely.js"></script>
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
+
+  <script>
+    var isMobile = /iPhone|iPad|iPod|Android|mobile|avantgo|bada/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location = "/mobile/";
+    }
+  </script>
 </head>
