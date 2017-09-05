@@ -78,29 +78,40 @@
 
   &_cover {
     overflow: hidden;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
     position: relative;
 
-    &-bg {
-      visibility: visible;
-      opacity: 1;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+    &-box {
       background-color: rgba(33, 170, 0, .8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
+      min-height: 200px;
+      height: auto;
+      margin: 0;
+      background-attachment: scroll;
+      background-position: 0 50%;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: relative;
     }
 
     img {
-      display: block;
+      display: none;
+      visibility: hidden;
       vertical-align: bottom;
     }
+  }
+
+  &_cover-bg {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 170, 0, .8);
+    justify-content: center;
+    transition: visibility .25s ease-in-out, opacity .25s ease-in-out;
   }
 
   &_play {
