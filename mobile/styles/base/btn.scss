@@ -28,6 +28,10 @@ button:disabled,
   position: relative;
   overflow: hidden;
 
+  &-big {
+    padding: 14px 60px 12px 60px;
+  }
+
   &-green {
     background-color: #21aa00;
     border: none;
