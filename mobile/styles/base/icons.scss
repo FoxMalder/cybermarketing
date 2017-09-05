@@ -123,4 +123,14 @@
       background-image: svg-load('watch.svg', fill=#ffffff);
     }
   }
+
+  &-article {
+    @include size(16px, 20px);
+    background-image: svg-load('article.svg', fill=#adb1b9);
+  }
+
+  &-book {
+    @include size(16px, 20px);
+    background-image: svg-load('book.svg', fill=#adb1b9);
+  }
 }
