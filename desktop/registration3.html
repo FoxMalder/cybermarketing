@@ -85,11 +85,18 @@
 
   <link rel="image_src" href="" />
 
-  <link href="/assets/desktop/styles/style.css?v=2cf7a7f2e3e554cba93c5c0725f95360" rel="stylesheet" />
-  <link href="/assets/scripts/likely/likely.css?v=5474c4a5e7dc3a54edc59cfb0680fd66" rel="stylesheet" />
-  <script src="/assets/scripts/likely/likely.js?v=65ee808632dfc7575e2c46289b4c6b11"></script>
+  <link href="/assets/desktop/styles/style.css" rel="stylesheet" />
+  <link href="/assets/scripts/likely/likely.css" rel="stylesheet" />
+  <script src="/assets/scripts/likely/likely.js"></script>
 
 	<script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
+
+  <script>
+    var isMobile = /iPhone|iPad|iPod|Android|mobile|avantgo|bada/i.test(navigator.userAgent);
+    if (isMobile) {
+      window.location = "/mobile/";
+    }
+  </script>
 </head>
 
   <body>
