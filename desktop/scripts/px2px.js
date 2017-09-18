@@ -93,7 +93,6 @@ function px2px() {
     };
   }
 
-
   function createContolsPanel() {
     let targetElem = doc.documentElement;
 
@@ -111,8 +110,6 @@ function px2px() {
   } else {
     console.log('не существует');
   }
-
-
 }
 
 window.onload = function () {
