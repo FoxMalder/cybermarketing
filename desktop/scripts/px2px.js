@@ -8,7 +8,6 @@ function px2px() {
 
   let controlsPanel;
 
-
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
   function setClasses( elem, classes ) {
@@ -29,7 +28,7 @@ function px2px() {
   }
 
   function createDragButton() {
-    var input = doc.createElement('button');
+    let input = doc.createElement('button');
     setClasses( input, [
       panelClass + '__control',
       panelClass + '__control--drag-n-drop'
@@ -42,9 +41,9 @@ function px2px() {
     input.onmousedown = function () {
       //Place it here to get real sizes after
       // external styles has been loaded
-      var offsetTop = this.offsetTop;
-      var offsetLeft = controlsPanel.clientWidth - this.clientWidth;
-      var styles = getComputedStyle(controlsPanel);
+      let offsetTop = this.offsetTop;
+      let offsetLeft = controlsPanel.clientWidth - this.clientWidth;
+      let styles = getComputedStyle(controlsPanel);
 
       controlsPanel.style.top = styles.top;
       controlsPanel.style.left = styles.left;
@@ -52,8 +51,8 @@ function px2px() {
       controlsPanel.style.bottom = 'auto';
 
       doc.onmousemove = function ( ev ) {
-        var x = (ev.clientX - offsetLeft ) + 'px';
-        var y = (ev.clientY) + 'px';
+        let x = (ev.clientX - offsetLeft ) + 'px';
+        let y = (ev.clientY) + 'px';
 
         controlsPanel.style.left = x;
         controlsPanel.style.top = y;
@@ -61,11 +60,11 @@ function px2px() {
     };
 
     input.onmouseup = function () {
-      var styles = getComputedStyle(controlsPanel);
-      var left = +styles.left.replace(/px/,'');
-      var right = +styles.right.replace(/px/,'');
-      var top = +styles.top.replace(/px/,'');
-      var bottom = +styles.bottom.replace(/px/,'');
+      let styles = getComputedStyle(controlsPanel);
+      let left = +styles.left.replace(/px/,'');
+      let right = +styles.right.replace(/px/,'');
+      let top = +styles.top.replace(/px/,'');
+      let bottom = +styles.bottom.replace(/px/,'');
 
       if ( left > right ) {
         saveLocalStorage('left', 'auto');
