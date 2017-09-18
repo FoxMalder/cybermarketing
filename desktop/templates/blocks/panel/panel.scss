@@ -58,6 +58,12 @@
     a:first-child {
       margin-right: 20px;
     }
+
+    .btn {
+      display: inline-block;
+      width: 140px;
+      height: 40px;
+    }
   }
 
   &__steps {
