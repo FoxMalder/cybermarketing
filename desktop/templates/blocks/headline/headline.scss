@@ -21,6 +21,13 @@
     }
   }
 
+  &--big {
+
+    .headline__box {
+      padding: 29px 39px;
+    }
+  }
+
   &__box {
     display: flex;
     align-content: space-between;
