@@ -8,8 +8,25 @@ function px2px() {
 
   let controlsPanel;
   let controlsPanelWrap;
+  let elemento;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
+
+
+  function CheckForm(){
+    var checked=false;
+    var elements = document.querySelector('input[id="checkbe"]');
+    for(var i=0; i < elements.length; i++){
+      if(elements[i].checked) {
+        checked = true;
+      }
+    }
+    if (checked) {
+      console.log('fsdfsdf');
+      px2pxBlock.classList.add('lol');
+    }
+    return checked;
+  }
 
   function createContolsPanel() {
     let targetElem = doc.documentElement;
@@ -22,11 +39,20 @@ function px2px() {
     controlsPanelWrap.classList.add(panelClassWrap);
 
     controlsPanel.appendChild(controlsPanelWrap);
+
+    let checkbox = doc.createElement('input');
+    checkbox.type = "checkbox";
+    checkbox.name = "gdfgg";
+    checkbox.value = "gdfggd";
+    checkbox.id = "checkbe";
+
+    controlsPanel.appendChild(checkbox);
   }
 
   if (px2pxBlock) {
     console.log('существует');
     createContolsPanel();
+    CheckForm();
   } else {
     console.log('не существует');
   }
