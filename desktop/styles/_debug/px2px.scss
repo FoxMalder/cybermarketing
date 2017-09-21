@@ -18,17 +18,24 @@
 
 .px2px-controls {
   display: block;
-  position: fixed;
-  width: 40px;
-  height: 212px;
+  position: absolute;
+  width: 200px;
+  height: 40px;
   background-color: #fff;
   border: 1px solid #d6d9dc;
   border-radius: 2px 2px 0 0;
-  left: 0;
+  left: 300px;
   top: 160px;
   z-index: 10000;
 
-  .px2px-controls_inner {
-    transform: rotate(90deg);
+  &_inner {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: 40px;
+  }
+
+  #marginleft {
+    width: 55px;
   }
 }

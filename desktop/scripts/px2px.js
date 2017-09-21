@@ -4,29 +4,15 @@ function px2px() {
 
   let doc = document;
   let panelClass = 'px2px-controls';
-  let panelClassWrap = 'px2px-controls_inner';
+  let panelClassInner = 'px2px-controls_inner';
 
   let controlsPanel;
-  let controlsPanelWrap;
-  let elemento;
+  let controlsPanelInner;
+
+  let marginLeftInput;
+  let onOff;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
-
-
-  function CheckForm(){
-    var checked=false;
-    var elements = document.querySelector('input[id="checkbe"]');
-    for(var i=0; i < elements.length; i++){
-      if(elements[i].checked) {
-        checked = true;
-      }
-    }
-    if (checked) {
-      console.log('fsdfsdf');
-      px2pxBlock.classList.add('lol');
-    }
-    return checked;
-  }
 
   function createContolsPanel() {
     let targetElem = doc.documentElement;
@@ -35,24 +21,32 @@ function px2px() {
     controlsPanel.classList.add(panelClass);
     targetElem.appendChild(controlsPanel);
 
-    controlsPanelWrap = doc.createElement('div');
-    controlsPanelWrap.classList.add(panelClassWrap);
+    controlsPanelInner = doc.createElement('div');
+    controlsPanelInner.classList.add(panelClassInner);
+    controlsPanel.appendChild(controlsPanelInner);
 
-    controlsPanel.appendChild(controlsPanelWrap);
+    marginLeftInput = doc.createElement('input');
+    marginLeftInput.type = "text";
+    marginLeftInput.name = "marginleft";
+    marginLeftInput.value = "";
+    marginLeftInput.id = "marginleft";
+    marginLeftInput.placeholder = "marginLeftControl";
 
-    let checkbox = doc.createElement('input');
-    checkbox.type = "checkbox";
-    checkbox.name = "gdfgg";
-    checkbox.value = "gdfggd";
-    checkbox.id = "checkbe";
+    controlsPanelInner.appendChild(marginLeftInput);
 
-    controlsPanel.appendChild(checkbox);
+    onOff = doc.createElement('input');
+    onOff.type = "checkbox";
+    onOff.name = "onOff";
+    onOff.value = "on";
+    onOff.id = "onOffControl";
+
+    controlsPanelInner.appendChild(onOff);
+
   }
 
   if (px2pxBlock) {
     console.log('существует');
     createContolsPanel();
-    CheckForm();
   } else {
     console.log('не существует');
   }
