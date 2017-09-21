@@ -36,12 +36,9 @@ function px2px() {
 
     onOff = doc.createElement('input');
     onOff.type = "checkbox";
-    onOff.name = "onOff";
-    onOff.value = "on";
     onOff.id = "onOffControl";
 
     controlsPanelInner.appendChild(onOff);
-
   }
 
   if (px2pxBlock) {
@@ -50,8 +47,13 @@ function px2px() {
   } else {
     console.log('не существует');
   }
+
 }
 
 window.onload = function () {
   px2px();
+
+  document.getElementById('onOffControl').onchange = function() {
+    document.getElementById('px2px').style.display = this.checked ? 'block' : 'none';
+  };
 };
