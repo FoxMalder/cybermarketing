@@ -14,7 +14,7 @@ function px2px() {
   let onOffWrap;
   let onOff;
   let onOffLabel;
-  let onOffСontrol;
+  let onOffFormСontrol;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
@@ -42,6 +42,11 @@ function px2px() {
 
     controlsPanelInner.appendChild(marginLeftInput);
 
+    createOnOff();
+  }
+
+  function createOnOff() {
+
     onOffWrap = doc.createElement('div');
     onOffWrap.classList.add('form-check');
     controlsPanelInner.appendChild(onOffWrap);
@@ -58,10 +63,10 @@ function px2px() {
     onOffLabel.setAttribute("for", 'onOffControl');
     onOffWrap.appendChild(onOffLabel);
 
-    onOffСontrol = doc.createElement('span');
-    onOffСontrol.classList.add('form-check-control');
-    onOffСontrol.innerHTML = "вкл/выкл";
-    onOffLabel.appendChild(onOffСontrol);
+    onOffFormСontrol = doc.createElement('span');
+    onOffFormСontrol.classList.add('form-check-control');
+    onOffFormСontrol.innerHTML = "вкл/выкл";
+    onOffLabel.appendChild(onOffFormСontrol);
   }
 
   if (px2pxBlock) {
