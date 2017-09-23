@@ -10,8 +10,11 @@ function px2px() {
   let controlsPanelInner;
 
   let marginLeftInput;
+
   let onOffWrap;
   let onOff;
+  let onOffLabel;
+  let onOffСontrol;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
@@ -45,14 +48,20 @@ function px2px() {
 
     onOff = doc.createElement('input');
     onOff.type = "checkbox";
+    onOff.name = "onofctrl";
     onOff.id = "onOffControl";
     onOff.checked = true;
 
-    onOffLabel = doc.createElement('label');
-    onOffLabel.classList.add('form-check');
-    controlsPanelInner.appendChild(onOffLabel);
-
     onOffWrap.appendChild(onOff);
+
+    onOffLabel = doc.createElement('label');
+    onOffLabel.setAttribute("for", 'onOffControl');
+    onOffWrap.appendChild(onOffLabel);
+
+    onOffСontrol = doc.createElement('span');
+    onOffСontrol.classList.add('form-check-control');
+    onOffСontrol.innerHTML = "вкл/выкл";
+    onOffLabel.appendChild(onOffСontrol);
   }
 
   if (px2pxBlock) {
