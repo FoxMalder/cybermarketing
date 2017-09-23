@@ -18,6 +18,7 @@ function px2px() {
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
+  // создаём контрольную панель
   function createContolsPanel() {
     let targetElem = doc.documentElement;
 
@@ -32,6 +33,7 @@ function px2px() {
     initControls();
   }
 
+  // создаём контрольные элементы
   function initControls() {
     marginLeftInput = doc.createElement('input');
     marginLeftInput.type = "text";
@@ -45,6 +47,7 @@ function px2px() {
     createOnOff();
   }
 
+  // контрольный элемент: чекбокс вкл/выкл слоя
   function createOnOff() {
 
     onOffWrap = doc.createElement('div');
@@ -69,15 +72,16 @@ function px2px() {
     onOffLabel.appendChild(onOffFormСontrol);
   }
 
+  // если есть нужный элемент на странице, то создаём контрольную панель
   if (px2pxBlock) {
     createContolsPanel();
   }
-
 }
 
 window.onload = function () {
   px2px();
 
+  // следим за положением чекбокса
   document.getElementById('onOffControl').onchange = function() {
     document.getElementsByClassName('px2px')[0].style.display = this.checked ? 'block' : 'none';
   };
