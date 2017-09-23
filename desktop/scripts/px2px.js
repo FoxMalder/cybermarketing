@@ -10,6 +10,7 @@ function px2px() {
   let controlsPanelInner;
 
   let marginLeftInput;
+  let onOffWrap;
   let onOff;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
@@ -25,6 +26,10 @@ function px2px() {
     controlsPanelInner.classList.add(panelClassInner);
     controlsPanel.appendChild(controlsPanelInner);
 
+    initControls();
+  }
+
+  function initControls() {
     marginLeftInput = doc.createElement('input');
     marginLeftInput.type = "text";
     marginLeftInput.name = "marginleft";
@@ -34,19 +39,24 @@ function px2px() {
 
     controlsPanelInner.appendChild(marginLeftInput);
 
+    onOffWrap = doc.createElement('div');
+    onOffWrap.classList.add('form-check');
+    controlsPanelInner.appendChild(onOffWrap);
+
     onOff = doc.createElement('input');
     onOff.type = "checkbox";
     onOff.id = "onOffControl";
     onOff.checked = true;
 
-    controlsPanelInner.appendChild(onOff);
+    onOffLabel = doc.createElement('label');
+    onOffLabel.classList.add('form-check');
+    controlsPanelInner.appendChild(onOffLabel);
+
+    onOffWrap.appendChild(onOff);
   }
 
   if (px2pxBlock) {
-    console.log('существует');
     createContolsPanel();
-  } else {
-    console.log('не существует');
   }
 
 }
