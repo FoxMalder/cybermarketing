@@ -37,6 +37,7 @@ function px2px() {
     onOff = doc.createElement('input');
     onOff.type = "checkbox";
     onOff.id = "onOffControl";
+    onOff.checked = true;
 
     controlsPanelInner.appendChild(onOff);
   }
@@ -54,6 +55,6 @@ window.onload = function () {
   px2px();
 
   document.getElementById('onOffControl').onchange = function() {
-    document.getElementById('px2px').style.display = this.checked ? 'block' : 'none';
+    document.getElementsByClassName('px2px')[0].style.display = this.checked ? 'block' : 'none';
   };
 };
