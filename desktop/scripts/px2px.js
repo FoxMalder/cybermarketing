@@ -72,20 +72,21 @@ function px2px() {
     onOffLabel.appendChild(onOffFormСontrol);
   }
 
-  // если есть нужный элемент на странице, то создаём контрольную панель
+  // если есть нужный элемент на странице
   if (px2pxBlock) {
+
+    // , то создаём контрольную панель
     createContolsPanel();
+
+    // следим за положением чекбокса
+    doc.getElementById('onOffControl').onchange = function() {
+      px2pxBlock.style.display = this.checked ? 'block' : 'none';
+    };
+
   }
+
 }
 
 window.onload = function () {
-  let doc = document;
-  let px2pxBlock = doc.getElementsByClassName('px2px')[0];
-
   px2px();
-
-  // следим за положением чекбокса
-  doc.getElementById('onOffControl').onchange = function() {
-    px2pxBlock.style.display = this.checked ? 'block' : 'none';
-  };
 };
