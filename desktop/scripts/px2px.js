@@ -79,10 +79,13 @@ function px2px() {
 }
 
 window.onload = function () {
+  let doc = document;
+  let px2pxBlock = doc.getElementsByClassName('px2px')[0];
+
   px2px();
 
   // следим за положением чекбокса
-  document.getElementById('onOffControl').onchange = function() {
-    document.getElementsByClassName('px2px')[0].style.display = this.checked ? 'block' : 'none';
+  doc.getElementById('onOffControl').onchange = function() {
+    px2pxBlock.style.display = this.checked ? 'block' : 'none';
   };
 };
