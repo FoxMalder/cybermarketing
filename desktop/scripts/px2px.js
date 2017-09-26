@@ -81,13 +81,11 @@ function px2px() {
     // , то создаём контрольную панель
     createContolsPanel();
 
-    // следим за положением чекбокса
+    // и следим за положением чекбокса
     doc.getElementById('onOffControl').onchange = function() {
       px2pxBlock.style.display = this.checked ? 'block' : 'none';
     };
-
   }
-
 }
 
 window.onload = function () {
