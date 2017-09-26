@@ -14,7 +14,7 @@ function px2px() {
   let onOffWrap;
   let onOff;
   let onOffLabel;
-  let onOffFormСontrol;
+  let onOffFormControl;
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
@@ -35,16 +35,8 @@ function px2px() {
 
   // создаём контрольные элементы
   function initControls() {
-    marginLeftInput = doc.createElement('input');
-    marginLeftInput.type = "text";
-    marginLeftInput.name = "marginleft";
-    marginLeftInput.value = "";
-    marginLeftInput.id = "marginleft";
-    marginLeftInput.placeholder = "marginLeftControl";
-
-    controlsPanelInner.appendChild(marginLeftInput);
-
     createOnOff();
+    marginLeft();
   }
 
   // контрольный элемент: чекбокс вкл/выкл слоя
@@ -66,10 +58,21 @@ function px2px() {
     onOffLabel.setAttribute("for", 'onOffControl');
     onOffWrap.appendChild(onOffLabel);
 
-    onOffFormСontrol = doc.createElement('span');
-    onOffFormСontrol.classList.add('form-check-control');
-    onOffFormСontrol.innerHTML = "вкл/выкл";
-    onOffLabel.appendChild(onOffFormСontrol);
+    onOffFormControl = doc.createElement('span');
+    onOffFormControl.classList.add('form-check-control');
+    onOffFormControl.innerHTML = "вкл/выкл";
+    onOffLabel.appendChild(onOffFormControl);
+  }
+
+  function marginLeft() {
+    marginLeftInput = doc.createElement('input');
+    marginLeftInput.type = "text";
+    marginLeftInput.name = "marginleft";
+    marginLeftInput.value = "";
+    marginLeftInput.id = "marginleft";
+    marginLeftInput.placeholder = "marginLeftControl";
+
+    controlsPanelInner.appendChild(marginLeftInput);
   }
 
   // если есть нужный элемент на странице
