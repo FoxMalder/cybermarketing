@@ -3,11 +3,11 @@ function px2px() {
   'use strict';
 
   let doc = document;
-  let panelClass = 'px2px-controls';
-  let panelClassInner = 'px2px-controls_inner';
+  let panelClass = 'p_panel';
 
   let controlsPanel;
-  let controlsPanelInner;
+  let controlsPanelHeader;
+  let controlsPanelBody;
 
   let marginLeftInput;
 
@@ -26,9 +26,40 @@ function px2px() {
     controlsPanel.classList.add(panelClass);
     targetElem.appendChild(controlsPanel);
 
-    controlsPanelInner = doc.createElement('div');
-    controlsPanelInner.classList.add(panelClassInner);
-    controlsPanel.appendChild(controlsPanelInner);
+    controlsPanelHeader = doc.createElement('div');
+    controlsPanelHeader.classList.add('p_panel_header');
+    controlsPanelHeader.innerHTML = '<div class="p_dragndrop">\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      </div>';
+    controlsPanel.appendChild(controlsPanelHeader);
+
+    controlsPanelBody = doc.createElement('div');
+    controlsPanelBody.classList.add('p_panel_body');
+    controlsPanelBody.innerHTML = '<div class="p_form-group">\
+      <label for="">Слой с макетом</label>\
+    <div class="p_input-group">\
+      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
+      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
+      <button class="p_btn" type="submit">Выкл</button>\
+      </div>\
+      <small id="emailHelp" class="form-text text-muted">Прозрачность и фильтр</small>\
+    </div>\
+    <div class="p_form-group">\
+      <label for="">Отступы (margin)</label>\
+      <div class="p_input-group">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      </div>\
+      <small id="emailHelp" class="form-text text-muted">Значения в px</small>\
+    </div>';
+    controlsPanel.appendChild(controlsPanelBody);
 
     initControls();
   }
@@ -44,7 +75,7 @@ function px2px() {
 
     onOffWrap = doc.createElement('div');
     onOffWrap.classList.add('form-check');
-    controlsPanelInner.appendChild(onOffWrap);
+    // controlsPanelInner.appendChild(onOffWrap);
 
     onOff = doc.createElement('input');
     onOff.type = "checkbox";
@@ -72,7 +103,7 @@ function px2px() {
     marginLeftInput.id = "marginleft";
     marginLeftInput.placeholder = "marginLeftControl";
 
-    controlsPanelInner.appendChild(marginLeftInput);
+    // controlsPanelInner.appendChild(marginLeftInput);
   }
 
   // если есть нужный элемент на странице
@@ -81,10 +112,17 @@ function px2px() {
     // , то создаём контрольную панель
     createContolsPanel();
 
+    document.body.className = "something";
+
     // и следим за положением чекбокса
-    doc.getElementById('onOffControl').onchange = function() {
-      px2pxBlock.style.display = this.checked ? 'block' : 'none';
-    };
+    // doc.getElementById('onOffControl').onchange = function() {
+    //   px2pxBlock.style.display = this.checked ? 'block' : 'none';
+    // };
+
+    // var p = document.getElementById("target");
+    // var style = p.currentStyle || window.getComputedStyle(p);
+    //
+    // display("Current marginTop: " + style.marginTop);
   }
 }
 
