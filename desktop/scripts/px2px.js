@@ -16,7 +16,17 @@ function px2px() {
   let onOffLabel;
   let onOffFormControl;
 
+  let offsetTop;
+
+  let prefix = 'pg';
+
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
+
+  init();
+
+  function init() {
+    createContolsPanel();
+  }
 
   // создаём контрольную панель
   function createContolsPanel() {
@@ -26,24 +36,14 @@ function px2px() {
     controlsPanel.classList.add(panelClass);
     targetElem.appendChild(controlsPanel);
 
-    controlsPanelHeader = doc.createElement('div');
-    controlsPanelHeader.classList.add('p_panel_header');
-    controlsPanelHeader.innerHTML = '<div class="p_dragndrop">\
-      <div class="p_dragndrop_dot"></div>\
-      <div class="p_dragndrop_dot"></div>\
-      <div class="p_dragndrop_dot"></div>\
-      <div class="p_dragndrop_dot"></div>\
-      <div class="p_dragndrop_dot"></div>\
-      <div class="p_dragndrop_dot"></div>\
-      </div>';
-    controlsPanel.appendChild(controlsPanelHeader);
+    createDragHeader();
 
     controlsPanelBody = doc.createElement('div');
     controlsPanelBody.classList.add('p_panel_body');
     controlsPanelBody.innerHTML = '<div class="p_form-group">\
       <label for="">Слой с макетом</label>\
     <div class="p_input-group">\
-      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
+      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7" step="0.1" min="0" max="1">\
       <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
       <button class="p_btn" type="submit">Выкл</button>\
       </div>\
@@ -64,10 +64,87 @@ function px2px() {
     initControls();
   }
 
+  // создаём шапку, за которую можно таскать всю панель
+  function createDragHeader() {
+    controlsPanelHeader = doc.createElement('div');
+    controlsPanelHeader.classList.add('p_panel_header');
+    controlsPanelHeader.innerHTML = '<div class="p_dragndrop">\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      </div>';
+    controlsPanel.appendChild(controlsPanelHeader);
+
+    controlsPanelHeader.onmousedown = function () {
+      console.log('2222');
+      //Place it here to get real sizes after
+      // external styles has been loaded
+      let offsetTop = this.offsetTop;
+      let offsetLeft = controlsPanel.clientWidth - this.clientWidth;
+      let styles = getComputedStyle(controlsPanel);
+
+      controlsPanel.style.top = styles.top;
+      controlsPanel.style.left = styles.left;
+      controlsPanel.style.right = 'auto';
+      controlsPanel.style.bottom = 'auto';
+
+      doc.onmousemove = function ( ev ) {
+        console.log('onmousemove in onmousedown');
+        let x = (ev.clientX - offsetLeft ) + 'px';
+        let y = (ev.clientY ) + 'px';
+
+        controlsPanel.style.left = x;
+        controlsPanel.style.top = y;
+      };
+    };
+
+    controlsPanelHeader.onmouseup = function () {
+      console.log('123123');
+      let styles = getComputedStyle(controlsPanel);
+      let left = +styles.left.replace(/px/,'');
+      let right = +styles.right.replace(/px/,'');
+      let top = +styles.top.replace(/px/,'');
+      let bottom = +styles.bottom.replace(/px/,'');
+
+      if ( left > right ) {
+        saveLocalStorage('left', 'auto');
+        saveLocalStorage('right', styles.right);
+
+        controlsPanel.style.right = styles.right;
+        controlsPanel.style.left = 'auto';
+      }
+      else {
+        saveLocalStorage('left', styles.left);
+        saveLocalStorage('right', 'auto'); //'auto' needs to override default position;
+      }
+      if ( top > bottom ) {
+        saveLocalStorage('top', 'auto');
+        saveLocalStorage('bottom', styles.bottom);
+
+        controlsPanel.style.bottom = styles.bottom;
+        controlsPanel.style.top = 'auto';
+      }
+      else {
+        saveLocalStorage('top', styles.top);
+        saveLocalStorage('bottom', 'auto');
+      }
+
+      doc.onmousemove = null;
+    };
+  }
+
   // создаём контрольные элементы
   function initControls() {
     createOnOff();
     marginLeft();
+  }
+
+  function saveLocalStorage(name, value) {
+    var itemName = [prefix, name].join('-');
+    localStorage[itemName] = value;
   }
 
   // контрольный элемент: чекбокс вкл/выкл слоя
@@ -110,7 +187,7 @@ function px2px() {
   if (px2pxBlock) {
 
     // , то создаём контрольную панель
-    createContolsPanel();
+    // createContolsPanel();
 
     document.body.className = "something";
 

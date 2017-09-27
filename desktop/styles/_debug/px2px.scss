@@ -25,10 +25,12 @@
   border: 1px solid #d2d8d9;
   border-radius: 3px;
   z-index: 10001;
+  box-sizing: border-box;
+  outline: none;
 
-  position: absolute;
-  left: 300px;
-  top: 160px;
+  position: fixed;
+  top: 121px;
+  left: 121px;
 
   &_header {
     background-color: #fff;
