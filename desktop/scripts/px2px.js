@@ -20,8 +20,6 @@ function px2px() {
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
-  init();
-
   function init() {
     createContolsPanel();
   }
@@ -180,7 +178,7 @@ function px2px() {
   if (px2pxBlock) {
 
     // , то создаём контрольную панель
-    // createContolsPanel();
+    init();
 
     document.body.className = "something";
 
