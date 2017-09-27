@@ -16,8 +16,6 @@ function px2px() {
   let onOffLabel;
   let onOffFormControl;
 
-  let offsetTop;
-
   let prefix = 'pg';
 
   let px2pxBlock = doc.getElementsByClassName('px2px')[0];
@@ -79,9 +77,6 @@ function px2px() {
     controlsPanel.appendChild(controlsPanelHeader);
 
     controlsPanelHeader.onmousedown = function () {
-      console.log('2222');
-      //Place it here to get real sizes after
-      // external styles has been loaded
       let offsetTop = this.offsetTop;
       let offsetLeft = controlsPanel.clientWidth - this.clientWidth;
       let styles = getComputedStyle(controlsPanel);
@@ -92,9 +87,8 @@ function px2px() {
       controlsPanel.style.bottom = 'auto';
 
       doc.onmousemove = function ( ev ) {
-        console.log('onmousemove in onmousedown');
-        let x = (ev.clientX - offsetLeft ) + 'px';
-        let y = (ev.clientY ) + 'px';
+        let x = (ev.clientX - 20 ) + 'px';
+        let y = (ev.clientY - 20) + 'px';
 
         controlsPanel.style.left = x;
         controlsPanel.style.top = y;
@@ -102,7 +96,6 @@ function px2px() {
     };
 
     controlsPanelHeader.onmouseup = function () {
-      console.log('123123');
       let styles = getComputedStyle(controlsPanel);
       let left = +styles.left.replace(/px/,'');
       let right = +styles.right.replace(/px/,'');
