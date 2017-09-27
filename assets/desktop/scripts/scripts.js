@@ -273,17 +273,28 @@ function px2px() {
   'use strict';
 
   var doc = document;
-  var panelClass = 'px2px-controls';
-  var panelClassInner = 'px2px-controls_inner';
+  var panelClass = 'p_panel';
 
   var controlsPanel = void 0;
-  var controlsPanelInner = void 0;
+  var controlsPanelHeader = void 0;
+  var controlsPanelBody = void 0;
 
   var marginLeftInput = void 0;
+
+  var onOffWrap = void 0;
   var onOff = void 0;
+  var onOffLabel = void 0;
+  var onOffFormControl = void 0;
+
+  var prefix = 'pg';
 
   var px2pxBlock = doc.getElementsByClassName('px2px')[0];
 
+  function init() {
+    createContolsPanel();
+  }
+
+  // создаём контрольную панель
   function createContolsPanel() {
     var targetElem = doc.documentElement;
 
@@ -291,10 +302,136 @@ function px2px() {
     controlsPanel.classList.add(panelClass);
     targetElem.appendChild(controlsPanel);
 
-    controlsPanelInner = doc.createElement('div');
-    controlsPanelInner.classList.add(panelClassInner);
-    controlsPanel.appendChild(controlsPanelInner);
+    createDragHeader();
 
+    controlsPanelBody = doc.createElement('div');
+    controlsPanelBody.classList.add('p_panel_body');
+    controlsPanelBody.innerHTML = '<div class="p_form-group">\
+      <label for="">Слой с макетом</label>\
+    <div class="p_input-group">\
+      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7" step="0.1" min="0" max="1">\
+      <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
+      <button class="p_btn" type="submit">Выкл</button>\
+      </div>\
+      <small id="emailHelp" class="form-text text-muted">Прозрачность и фильтр</small>\
+    </div>\
+    <div class="p_form-group">\
+      <label for="">Отступы (margin)</label>\
+      <div class="p_input-group">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      <input type="number" class="p_form-control" placeholder="0">\
+      </div>\
+      <small id="emailHelp" class="form-text text-muted">Значения в px</small>\
+    </div>';
+    controlsPanel.appendChild(controlsPanelBody);
+
+    initControls();
+  }
+
+  // создаём шапку, за которую можно таскать всю панель
+  function createDragHeader() {
+    controlsPanelHeader = doc.createElement('div');
+    controlsPanelHeader.classList.add('p_panel_header');
+    controlsPanelHeader.innerHTML = '<div class="p_dragndrop">\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      <div class="p_dragndrop_dot"></div>\
+      </div>';
+    controlsPanel.appendChild(controlsPanelHeader);
+
+    controlsPanelHeader.onmousedown = function () {
+      var offsetTop = this.offsetTop;
+      var offsetLeft = controlsPanel.clientWidth - this.clientWidth;
+      var styles = getComputedStyle(controlsPanel);
+
+      controlsPanel.style.top = styles.top;
+      controlsPanel.style.left = styles.left;
+      controlsPanel.style.right = 'auto';
+      controlsPanel.style.bottom = 'auto';
+
+      doc.onmousemove = function (ev) {
+        var x = ev.clientX - 20 + 'px';
+        var y = ev.clientY - 20 + 'px';
+
+        controlsPanel.style.left = x;
+        controlsPanel.style.top = y;
+      };
+    };
+
+    controlsPanelHeader.onmouseup = function () {
+      var styles = getComputedStyle(controlsPanel);
+      var left = +styles.left.replace(/px/, '');
+      var right = +styles.right.replace(/px/, '');
+      var top = +styles.top.replace(/px/, '');
+      var bottom = +styles.bottom.replace(/px/, '');
+
+      if (left > right) {
+        saveLocalStorage('left', 'auto');
+        saveLocalStorage('right', styles.right);
+
+        controlsPanel.style.right = styles.right;
+        controlsPanel.style.left = 'auto';
+      } else {
+        saveLocalStorage('left', styles.left);
+        saveLocalStorage('right', 'auto'); //'auto' needs to override default position;
+      }
+      if (top > bottom) {
+        saveLocalStorage('top', 'auto');
+        saveLocalStorage('bottom', styles.bottom);
+
+        controlsPanel.style.bottom = styles.bottom;
+        controlsPanel.style.top = 'auto';
+      } else {
+        saveLocalStorage('top', styles.top);
+        saveLocalStorage('bottom', 'auto');
+      }
+
+      doc.onmousemove = null;
+    };
+  }
+
+  // создаём контрольные элементы
+  function initControls() {
+    createOnOff();
+    marginLeft();
+  }
+
+  function saveLocalStorage(name, value) {
+    var itemName = [prefix, name].join('-');
+    localStorage[itemName] = value;
+  }
+
+  // контрольный элемент: чекбокс вкл/выкл слоя
+  function createOnOff() {
+
+    onOffWrap = doc.createElement('div');
+    onOffWrap.classList.add('form-check');
+    // controlsPanelInner.appendChild(onOffWrap);
+
+    onOff = doc.createElement('input');
+    onOff.type = "checkbox";
+    onOff.name = "onofctrl";
+    onOff.id = "onOffControl";
+    onOff.checked = true;
+
+    onOffWrap.appendChild(onOff);
+
+    onOffLabel = doc.createElement('label');
+    onOffLabel.setAttribute("for", 'onOffControl');
+    onOffWrap.appendChild(onOffLabel);
+
+    onOffFormControl = doc.createElement('span');
+    onOffFormControl.classList.add('form-check-control');
+    onOffFormControl.innerHTML = "вкл/выкл";
+    onOffLabel.appendChild(onOffFormControl);
+  }
+
+  function marginLeft() {
     marginLeftInput = doc.createElement('input');
     marginLeftInput.type = "text";
     marginLeftInput.name = "marginleft";
@@ -302,30 +439,31 @@ function px2px() {
     marginLeftInput.id = "marginleft";
     marginLeftInput.placeholder = "marginLeftControl";
 
-    controlsPanelInner.appendChild(marginLeftInput);
-
-    onOff = doc.createElement('input');
-    onOff.type = "checkbox";
-    onOff.id = "onOffControl";
-    onOff.checked = true;
-
-    controlsPanelInner.appendChild(onOff);
+    // controlsPanelInner.appendChild(marginLeftInput);
   }
 
+  // если есть нужный элемент на странице
   if (px2pxBlock) {
-    console.log('существует');
-    createContolsPanel();
-  } else {
-    console.log('не существует');
+
+    // , то создаём контрольную панель
+    init();
+
+    document.body.className = "something";
+
+    // и следим за положением чекбокса
+    // doc.getElementById('onOffControl').onchange = function() {
+    //   px2pxBlock.style.display = this.checked ? 'block' : 'none';
+    // };
+
+    // var p = document.getElementById("target");
+    // var style = p.currentStyle || window.getComputedStyle(p);
+    //
+    // display("Current marginTop: " + style.marginTop);
   }
 }
 
 window.onload = function () {
   px2px();
-
-  document.getElementById('onOffControl').onchange = function () {
-    document.getElementsByClassName('px2px')[0].style.display = this.checked ? 'block' : 'none';
-  };
 };
 
 /*
