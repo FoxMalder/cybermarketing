@@ -146,10 +146,16 @@ function px2px() {
 
     let yes = document.getElementById("yes");
 
-    yes.onclick = function() {
+
+
+    let el = document.getElementById('yes')
+    let clickerFn = function() {
       px2pxBlock.style.display = "none";
       yes.innerHTML = 'вкл?';
     }
+
+    el.addEventListener('click', clickerFn);
+
 
     // var p = document.getElementById("target");
     // var style = p.currentStyle || window.getComputedStyle(p);
