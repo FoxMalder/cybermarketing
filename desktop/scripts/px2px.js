@@ -41,7 +41,7 @@ function px2px() {
     <div class="p_input-group">\
       <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7" step="0.1" min="0" max="1">\
       <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
-      <button class="p_btn" type="submit">Выкл</button>\
+      <button class="p_btn" type="submit" id="yes">Выкл</button>\
       </div>\
       <small id="emailHelp" class="form-text text-muted">Прозрачность и фильтр</small>\
     </div>\
@@ -129,49 +129,11 @@ function px2px() {
 
   // создаём контрольные элементы
   function initControls() {
-    createOnOff();
-    marginLeft();
   }
 
   function saveLocalStorage(name, value) {
     var itemName = [prefix, name].join('-');
     localStorage[itemName] = value;
-  }
-
-  // контрольный элемент: чекбокс вкл/выкл слоя
-  function createOnOff() {
-
-    onOffWrap = doc.createElement('div');
-    onOffWrap.classList.add('form-check');
-    // controlsPanelInner.appendChild(onOffWrap);
-
-    onOff = doc.createElement('input');
-    onOff.type = "checkbox";
-    onOff.name = "onofctrl";
-    onOff.id = "onOffControl";
-    onOff.checked = true;
-
-    onOffWrap.appendChild(onOff);
-
-    onOffLabel = doc.createElement('label');
-    onOffLabel.setAttribute("for", 'onOffControl');
-    onOffWrap.appendChild(onOffLabel);
-
-    onOffFormControl = doc.createElement('span');
-    onOffFormControl.classList.add('form-check-control');
-    onOffFormControl.innerHTML = "вкл/выкл";
-    onOffLabel.appendChild(onOffFormControl);
-  }
-
-  function marginLeft() {
-    marginLeftInput = doc.createElement('input');
-    marginLeftInput.type = "text";
-    marginLeftInput.name = "marginleft";
-    marginLeftInput.value = "";
-    marginLeftInput.id = "marginleft";
-    marginLeftInput.placeholder = "marginLeftControl";
-
-    // controlsPanelInner.appendChild(marginLeftInput);
   }
 
   // если есть нужный элемент на странице
@@ -180,12 +142,20 @@ function px2px() {
     // , то создаём контрольную панель
     init();
 
-    document.body.className = "something";
+    document.body.className = "is-px2px";
 
-    // и следим за положением чекбокса
-    // doc.getElementById('onOffControl').onchange = function() {
-    //   px2pxBlock.style.display = this.checked ? 'block' : 'none';
-    // };
+    let yes = document.getElementById("yes");
+
+
+
+    let el = document.getElementById('yes')
+    let clickerFn = function() {
+      px2pxBlock.style.display = "none";
+      yes.innerHTML = 'вкл?';
+    }
+
+    el.addEventListener('click', clickerFn);
+
 
     // var p = document.getElementById("target");
     // var style = p.currentStyle || window.getComputedStyle(p);
