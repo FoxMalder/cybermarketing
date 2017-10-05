@@ -311,7 +311,7 @@ function px2px() {
     <div class="p_input-group">\
       <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7" step="0.1" min="0" max="1">\
       <input type="number" class="p_form-control p_form-control--mini" placeholder="0.7">\
-      <button class="p_btn" type="submit">Выкл</button>\
+      <button class="p_btn" type="submit" id="yes">Выкл</button>\
       </div>\
       <small id="emailHelp" class="form-text text-muted">Прозрачность и фильтр</small>\
     </div>\
@@ -396,50 +396,11 @@ function px2px() {
   }
 
   // создаём контрольные элементы
-  function initControls() {
-    createOnOff();
-    marginLeft();
-  }
+  function initControls() {}
 
   function saveLocalStorage(name, value) {
     var itemName = [prefix, name].join('-');
     localStorage[itemName] = value;
-  }
-
-  // контрольный элемент: чекбокс вкл/выкл слоя
-  function createOnOff() {
-
-    onOffWrap = doc.createElement('div');
-    onOffWrap.classList.add('form-check');
-    // controlsPanelInner.appendChild(onOffWrap);
-
-    onOff = doc.createElement('input');
-    onOff.type = "checkbox";
-    onOff.name = "onofctrl";
-    onOff.id = "onOffControl";
-    onOff.checked = true;
-
-    onOffWrap.appendChild(onOff);
-
-    onOffLabel = doc.createElement('label');
-    onOffLabel.setAttribute("for", 'onOffControl');
-    onOffWrap.appendChild(onOffLabel);
-
-    onOffFormControl = doc.createElement('span');
-    onOffFormControl.classList.add('form-check-control');
-    onOffFormControl.innerHTML = "вкл/выкл";
-    onOffLabel.appendChild(onOffFormControl);
-  }
-
-  function marginLeft() {
-    marginLeftInput = doc.createElement('input');
-    marginLeftInput.type = "text";
-    marginLeftInput.name = "marginleft";
-    marginLeftInput.value = "";
-    marginLeftInput.id = "marginleft";
-    marginLeftInput.placeholder = "marginLeftControl";
-
-    // controlsPanelInner.appendChild(marginLeftInput);
   }
 
   // если есть нужный элемент на странице
@@ -448,12 +409,17 @@ function px2px() {
     // , то создаём контрольную панель
     init();
 
-    document.body.className = "something";
+    document.body.className = "is-px2px";
 
-    // и следим за положением чекбокса
-    // doc.getElementById('onOffControl').onchange = function() {
-    //   px2pxBlock.style.display = this.checked ? 'block' : 'none';
-    // };
+    var yes = document.getElementById("yes");
+
+    var el = document.getElementById('yes');
+    var clickerFn = function clickerFn() {
+      px2pxBlock.style.display = "none";
+      yes.innerHTML = 'вкл?';
+    };
+
+    el.addEventListener('click', clickerFn);
 
     // var p = document.getElementById("target");
     // var style = p.currentStyle || window.getComputedStyle(p);
@@ -499,6 +465,81 @@ window.onload = function () {
 
 $('#commentnew').keyup(function () {
   if ($(this).val().length != 0) $('#submit').attr('disabled', false);else $('#submit').attr('disabled', true);
+});
+'use strict';
+
+/*!
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 42):
+ * <jevin9@gmail.com> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return. Jevin O. Sewaruth
+ * ----------------------------------------------------------------------------
+ *
+ * Autogrow Textarea Plugin Version v3.0
+ * http://www.technoreply.com/autogrow-textarea-plugin-3-0
+ *
+ * THIS PLUGIN IS DELIVERD ON A PAY WHAT YOU WHANT BASIS. IF THE PLUGIN WAS USEFUL TO YOU, PLEASE CONSIDER BUYING THE PLUGIN HERE :
+ * https://sites.fastspring.com/technoreply/instant/autogrowtextareaplugin
+ *
+ * Date: October 15, 2012
+ */
+
+jQuery.fn.autoGrow = function (options) {
+  return this.each(function () {
+    var settings = jQuery.extend({
+      extraLine: true
+    }, options);
+
+    var createMirror = function createMirror(textarea) {
+      jQuery(textarea).after('<div class="autogrow-textarea-mirror"></div>');
+      return jQuery(textarea).next('.autogrow-textarea-mirror')[0];
+    };
+
+    var sendContentToMirror = function sendContentToMirror(textarea) {
+      mirror.innerHTML = String(textarea.value).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\n/g, '<br />') + (settings.extraLine ? '.<br/>.' : '');
+
+      if (jQuery(textarea).height() != jQuery(mirror).height()) jQuery(textarea).height(jQuery(mirror).height());
+    };
+
+    var growTextarea = function growTextarea() {
+      sendContentToMirror(this);
+    };
+
+    // Create a mirror
+    var mirror = createMirror(this);
+
+    // Style the mirror
+    mirror.style.display = 'none';
+    mirror.style.wordWrap = 'break-word';
+    mirror.style.whiteSpace = 'pre-wrap';
+    mirror.style.padding = jQuery(this).css('paddingTop') + ' ' + jQuery(this).css('paddingRight') + ' ' + jQuery(this).css('paddingBottom') + ' ' + jQuery(this).css('paddingLeft');
+
+    mirror.style.borderStyle = jQuery(this).css('borderTopStyle') + ' ' + jQuery(this).css('borderRightStyle') + ' ' + jQuery(this).css('borderBottomStyle') + ' ' + jQuery(this).css('borderLeftStyle');
+
+    mirror.style.borderWidth = jQuery(this).css('borderTopWidth') + ' ' + jQuery(this).css('borderRightWidth') + ' ' + jQuery(this).css('borderBottomWidth') + ' ' + jQuery(this).css('borderLeftWidth');
+
+    mirror.style.width = jQuery(this).css('width');
+    mirror.style.fontFamily = jQuery(this).css('font-family');
+    mirror.style.fontSize = jQuery(this).css('font-size');
+    mirror.style.lineHeight = jQuery(this).css('line-height');
+    mirror.style.letterSpacing = jQuery(this).css('letter-spacing');
+
+    // Style the textarea
+    this.style.overflow = "hidden";
+    this.style.minHeight = this.rows + "em";
+
+    // Bind the textarea's event
+    this.onkeyup = growTextarea;
+    this.onfocus = growTextarea;
+
+    // Fire the event for text already present
+    sendContentToMirror(this);
+  });
+};
+
+$(document).ready(function () {
+  $("#commentnew").autoGrow();
 });
 'use strict';
 
