@@ -12,7 +12,7 @@ const paths = require('../paths');
 // Федеральная служба по контролю за оборотом файлов
 gulp.task('watch', function() {
   watch(paths.watch.templates, function() {
-    return runSequence('html');
+    return runSequence('html', reload);
   });
   watch(paths.watch.styles, function() {
     return runSequence(['styles', 'cleancache']);
@@ -21,12 +21,12 @@ gulp.task('watch', function() {
     return runSequence(['scripts', 'cleancache']);
   });
   watch(paths.watch.images, function() {
-    return runSequence('images', browserSync.reload);
+    return runSequence('images', reload);
   });
   watch(paths.watch.imagesblocks, function() {
-  return runSequence('images:blocks', browserSync.reload);
+    return runSequence('images:blocks', reload);
   });
   watch(paths.watch.resources, function() {
-    return runSequence('resources', browserSync.reload);
+    return runSequence('resources', reload);
   });
 });
